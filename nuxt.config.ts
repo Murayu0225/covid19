@@ -25,7 +25,7 @@ const config: NuxtConfig = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp',
+        content: 'https://sagamihara-covid19.netlify.app/',
       },
       {
         hid: 'twitter:card',
@@ -178,8 +178,8 @@ const config: NuxtConfig = {
     whitelistPatterns: [/(col|row)/],
   },
   manifest: {
-    name: '東京都 新型コロナウイルス感染症対策サイト',
-    theme_color: '#00a040',
+    name: '相模原市 新型コロナウイルス感染症対策サイト',
+    theme_color: '#085c6c',
     background_color: '#ffffff',
     display: 'standalone',
     Scope: '/',

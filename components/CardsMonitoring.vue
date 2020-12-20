@@ -6,6 +6,7 @@
 /* eslint-disable simple-import-sort/sort -- ブラウザでの表示順に合わせて各 card の component を import する */
 import Vue from 'vue'
 
+//CardfReference.vueではなく、こちらに全てを統一
 // 検査陽性者の状況
 const ConfirmedCasesDetailsCard = () =>
   import('@/components/cards/ConfirmedCasesDetailsCard.vue')
@@ -15,9 +16,9 @@ const ConfirmedCasesNumberCard = () =>
 // モニタリング項目(1)新規陽性者数
 const MonitoringConfirmedCasesNumberCard = () =>
   import('@/components/cards/MonitoringConfirmedCasesNumberCard.vue')
-// 陽性者の属性
-const ConfirmedCasesAttributesCard = () =>
-  import('@/components/cards/ConfirmedCasesAttributesCard.vue')
+// 陽性者の属性(後に追加予定)
+//const ConfirmedCasesAttributesCard = () =>
+//  import('@/components/cards/ConfirmedCasesAttributesCard.vue')
 // 発症日別による陽性者数の推移
 const PositiveNumberByDevelopedDateCard = () =>
   import('@/components/cards/PositiveNumberByDevelopedDateCard.vue')
@@ -40,10 +41,10 @@ export default Vue.extend({
     return {
       rows: [
         [ConfirmedCasesDetailsCard, ConfirmedCasesNumberCard],
-        [MonitoringConfirmedCasesNumberCard, ConfirmedCasesAttributesCard],
-        [PositiveNumberByDevelopedDateCard, PositiveNumberByDiagnosedDateCard],
-        [TestedNumberCard, PositiveRateCard],
-        [HospitalizedNumberCard, SevereCaseCard],
+        [MonitoringConfirmedCasesNumberCard, PositiveNumberByDevelopedDateCard],
+        [PositiveNumberByDiagnosedDateCard, TestedNumberCard],
+        [PositiveRateCard, HospitalizedNumberCard],
+        [SevereCaseCard],
       ],
     }
   },

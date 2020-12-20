@@ -7,7 +7,7 @@
       justify-center
       align-center
     >
-      <scale-loader color="#00A040" />
+      <scale-loader color="#085c6c" />
     </v-overlay>
     <v-overlay v-if="error" absolute justify-center align-center>
       <v-alert color="#AD2121">

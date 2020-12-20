@@ -192,7 +192,7 @@ export default Vue.extend({
     twitter() {
       const url = `https://twitter.com/intent/tweet?text=${
         this.title
-      } / ${this.$t('東京都')}${this.$t('新型コロナウイルス感染症')}${this.$t(
+      } / ${this.$t('相模原市')}${this.$t('新型コロナウイルス感染症')}${this.$t(
         '対策サイト'
       )}&url=${this.permalink(true)}&hashtags=StopCovid19JP`
       window.open(url)
