@@ -2,8 +2,6 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/310b94c2-0f75-4380-ab51-2b7b239a2eef/deploy-status)](https://app.netlify.com/sites/sagamihara-covid19/deploys)
 
-[![相模原市 新型コロナウイルス感染症対策サイト](https://user-images.githubusercontent.com/1301149/75629392-1d19d900-5c25-11ea-843d-2d4376e3a560.png)](https://sagamihara-covid19.netlify.app/)
-
 ## 貢献の仕方
 Issues にあるいろいろな修正にご協力いただけると嬉しいです。
 
