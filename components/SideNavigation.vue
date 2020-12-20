@@ -57,41 +57,6 @@
       <footer class="SideNavigation-Footer">
         <div class="SideNavigation-Social">
           <app-link
-            to="https://line.me/R/ti/p/%40822sysfc"
-            :show-icon="false"
-            class="SideNavigation-SocialLink"
-          >
-            <picture>
-              <source srcset="/line.webp" type="image/webp" />
-              <img src="/line.png" width="130" height="130" alt="LINE" />
-            </picture>
-          </app-link>
-          <app-link
-            to="https://twitter.com/tokyo_bousai"
-            :show-icon="false"
-            class="SideNavigation-SocialLink"
-          >
-            <picture>
-              <source srcset="/twitter.webp" type="image/webp" />
-              <img src="/twitter.png" width="130" height="130" alt="Twitter" />
-            </picture>
-          </app-link>
-          <app-link
-            to="https://www.facebook.com/tochokoho"
-            :show-icon="false"
-            class="SideNavigation-SocialLink"
-          >
-            <picture>
-              <source srcset="/facebook.webp" type="image/webp" />
-              <img
-                src="/facebook.png"
-                width="130"
-                height="130"
-                alt="Facebook"
-              />
-            </picture>
-          </app-link>
-          <app-link
             to="https://github.com/Murayu0225/covid19"
             :show-icon="false"
             class="SideNavigation-SocialLink"
@@ -101,17 +66,6 @@
               <img src="/github.png" width="130" height="130" alt="GitHub" />
             </picture>
           </app-link>
- <!--         <app-link
-            to="https://www.youtube.com/user/tokyo/videos"
-            :show-icon="false"
-            class="SideNavigation-SocialLink"
-          >
-            <picture>
-              <source srcset="/youtube.webp" type="image/webp" />
-              <img src="/youtube.png" width="130" height="130" alt="YouTube" />
-            </picture>
-          </app-link>
--->
         </div>
         <i18n
           tag="small"
@@ -197,7 +151,7 @@ export default Vue.extend({
           link: this.localePath('/worker'),
           divider: true,
         },
-        {
+        {ßß
           title: this.$t('相模原市新型コロナウイルス感染症対策本部報'),
           link:
             'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1010035/index.html',

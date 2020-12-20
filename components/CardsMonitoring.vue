@@ -15,6 +15,17 @@ const ConfirmedCasesNumberCard = () =>
 // モニタリング項目(1)新規陽性者数
 const MonitoringConfirmedCasesNumberCard = () =>
   import('@/components/cards/MonitoringConfirmedCasesNumberCard.vue')
+// 陽性者の属性
+const ConfirmedCasesAttributesCard = () =>
+  import('@/components/cards/ConfirmedCasesAttributesCard.vue')
+// 発症日別による陽性者数の推移
+const PositiveNumberByDevelopedDateCard = () =>
+  import('@/components/cards/PositiveNumberByDevelopedDateCard.vue')
+// 確定日別による陽性者数の推移
+const PositiveNumberByDiagnosedDateCard = () =>
+  import('@/components/cards/PositiveNumberByDiagnosedDateCard.vue')
+// 検査実施件数
+const TestedNumberCard = () => import('@/components/cards/TestedNumberCard.vue')
 // モニタリング項目(4)検査の陽性率
 const PositiveRateCard = () => import('@/components/cards/PositiveRateCard.vue')
 // モニタリング項目(6)入院患者数
@@ -29,8 +40,10 @@ export default Vue.extend({
     return {
       rows: [
         [ConfirmedCasesDetailsCard, ConfirmedCasesNumberCard],
-        [MonitoringConfirmedCasesNumberCard, PositiveRateCard],
-        [HospitalizedNumberCard, SevereCaseCard],
+        [MonitoringConfirmedCasesNumberCard, ConfirmedCasesAttributesCard],
+        [PositiveNumberByDevelopedDateCard, PositiveNumberByDiagnosedDateCard],
+        [TestedNumberCard, PositiveRateCard],
+        [HospitalizedNumberCard,SevereCaseCard]
       ],
     }
   },
