@@ -15,7 +15,7 @@
             src="/logo.svg"
             width="111"
             height="28"
-            :alt="$t('東京都')"
+            :alt="$t('相模原市')"
           />
           <div class="SideNavigation-HeaderText">
             {{ $t('menu/新型コロナウイルス感染症') }}<br />{{
@@ -39,7 +39,7 @@
       </v-icon>
 
       <nav class="SideNavigation-Menu">
-        <div class="SideNavigation-Language">
+<!--        <div class="SideNavigation-Language">
           <div
             v-if="this.$i18n.locales.length > 1"
             class="SideNavigation-Language"
@@ -50,6 +50,7 @@
             <language-selector />
           </div>
         </div>
+-->
         <menu-list :items="items" @click="$emit('close-navigation', $event)" />
       </nav>
 
@@ -91,7 +92,7 @@
             </picture>
           </app-link>
           <app-link
-            to="https://github.com/tokyo-metropolitan-gov/covid19"
+            to="https://github.com/Murayu0225/covid19"
             :show-icon="false"
             class="SideNavigation-SocialLink"
           >
@@ -100,7 +101,7 @@
               <img src="/github.png" width="130" height="130" alt="GitHub" />
             </picture>
           </app-link>
-          <app-link
+ <!--         <app-link
             to="https://www.youtube.com/user/tokyo/videos"
             :show-icon="false"
             class="SideNavigation-SocialLink"
@@ -110,6 +111,7 @@
               <img src="/youtube.png" width="130" height="130" alt="YouTube" />
             </picture>
           </app-link>
+-->
         </div>
         <i18n
           tag="small"
@@ -128,7 +130,7 @@
         </i18n>
         <br />
         <small class="SideNavigation-Copyright">
-          &copy; 2020 Tokyo Metropolitan Government
+          &copy; 2020 Yu Muramatsu
         </small>
       </footer>
     </div>
@@ -181,44 +183,12 @@ export default Vue.extend({
       return [
         {
           iconPath: mdiChartTimelineVariant,
-          title: this.$t('都内の最新感染動向'),
+          title: this.$t('市内の最新感染動向'),
           link: this.localePath('/'),
         },
         {
-          svg: 'CovidIcon',
-          title: this.$t('新型コロナウイルス感染症が心配なときに.nav'),
-          link:
-            'https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html',
-        },
-        {
-          svg: 'CovidIcon',
-          title: this.$t('新型コロナウイルスの感染が判明した方へ'),
-          link:
-            'https://www.fukushihoken.metro.tokyo.lg.jp/oshirase/corona_0401.html',
-        },
-        {
-          svg: 'SupportIcon',
-          title: this.$t(
-            '新型コロナウイルス感染症の患者発生状況に関するよくあるご質問'
-          ),
-          link:
-            'https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronafaq.html',
-        },
-        {
-          svg: 'MaskTrashIcon',
-          title: this.$t('ご家庭でのマスク等の捨て方'),
-          link:
-            'https://www.kankyo.metro.tokyo.lg.jp/resource/500200a20200221162304660.files/200327_chirashi.pdf',
-          divider: true,
-        },
-        {
-          svg: 'ParentIcon',
-          title: this.$t('お子様をお持ちの皆様へ'),
-          link: this.localePath('/parent'),
-        },
-        {
           iconPath: mdiAccountMultiple,
-          title: this.$t('都民の皆様へ'),
+          title: this.$t('市民の皆様へ'),
           link: 'https://www.metro.tokyo.lg.jp/tosei/tosei/news/2019-ncov.html',
         },
         {
@@ -228,30 +198,17 @@ export default Vue.extend({
           divider: true,
         },
         {
-          title: this.$t('東京都新型コロナウイルス感染症対策本部報'),
+          title: this.$t('相模原市新型コロナウイルス感染症対策本部報'),
           link:
             'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1010035/index.html',
         },
         {
-          title: this.$t('東京都 新型コロナウイルス感染症 支援情報ナビ'),
-          link: 'https://covid19.supportnavi.metro.tokyo.lg.jp/',
-        },
-        {
-          title: this.$t('東京iCDC（東京感染症対策センター）からのお知らせ'),
-          link: 'https://note.com/tokyo_icdc',
-        },
-        {
-          title: this.$t('都民利用施設・都主催イベントに関する情報'),
+          title: this.$t('市民利用施設・都主催イベントに関する情報'),
           link:
             'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html',
         },
         {
-          title: this.$t('東京都における滞在人口の増減'),
-          link:
-            'https://www.seisakukikaku.metro.tokyo.lg.jp/information/corona-people-flow-analysis.html',
-        },
-        {
-          title: this.$t('知事からのメッセージ'),
+          title: this.$t('市長からのメッセージ'),
           link:
             'https://www.metro.tokyo.lg.jp/tosei/governor/governor/katsudo/2020/03/03_00.html',
         },
@@ -264,7 +221,7 @@ export default Vue.extend({
           link: this.localePath('/contacts'),
         },
         {
-          title: this.$t('東京都公式ホームページ'),
+          title: this.$t('相模原市公式ホームページ'),
           link: 'https://www.metro.tokyo.lg.jp/',
         },
       ]
