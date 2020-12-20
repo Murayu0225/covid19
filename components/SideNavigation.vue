@@ -39,7 +39,7 @@
       </v-icon>
 
       <nav class="SideNavigation-Menu">
-<!--        <div class="SideNavigation-Language">
+        <!--        <div class="SideNavigation-Language">
           <div
             v-if="this.$i18n.locales.length > 1"
             class="SideNavigation-Language"
@@ -103,7 +103,6 @@ import Vue from 'vue'
 import { TranslateResult } from 'vue-i18n'
 
 import AppLink from '@/components/AppLink.vue'
-import LanguageSelector from '@/components/LanguageSelector.vue'
 import MenuList from '@/components/MenuList.vue'
 
 type Item = {
@@ -116,7 +115,6 @@ type Item = {
 
 export default Vue.extend({
   components: {
-    LanguageSelector,
     MenuList,
     AppLink,
   },
@@ -151,7 +149,7 @@ export default Vue.extend({
           link: this.localePath('/worker'),
           divider: true,
         },
-        {ßß
+        {
           title: this.$t('相模原市新型コロナウイルス感染症対策本部報'),
           link:
             'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1010035/index.html',

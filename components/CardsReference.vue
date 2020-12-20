@@ -17,9 +17,7 @@ const PositiveNumberByDiagnosedDateCard = () =>
   import('@/components/cards/PositiveNumberByDiagnosedDateCard.vue')
 // 検査実施件数
 const TestedNumberCard = () => import('@/components/cards/TestedNumberCard.vue')
-/* eslint-enable simple-import-sort/sort */　
-
-export default Vue.extend({
+/* eslint-enable simple-import-sort/sort */ export default Vue.extend({
   data() {
     return {
       rows: [

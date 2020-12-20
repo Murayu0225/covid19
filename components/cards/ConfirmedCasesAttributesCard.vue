@@ -14,14 +14,14 @@
 </template>
 
 <script>
+import DataTable from '@/components/DataTable.vue'
 import Data from '@/data/data.json'
 import formatGraph from '@/utils/formatGraph'
 import formatTable from '@/utils/formatTable'
-import DataTable from '@/components/DataTable.vue'
 
 export default {
   components: {
-    DataTable
+    DataTable,
   },
   data() {
     // 感染者数グラフ
@@ -34,9 +34,9 @@ export default {
         patientsGraph.length - 1
       ].cumulative.toLocaleString(),
       sText: this.$t('{date}の累計', {
-        date: patientsGraph[patientsGraph.length - 1].label
+        date: patientsGraph[patientsGraph.length - 1].label,
       }),
-      unit: this.$t('人')
+      unit: this.$t('人'),
     }
 
     // 陽性患者の属性 ヘッダー翻訳
@@ -63,9 +63,9 @@ export default {
     const data = {
       Data,
       patientsTable,
-      sumInfoOfPatients
+      sumInfoOfPatients,
     }
     return data
-  }
+  },
 }
 </script>

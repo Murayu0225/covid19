@@ -43,7 +43,7 @@ export default Vue.extend({
         [MonitoringConfirmedCasesNumberCard, ConfirmedCasesAttributesCard],
         [PositiveNumberByDevelopedDateCard, PositiveNumberByDiagnosedDateCard],
         [TestedNumberCard, PositiveRateCard],
-        [HospitalizedNumberCard,SevereCaseCard]
+        [HospitalizedNumberCard, SevereCaseCard],
       ],
     }
   },

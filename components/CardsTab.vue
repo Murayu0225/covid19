@@ -35,9 +35,7 @@ export default Vue.extend({
   data() {
     return {
       tab: null,
-      items: [
-        { label: this.$t('項目一覧'), component: CardsMonitoring },
-      ],
+      items: [{ label: this.$t('項目一覧'), component: CardsMonitoring }],
       mdiChartTimelineVariant,
     }
   },

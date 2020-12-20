@@ -24,7 +24,6 @@ import { mdiChartTimelineVariant } from '@mdi/js'
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 
-import MonitoringCommentCard from '@/components/MonitoringCommentCard.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
 import Data from '@/data/data.json'
@@ -36,7 +35,6 @@ export default Vue.extend({
   components: {
     PageHeader,
     WhatsNew,
-    MonitoringCommentCard,
   },
   data() {
     const { lastUpdate } = Data
