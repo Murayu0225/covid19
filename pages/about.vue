@@ -6,13 +6,13 @@
     <static-card>
       {{
         $t(
-          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものです。'
+          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものを相模原市向けに改変したものです。'
         )
       }}<br />
       <br />
       {{
         $t(
-          '東京都による公式情報と客観的な数値をわかりやすく伝えることで、東京都にお住まいの方や、東京都内に拠点を持つ企業の方、東京都を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
+          '相模原市による公式情報と客観的な数値をわかりやすく伝えることで、相模原市にお住まいの方や、相模原市内に拠点を持つ企業の方、相模原市を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
         )
       }}
     </static-card>
@@ -187,19 +187,6 @@
       </p>
     </static-card>
     <static-card>
-      <h3>{{ $t('データについて') }}</h3>
-      <i18n
-        tag="p"
-        path="本サイトで公表しているデータは、{catalogWebsite}より誰でも自由にダウンロードが可能です。（データは順次追加予定です）"
-      >
-        <template v-slot:catalogWebsite>
-          <app-link to="https://portal.data.metro.tokyo.lg.jp/" :icon-size="16">
-            {{ $t('東京都オープンデータカタログサイト') }}
-          </app-link>
-        </template>
-      </i18n>
-    </static-card>
-    <static-card>
       <h3>{{ $t('ソースコードについて') }}</h3>
       <p>
         {{
@@ -210,7 +197,7 @@
         <i18n path="詳しくは、{githubRepo}をご確認ください。">
           <template v-slot:githubRepo>
             <app-link
-              to="https://github.com/tokyo-metropolitan-gov/covid19"
+              to="https://github.com/Murayu0225/covid19"
               :icon-size="16"
             >
               {{ $t('GitHub リポジトリ') }}
