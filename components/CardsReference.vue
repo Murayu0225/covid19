@@ -6,7 +6,6 @@
 /* eslint-disable simple-import-sort/sort -- ブラウザでの表示順に合わせて各 card の component を import する */
 import Vue from 'vue'
 
-//初期では、その他として入っていたデータ
 // 陽性者の属性
 const ConfirmedCasesAttributesCard = () =>
   import('@/components/cards/ConfirmedCasesAttributesCard.vue')

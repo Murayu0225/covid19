@@ -16,9 +16,6 @@ const ConfirmedCasesNumberCard = () =>
 // モニタリング項目(1)新規陽性者数
 const MonitoringConfirmedCasesNumberCard = () =>
   import('@/components/cards/MonitoringConfirmedCasesNumberCard.vue')
-// 陽性者の属性(後に追加予定)
-//const ConfirmedCasesAttributesCard = () =>
-//  import('@/components/cards/ConfirmedCasesAttributesCard.vue')
 // 発症日別による陽性者数の推移
 const PositiveNumberByDevelopedDateCard = () =>
   import('@/components/cards/PositiveNumberByDevelopedDateCard.vue')
