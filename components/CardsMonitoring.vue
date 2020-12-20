@@ -6,7 +6,6 @@
 /* eslint-disable simple-import-sort/sort -- ブラウザでの表示順に合わせて各 card の component を import する */
 import Vue from 'vue'
 
-//CardfReference.vueではなく、こちらに全てを統一
 // 検査陽性者の状況
 const ConfirmedCasesDetailsCard = () =>
   import('@/components/cards/ConfirmedCasesDetailsCard.vue')
