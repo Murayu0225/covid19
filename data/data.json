@@ -8587,19 +8587,21 @@
                 "children": [
                     {
                         "attr": "治療中",
-                        "value": 115
-                    },
-                    {
-                        "attr":　"医療機関",
-                        "value": 45
-                    },
-                    {
-                        "attr": "宿泊療養",
-                        "value": 17
-                    },
-                    {
-                        "attr": "自宅療養",
-                        "value": 53
+                        "value": 115,
+                        "children": [
+                            {
+                                "attr": "医療機関",
+                                "value": 45
+                            },
+                            {
+                                "attr": "宿泊療養",
+                                "value": 17
+                            },
+                            {
+                                "attr": "自宅療養",
+                                "value": 53
+                            }
+                        ]
                     },
                     {
                         "attr": "死亡",
