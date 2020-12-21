@@ -7,22 +7,6 @@
 // ---- 項目一覧
 // 検査陽性者の状況
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
-// 報告日別による陽性者数の推移
-import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
-// モニタリング項目(1)新規陽性者数
-import MonitoringConfirmedCasesNumberCard from '@/components/cards/MonitoringConfirmedCasesNumberCard.vue'
-// 発症日別による陽性者数の推移
-import PositiveNumberByDevelopedDateCard from '@/components/cards/PositiveNumberByDevelopedDateCard.vue'
-// 確定日別による陽性者数の推移
-import PositiveNumberByDiagnosedDateCard from '@/components/cards/PositiveNumberByDiagnosedDateCard.vue'
-// 検査実施件数
-import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
-// モニタリング項目(4)検査の陽性率
-import PositiveRateCard from '@/components/cards/PositiveRateCard.vue'
-// モニタリング項目(6)入院患者数
-import HospitalizedNumberCard from '@/components/cards/HospitalizedNumberCard.vue'
-// モニタリング項目(7)重症患者数
-import SevereCaseCard from '@/components/cards/SevereCaseCard.vue'
 /* eslint-enable simple-import-sort/sort */
 
 import { getLinksLanguageAlternative } from '@/utils/i18nUtils'
@@ -31,14 +15,6 @@ export default {
   components: {
     // ---- モニタリング項目
     ConfirmedCasesDetailsCard,
-    ConfirmedCasesNumberCard,
-    MonitoringConfirmedCasesNumberCard,
-    PositiveNumberByDevelopedDateCard,
-    PositiveNumberByDiagnosedDateCard,
-    TestedNumberCard,
-    PositiveRateCard,
-    HospitalizedNumberCard,
-    SevereCaseCard,
   },
   data() {
     let title, updatedAt, cardComponent
@@ -48,38 +24,6 @@ export default {
       // 検査陽性者の状況
       case 'details-of-confirmed-cases':
         cardComponent = 'confirmed-cases-details-card'
-        break
-      // 報告日別による陽性者数の推移
-      case 'number-of-confirmed-cases':
-        cardComponent = 'confirmed-cases-number-card'
-        break
-      // モニタリング項目(1)新規陽性者数
-      case 'monitoring-number-of-confirmed-cases':
-        cardComponent = 'monitoring-confirmed-cases-number-card'
-        break
-      // 発症日別による陽性者数の推移
-      case 'positive-number-by-developed-date':
-        cardComponent = 'positive-number-by-developed-date-card'
-        break
-      // 確定日別による陽性者数の推移
-      case 'positive-number-by-diagnosed-date':
-        cardComponent = 'positive-number-by-diagnosed-date-card'
-        break
-      // 検査実施件数
-      case 'number-of-tested':
-        cardComponent = 'tested-number-card'
-        break
-      // モニタリング項目(4)検査の陽性率
-      case 'positive-rate':
-        cardComponent = 'positive-rate-card'
-        break
-      // モニタリング項目(6)入院患者数
-      case 'number-of-hospitalized':
-        cardComponent = 'hospitalized-number-card'
-        break
-      // モニタリング項目(7)重症患者数
-      case 'positive-status-severe-case':
-        cardComponent = 'severe-case-card'
     }
 
     return {
@@ -89,7 +33,7 @@ export default {
     }
   },
   head() {
-    const url = 'https://sagamihara-covid19.netlify.app/'
+    const url = 'https://sagamihara-stopcovid19.netlify.app/'
     const timestamp = new Date().getTime()
     const ogpImage =
       this.$i18n.locale === 'ja'
