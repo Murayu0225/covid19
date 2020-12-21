@@ -8,18 +8,14 @@ import Vue from 'vue'
 
 // 検査陽性者の状況
 const ConfirmedCasesDetailsCard = () =>
-  import('@/components/cards/ConfirmedCasesDetailsCard.vue')
+  import('@/components/cards/ConfirmedCasesDetailsCard.vue')ss
 /* eslint-enable simple-import-sort/sort */
 
 export default Vue.extend({
   data() {
     return {
       rows: [
-        [ConfirmedCasesDetailsCard, ConfirmedCasesNumberCard],
-        [MonitoringConfirmedCasesNumberCard, PositiveNumberByDevelopedDateCard],
-        [PositiveNumberByDiagnosedDateCard, TestedNumberCard],
-        [PositiveRateCard, HospitalizedNumberCard],
-        [SevereCaseCard],
+        [ConfirmedCasesDetailsCard],
       ],
     }
   },
