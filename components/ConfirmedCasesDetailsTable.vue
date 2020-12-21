@@ -11,9 +11,9 @@
       <ul :class="$style.group">
         <li :class="[$style.box, $style.parent]">
           <div :class="$style.content">
-            <span>{{ $t('入院') }}</span>
+            <span>{{ $t('治療中') }}</span>
             <span>
-              <strong>{{ 入院中.toLocaleString() }}</strong>
+              <strong>{{ 治療中.toLocaleString() }}</strong>
               <span :class="$style.unit">{{ $t('人') }}</span>
             </span>
           </div>
@@ -21,51 +21,33 @@
             <li :class="[$style.box]">
               <div :class="$style.content">
                 <!-- eslint-disable vue/no-v-html-->
-                <span v-html="$t('軽症・中等症')" />
+                <span v-html="$t('医療機関')" />
                 <!-- eslint-enable vue/no-v-html-->
                 <span>
-                  <strong>{{ 軽症中等症.toLocaleString() }}</strong>
+                  <strong>{{ 医療機関.toLocaleString() }}</strong>
                   <span :class="$style.unit">{{ $t('人') }}</span>
                 </span>
               </div>
             </li>
             <li :class="[$style.box]">
               <div :class="$style.content">
-                <span>{{ $t('重症') }}</span>
+                <span>{{ $t('自宅療養') }}</span>
                 <span>
-                  <strong>{{ 重症.toLocaleString() }}</strong>
+                  <strong>{{ 自宅療養.toLocaleString() }}</strong>
+                  <span :class="$style.unit">{{ $t('人') }}</span>
+                </span>
+              </div>
+            </li>
+            <li :class="[$style.box]">
+              <div :class="$style.content">
+                <span>{{ $t('宿泊療養') }}</span>
+                <span>
+                  <strong>{{ 宿泊療養.toLocaleString() }}</strong>
                   <span :class="$style.unit">{{ $t('人') }}</span>
                 </span>
               </div>
             </li>
           </ul>
-        </li>
-        <li :class="[$style.box]">
-          <div :class="$style.content">
-            <span>{{ $t('宿泊療養') }}</span>
-            <span>
-              <strong>{{ 宿泊療養.toLocaleString() }}</strong>
-              <span :class="$style.unit">{{ $t('人') }}</span>
-            </span>
-          </div>
-        </li>
-        <li :class="[$style.box]">
-          <div :class="$style.content">
-            <span>{{ $t('自宅療養') }}</span>
-            <span>
-              <strong>{{ 自宅療養.toLocaleString() }}</strong>
-              <span :class="$style.unit">{{ $t('人') }}</span>
-            </span>
-          </div>
-        </li>
-        <li :class="[$style.box]">
-          <div :class="$style.content">
-            <span>{{ $t('入院・療養等調整中') }}</span>
-            <span>
-              <strong>{{ 調査中.toLocaleString() }}</strong>
-              <span :class="$style.unit">{{ $t('人') }}</span>
-            </span>
-          </div>
         </li>
         <li :class="[$style.box]">
           <div :class="$style.content">
@@ -78,9 +60,9 @@
         </li>
         <li :class="[$style.box]">
           <div :class="$style.content">
-            <span>{{ $t('退院等（療養期間経過を含む）') }}</span>
+            <span>{{ $t('回復') }}</span>
             <span>
-              <strong>{{ 退院.toLocaleString() }}</strong>
+              <strong>{{ 回復.toLocaleString() }}</strong>
               <span :class="$style.unit">{{ $t('人') }}</span>
             </span>
           </div>
@@ -100,19 +82,11 @@ export default Vue.extend({
       type: Number,
       required: true,
     },
-    入院中: {
+    治療中: {
       type: Number,
       required: true,
     },
-    軽症中等症: {
-      type: Number,
-      required: true,
-    },
-    重症: {
-      type: Number,
-      required: true,
-    },
-    宿泊療養: {
+    医療機関: {
       type: Number,
       required: true,
     },
@@ -120,7 +94,7 @@ export default Vue.extend({
       type: Number,
       required: true,
     },
-    調査中: {
+    宿泊療養: {
       type: Number,
       required: true,
     },
@@ -128,7 +102,7 @@ export default Vue.extend({
       type: Number,
       required: true,
     },
-    退院: {
+    回復: {
       type: Number,
       required: true,
     },
