@@ -39,7 +39,7 @@
       </v-icon>
 
       <nav class="SideNavigation-Menu">
-<!--
+        <!--
         <div class="SideNavigation-Language">
           <div
             v-if="this.$i18n.locales.length > 1"
@@ -142,7 +142,8 @@ export default Vue.extend({
         {
           iconPath: mdiAccountMultiple,
           title: this.$t('市民の皆様へ'),
-          link: 'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/index.html',
+          link:
+            'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/index.html',
         },
         {
           iconPath: mdiDomain,

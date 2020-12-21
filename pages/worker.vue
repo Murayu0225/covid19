@@ -21,10 +21,10 @@
     </static-card>
     <static-card>
       <h3>
-        <app-link to="https://www.city.sagamihara.kanagawa.jp/sangyo/sangyo/1021369/index.html" :icon-size="24"
-          >{{
-            $t('サンキューさがみはら！最大25％戻ってくるキャンペーン')
-          }}
+        <app-link
+          to="https://www.city.sagamihara.kanagawa.jp/sangyo/sangyo/1021369/index.html"
+          :icon-size="24"
+          >{{ $t('サンキューさがみはら！最大25％戻ってくるキャンペーン') }}
         </app-link>
       </h3>
       <p>
@@ -41,7 +41,9 @@
           to="https://www.city.sagamihara.kanagawa.jp/sangyo/sangyo/1003291/1020100.html"
           :icon-size="24"
           >{{
-            $t('【飲食店の皆様へ】市内のテイクアウト・デリバリーができる飲食店の募集')
+            $t(
+              '【飲食店の皆様へ】市内のテイクアウト・デリバリーができる飲食店の募集'
+            )
           }}
         </app-link>
       </h3>
@@ -55,7 +57,9 @@
     </static-card>
     <static-card>
       <h3>
-        <app-link to="https://www.city.sagamihara.kanagawa.jp/sangyo/sangyo/1021242/index.html" :icon-size="24"
+        <app-link
+          to="https://www.city.sagamihara.kanagawa.jp/sangyo/sangyo/1021242/index.html"
+          :icon-size="24"
           >{{ $t('新型コロナウイルス感染症に強い店づくり家づくり応援助成金') }}
         </app-link>
       </h3>
