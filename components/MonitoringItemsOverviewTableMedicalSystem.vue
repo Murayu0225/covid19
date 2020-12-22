@@ -22,7 +22,7 @@
               </div>
             </li>
           </ul>
-    </li>
+      </li>
     <li :class="[$style.box, $style.parent]">
       <div :class="$style.content">
         <span>{{ $t('受入体制') }}</span>
