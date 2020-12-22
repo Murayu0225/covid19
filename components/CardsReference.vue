@@ -9,7 +9,7 @@ import Vue from 'vue'
 // 陽性者の属性
 const ConfirmedCasesAttributesCard = () =>
   import('@/components/cards/ConfirmedCasesAttributesCard.vue')
-/* eslint-enable simple-import-sort/sort */ 
+/* eslint-enable simple-import-sort/sort */
 
 export default Vue.extend({
   data() {
