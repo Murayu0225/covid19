@@ -9,7 +9,7 @@ import Vue from 'vue'
 // 検査陽性者の状況
 const ConfirmedCasesDetailsCard = () =>
   import('@/components/cards/ConfirmedCasesDetailsCard.vue')
-//　モニタリング項目
+// モニタリング項目
 const MonitoringItemsOverviewCard = () =>
   import('@/components/cards/MonitoringItemsOverviewCard.vue')
 /* eslint-enable simple-import-sort/sort */
