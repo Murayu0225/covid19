@@ -9,13 +9,10 @@ import Vue from 'vue'
 // 陽性者の属性
 const ConfirmedCasesAttributesCard = () =>
   import('@/components/cards/ConfirmedCasesAttributesCard.vue')
-// モニタリング状況
-const MonitoringItemsOverviewCard = () =>
-  import('@/components/cards/MonitoringItemsOverviewCard.vue')
 /* eslint-enable simple-import-sort/sort */ export default Vue.extend({
   data() {
     return {
-      rows: [[ConfirmedCasesAttributesCard, MonitoringItemsOverviewCard]],
+      rows: [[ConfirmedCasesAttributesCard]],
     }
   },
 })
