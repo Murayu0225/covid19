@@ -2,7 +2,7 @@
   <v-col cols="12" md="6" class="DataCard">
     <client-only>
       <data-view
-        :title="$t('モニタリング項目')"
+        :title="$t('モニタリング状況（集計期間：12月7日〜12月13日）')"
         title-id="monitoring-items-overview"
         :date="monitoringItemsData.date"
       >
@@ -10,30 +10,16 @@
           <span>{{ $t('（注）') }}</span>
           <ul>
             <li>
-              <i18n
-                tag="span"
-                path="{number}：急病やけがの際に、緊急受診の必要性や診察可能な医療機関をアドバイスする電話相談窓口"
-              >
-                <template v-slot:number>
-                  <dfn>#7119</dfn>
-                </template>
-              </i18n>
+              {{ $t('（　）内の数値は、前週の数値である')}}
             </li>
             <li>
-              {{
-                $t(
-                  '救急医療の東京ルールの適用件数：救急隊による5医療機関への受入要請又は選定開始から20分以上経過しても搬送先が決定しない事案の件数'
-                )
-              }}
+              {{ $t('速報値として公表するものであり、後日修正する場合がある') }}
             </li>
             <li>
               {{ $t('(1)～(5)は7日間移動平均で算出') }}
             </li>
             <li>
               {{ $t('(2)(4)(5)は報告日の前日時点の数値') }}
-            </li>
-            <li>
-              {{ $t('速報値として公表するものであり、後日修正する場合がある') }}
             </li>
             <li>
               {{
@@ -58,21 +44,12 @@
             :items="monitoringItems"
           />
         </section>
-        <div>
-          <app-link
-            :class="$style.button"
-            to="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/monitoring.html"
-          >
-            {{ $t('最新のモニタリング項目の分析・総括コメントについて') }}
-          </app-link>
-        </div>
       </data-view>
     </client-only>
   </v-col>
 </template>
 
 <script>
-import AppLink from '@/components/AppLink.vue'
 import DataView from '@/components/DataView.vue'
 import MonitoringItemsOverviewTableInfectionStatus from '@/components/MonitoringItemsOverviewTableInfectionStatus.vue'
 import MonitoringItemsOverviewTableMedicalSystem from '@/components/MonitoringItemsOverviewTableMedicalSystem.vue'
@@ -84,7 +61,6 @@ export default {
     DataView,
     MonitoringItemsOverviewTableInfectionStatus,
     MonitoringItemsOverviewTableMedicalSystem,
-    AppLink,
   },
   data() {
     const monitoringItems = formatMonitoringItems(monitoringItemsData.data)
