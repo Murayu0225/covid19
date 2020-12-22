@@ -1,41 +1,92 @@
 <template>
-  <div v-scroll="onScroll">
-    <site-top-upper />
-    <lazy-cards-tab v-if="$vuetify.breakpoint.smAndUp || showCardsTab" />
+  <div class="MainPage">
+    <div class="Header mb-3">
+      <page-header :icon="headerItem.icon">
+        {{ headerItem.title }}
+      </page-header>
+      <div class="UpdatedAt">
+        <span>{{ $t('最終更新') }} </span>
+        <time :datetime="updatedAt">{{ Data.lastUpdate }}</time>
+      </div>
+    </div>
+    <whats-new class="mb-4" :items="newsItems" />
+    <v-row class="DataBlock">
+      <confirmed-cases-details-card />
+      <monitoring-items-overview-card />
+    </v-row>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import { ThisTypedComponentOptionsWithRecordProps } from 'vue/types/options'
-
-type Data = {
-  showCardsTab: boolean
-}
-type Methods = {
-  onScroll: () => void
-}
-type Computed = {}
-type Props = {}
-
-const options: ThisTypedComponentOptionsWithRecordProps<
-  Vue,
-  Data,
-  Methods,
-  Computed,
-  Props
-> = {
+import { MetaInfo } from 'vue-meta'
+import PageHeader from '@/components/PageHeader.vue'
+import WhatsNew from '@/components/WhatsNew.vue'
+import StaticInfo from '@/components/StaticInfo.vue'
+import Data from '@/data/data.json'
+import News from '@/data/news.json'
+import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
+import MonitoringItemsOverviewCard from '@/components/cards/MonitoringItemsOverviewCard.vue'
+export default Vue.extend({
+  components: {
+    PageHeader,
+    WhatsNew,
+    StaticInfo,
+    ConfirmedCasesDetailsCard,
+    MonitoringItemsOverviewCard
+  },
   data() {
-    return {
-      showCardsTab: false,
+    const data = {
+      Data,
+      headerItem: {
+        icon: 'mdi-chart-timeline-variant',
+        title: this.$t('市内の最新感染動向')
+      },
+      newsItems: News.newsItems
     }
+    return data
   },
-  methods: {
-    onScroll() {
-      this.showCardsTab = true
-    },
-  },
-}
-
-export default options
+  head(): MetaInfo {
+    return {
+      title: this.$t('市内の最新感染動向') as string
+    }
+  }
+})
 </script>
+
+<style lang="scss" scoped>
+.MainPage {
+  .Header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    @include lessThan($small) {
+      flex-direction: column;
+      align-items: baseline;
+    }
+  }
+  .UpdatedAt {
+    @include font-size(14);
+    color: $gray-3;
+    margin-bottom: 0.2rem;
+  }
+  .Annotation {
+    @include font-size(12);
+    color: $gray-3;
+    @include largerThan($small) {
+      margin: 0 0 0 auto;
+    }
+  }
+  .DataBlock {
+    margin: 20px -8px;
+    .DataCard {
+      @include largerThan($medium) {
+        padding: 10px;
+      }
+      @include lessThan($small) {
+        padding: 4px 8px;
+      }
+    }
+  }
+}
+</style>
