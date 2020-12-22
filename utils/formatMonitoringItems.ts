@@ -17,13 +17,13 @@ type DataKey =
 type DataCommentKey = '総括コメント-感染状況' | '総括コメント-医療提供体制'
 
 type RawData = {
-  新規陽性者数: number
-  陽性患者増加比: number
+  '新規陽性者数': number
+  '陽性患者増加比': string
   '陽性患者増加比（参考値）': string
   '(4)PCR・抗原検査（陽性率）': number
   '(4)PCR・抗原検査（検査人数）': number
   '(5)救急医療の東京ルールの適用件数': number
-  入院患者数: string
+  '入院患者数': string
   '入院患者数（参考値）': string
   '(7)重症患者数': number
   '(7)重症患者確保病床数': string
@@ -74,28 +74,16 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
   const toNumberIn10thPlace = getCommaSeparatedNumberToFixedFunction(1)
 
   return {
-    '(1)新規陽性者数': {
-      value: toNumberIn10thPlace(rawDataObj['(1)新規陽性者数']),
+    '新規陽性者数': {
+      value: toNumberIn10thPlace(rawDataObj['新規陽性者数']),
       unit: unitPerson,
     },
-    '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 ': {
-      value: toNumberIn10thPlace(
-        rawDataObj[
-          '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 '
-        ]
-      ),
-      unit: unitReports,
+    '陽性患者増加比': {
+      value: rawDataObj['陽性患者増加比'],
+      unit: unitPercentage,
     },
-    '(3)新規陽性者における接触歴等不明者（人数）': {
-      value: toNumberIn10thPlace(
-        rawDataObj['(3)新規陽性者における接触歴等不明者（人数）']
-      ),
-      unit: unitPerson,
-    },
-    '(3)新規陽性者における接触歴等不明者（増加比）': {
-      value: toNumberIn10thPlace(
-        rawDataObj['(3)新規陽性者における接触歴等不明者（増加比）']
-      ),
+    '陽性患者増加比（参考値）': {
+      value: rawDataObj['陽性患者増加比（参考値）'],
       unit: unitPercentage,
     },
     '(4)PCR・抗原検査（検査人数）': {
@@ -112,9 +100,9 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
       ),
       unit: unitReports,
     },
-    入院患者数: {
+    '入院患者数': {
       value: rawDataObj['入院患者数'],
-      unit: null,
+      unit: unitPerson,
     },
     '入院患者数（参考値）': {
       value: rawDataObj['入院患者数（参考値）'],
