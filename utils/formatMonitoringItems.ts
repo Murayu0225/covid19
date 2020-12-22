@@ -28,7 +28,7 @@ type RawData = {
   感染経路不明者の割合: string
   '感染経路不明者の割合（参考値）': string
   陽性率: string
-  '陽性率（参考値）':number
+  '陽性率（参考値）': number
   入院患者数: string
   '入院患者数（参考値）': string
 }
@@ -79,15 +79,17 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
     },
     '新規陽性患者数（参考値）': {
       value: toNumberIn10thPlace(rawDataObj['新規陽性患者数（参考値）']),
-      unit: unitPerson
+      unit: unitPerson,
     },
     人口10万人当たりの累積陽性者数: {
       value: rawDataObj['人口10万人当たりの累積陽性者数'],
-      unit: unitPerson
+      unit: unitPerson,
     },
-    "人口10万人当たりの累積陽性者数（参考値）": {
-      value: toNumberIn10thPlace(rawDataObj['人口10万人当たりの累積陽性者数（参考値）']),
-      unit: unitPerson
+    '人口10万人当たりの累積陽性者数（参考値）': {
+      value: toNumberIn10thPlace(
+        rawDataObj['人口10万人当たりの累積陽性者数（参考値）']
+      ),
+      unit: unitPerson,
     },
     陽性患者増加比: {
       value: rawDataObj['陽性患者増加比'],
@@ -97,27 +99,27 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
       value: rawDataObj['陽性患者増加比（参考値）'],
       unit: unitPercentage,
     },
-        感染経路不明者の割合: {
+    感染経路不明者の割合: {
       value: rawDataObj['感染経路不明者の割合'],
-      unit: unitPercentage
+      unit: unitPercentage,
     },
     '感染経路不明者の割合（参考値）': {
       value: rawDataObj['感染経路不明者の割合（参考値）'],
-      unit: unitPercentage
+      unit: unitPercentage,
     },
     陽性率: {
       value: rawDataObj['陽性率'],
-      unit: unitPercentage
+      unit: unitPercentage,
     },
     '陽性率（参考値）': {
       value: toNumberIn10thPlace(rawDataObj['陽性率（参考値）']),
-      unit: unitPercentage
+      unit: unitPercentage,
     },
     入院患者数: {
       value: rawDataObj['入院患者数'],
       unit: unitPerson,
     },
-    "入院患者数（参考値）": {
+    '入院患者数（参考値）': {
       value: rawDataObj['入院患者数（参考値）'],
       unit: null,
     },
