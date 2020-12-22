@@ -17,7 +17,7 @@ const MonitoringItemsOverviewCard = () =>
 export default Vue.extend({
   data() {
     return {
-      rows: [[ConfirmedCasesDetailsCard]],
+      rows: [[ConfirmedCasesDetailsCard, MonitoringItemsOverviewCard]],
     }
   },
 })
