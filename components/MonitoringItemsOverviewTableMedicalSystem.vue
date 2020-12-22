@@ -13,7 +13,6 @@
               :unit="items['陽性率'].unit"
             />
           </div>
-        </li>
           <ul :class="$style.group">
             <li :class="[$style.box]">
               <div :class="$style.content">
@@ -22,7 +21,9 @@
               </div>
             </li>
           </ul>
-      </li>
+        </li>
+      </ul>
+    </li>
     <li :class="[$style.box, $style.parent]">
       <div :class="$style.content">
         <span>{{ $t('受入体制') }}</span>
@@ -36,7 +37,6 @@
               :unit="items['入院患者数'].unit"
             />
           </div>
-        </li>
           <ul :class="$style.group">
             <li :class="[$style.box]">
               <div :class="$style.content">
@@ -45,7 +45,9 @@
               </div>
             </li>
           </ul>
-      </li>
+        </li>
+      </ul>
+    </li>
   </ul>
 </template>
 
