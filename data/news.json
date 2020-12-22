@@ -2,8 +2,13 @@
     "newsItems": [
         {
             "date": "2020\/12\/20",
-            "url": "https\/google.com",
-            "text": "今現在、表示できる情報はありません。"
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/sangyo\/sangyo\/1021369\/index.html",
+            "text": "サンキューさがみはら！最大25％戻ってくるキャンペーン"
+        },
+        {
+            "date": "2020\/12\/1",
+            "url": "https:\/\/www.okippa.life\/20201021_sagamihara\/?utm_source=qrcode_sagamihara&utm_medium=flyer_official&utm_campaign=202011",
+            "text": "簡易型宅配ボックス配付"
         }
     ]
 }
