@@ -158,8 +158,7 @@ export default Vue.extend({
         },
         {
           title: this.$t('相模原市医師会 新型コロナウイルス特設サイト'),
-          link:
-            'https://www.sagamihara.kanagawa.med.or.jp/covid19'
+          link: 'https://www.sagamihara.kanagawa.med.or.jp/covid19',
         },
         {
           title: this.$t('市長からのメッセージ'),
