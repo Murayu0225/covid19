@@ -28,7 +28,7 @@ type RawData = {
   感染経路不明者の割合: string
   '感染経路不明者の割合（参考値）': string
   陽性率: string
-  '陽性率（参考値）': number
+  '陽性率（参考値）': string
   入院患者数: string
   '入院患者数（参考値）': string
 }
@@ -112,7 +112,7 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
       unit: unitPercentage,
     },
     '陽性率（参考値）': {
-      value: toNumberIn10thPlace(rawDataObj['陽性率（参考値）']),
+      value: rawDataObj['陽性率（参考値）'],
       unit: unitPercentage,
     },
     入院患者数: {

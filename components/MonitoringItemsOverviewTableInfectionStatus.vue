@@ -19,9 +19,9 @@
     </li>
     <li :class="[$style.box, $style.parent]">
       <div :class="$style.content">
-        <span>{{ $t('人口10万人当たりの累積新規陽性患者数') }}</span>
+        <span>{{ $t('人口10万人当たりの累積陽性者数') }}</span>
         <monitoring-items-overview-table-value-with-translatable-unit
-          :value="items['人口10万人当たりの累積新規陽性者数'].value"
+          :value="items['人口10万人当たりの累積陽性者数'].value"
           :unit="items['人口10万人当たりの累積陽性者数'].unit"
         />
       </div>
@@ -29,9 +29,7 @@
         <li :class="[$style.box]">
           <div :class="$style.content">
             <span>{{ $t('人口10万人当たりの累積陽性者数（参考値）') }}</span>
-            <span>{{
-              items['人口10万人当たりの累積陽性者数（参考値）'].value
-            }}</span>
+            <span>{{ items['人口10万人当たりの累積陽性者数（参考値）'].value }}</span>
           </div>
         </li>
       </ul>
