@@ -13,7 +13,7 @@
       <div :class="$style.content">
         <span>{{ $t('潜在・市中感染') }}</span>
       </div>
-        <ul :class="$style.group">
+      <ul :class="$style.group">
         <li :class="[$style.box, $style.parent]">
           <div :class="$style.content">
             <span>{{ $t('陽性患者増加比') }}</span>
@@ -31,7 +31,7 @@
             </li>
           </ul>
         </li>
-        </ul>
+      </ul>
     </li>
   </ul>
 </template>
