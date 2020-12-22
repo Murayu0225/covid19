@@ -29,7 +29,9 @@
         <li :class="[$style.box]">
           <div :class="$style.content">
             <span>{{ $t('人口10万人当たりの累積陽性者数（参考値）') }}</span>
-            <span>{{ items['人口10万人当たりの累積陽性者数（参考値）'].value }}</span>
+            <span>{{
+              items['人口10万人当たりの累積陽性者数（参考値）'].value
+            }}</span>
           </div>
         </li>
       </ul>
