@@ -3,30 +3,28 @@
 import { getCommaSeparatedNumberToFixedFunction } from '@/utils/monitoringStatusValueFormatters'
 
 type DataKey =
-  | '(1)新規陽性者数'
-  | '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 '
-  | '(3)新規陽性者における接触歴等不明者（人数）'
-  | '(3)新規陽性者における接触歴等不明者（増加比）'
+  | '新規陽性者数'
+  | '陽性患者増加比'
+  | '陽性患者増加比（参考値）'
   | '(4)PCR・抗原検査（陽性率）'
   | '(4)PCR・抗原検査（検査人数）'
   | '(5)救急医療の東京ルールの適用件数'
-  | '(6)入院患者数'
-  | '(6)入院患者確保病床数'
+  | '入院患者数'
+  | '入院患者数（参考値）'
   | '(7)重症患者数'
   | '(7)重症患者確保病床数'
 
 type DataCommentKey = '総括コメント-感染状況' | '総括コメント-医療提供体制'
 
 type RawData = {
-  '(1)新規陽性者数': number
-  '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 ': number
-  '(3)新規陽性者における接触歴等不明者（人数）': number
-  '(3)新規陽性者における接触歴等不明者（増加比）': number
+  '新規陽性者数': number
+  '陽性患者増加比': number
+  '陽性患者増加比（参考値）':string
   '(4)PCR・抗原検査（陽性率）': number
   '(4)PCR・抗原検査（検査人数）': number
   '(5)救急医療の東京ルールの適用件数': number
-  '(6)入院患者数': number
-  '(6)入院患者確保病床数': string
+  '入院患者数': string
+  '入院患者数（参考値）': string
   '(7)重症患者数': number
   '(7)重症患者確保病床数': string
 }
@@ -114,12 +112,12 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
       ),
       unit: unitReports,
     },
-    '(6)入院患者数': {
-      value: toInteger(rawDataObj['(6)入院患者数']),
-      unit: unitPerson,
+    '入院患者数': {
+      value: rawDataObj['入院患者数'],
+      unit: null,
     },
-    '(6)入院患者確保病床数': {
-      value: rawDataObj['(6)入院患者確保病床数'],
+    '入院患者数（参考値）': {
+      value: rawDataObj['入院患者数（参考値）'],
       unit: null,
     },
     '(7)重症患者数': {

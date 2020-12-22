@@ -48,17 +48,17 @@
         </li>
         <li :class="[$style.box, $style.parent]">
           <div :class="$style.content">
-            <span>{{ $t('(6)入院患者数') }}</span>
+            <span>{{ $t('入院患者数') }}</span>
             <monitoring-items-overview-table-value-with-translatable-unit
-              :value="items['(6)入院患者数'].value"
-              :unit="items['(6)入院患者数'].unit"
+              :value="items['入院患者数'].value"
+              :unit="items['入院患者数'].unit"
             />
           </div>
           <ul :class="$style.group">
             <li :class="[$style.box]">
               <div :class="$style.content">
-                <span>{{ $t('確保病床') }}</span>
-                <span>{{ items['(6)入院患者確保病床数'].value }}</span>
+                <span>{{ $t('入院患者数（参考値）') }}</span>
+                <span>{{ items['入院患者数（参考値）'].value }}</span>
               </div>
             </li>
           </ul>
