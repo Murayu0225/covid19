@@ -157,6 +157,11 @@ export default Vue.extend({
             'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019215.html',
         },
         {
+          title: this.$t('相模原市医師会 新型コロナウイルス特設サイト'),
+          link:
+            'https://www.sagamihara.kanagawa.med.or.jp/covid19'
+        },
+        {
           title: this.$t('市長からのメッセージ'),
           link:
             'https://www.city.sagamihara.kanagawa.jp/channel/1012225/1019894/1021411.html',
