@@ -68,13 +68,8 @@ export type Unit = {
  */
 export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
   const unitPerson: Unit = { text: '人', translatable: true }
-  const unitReports: Unit = {
-    text: '件.reports',
-    translatable: true,
-  }
   const unitPercentage: Unit = { text: '%', translatable: false }
 
-  const toInteger = getCommaSeparatedNumberToFixedFunction(0)
   const toNumberIn10thPlace = getCommaSeparatedNumberToFixedFunction(1)
 
   return {
