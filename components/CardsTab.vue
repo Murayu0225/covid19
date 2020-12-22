@@ -25,12 +25,10 @@ import Vue from 'vue'
 import { EventBus, TOGGLE_EVENT } from '@/utils/tab-event-bus.ts'
 
 const CardsMonitoring = () => import('@/components/CardsMonitoring.vue')
-const CardsReference = () => import('@/components/CardsReference.vue')
 
 export default Vue.extend({
   components: {
     CardsMonitoring,
-    CardsReference,
   },
   data() {
     return {
