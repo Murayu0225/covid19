@@ -9,11 +9,6 @@
         />
       </div>
     </li>
-    <li :class="[$style.box, $style.parent]">
-      <div :class="$style.content">
-        <span>{{ $t('潜在・市中感染') }}</span>
-      </div>
-      <ul :class="$style.group">
         <li :class="[$style.box, $style.parent]">
           <div :class="$style.content">
             <span>{{ $t('陽性患者増加比') }}</span>
@@ -28,11 +23,9 @@
                 <span>{{ $t('陽性患者増加比（参考値）') }}</span>
                 <span>{{ items['陽性患者増加比（参考値）'].value }}</span>
               </div>
-            </li>
+           </li>
           </ul>
-        </li>
-      </ul>
-    </li>
+       </li>
   </ul>
 </template>
 
