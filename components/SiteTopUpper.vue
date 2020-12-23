@@ -54,7 +54,7 @@ export default Vue.extend({
       TokyoAlert,
       headerItem: {
         iconPath: mdiChartTimelineVariant,
-        title: this.$t('都内の最新感染動向'),
+        title: this.$t('市内の最新感染動向'),
       },
       lastUpdate,
       newsItems: News.newsItems,
@@ -76,7 +76,7 @@ export default Vue.extend({
   },
   head(): MetaInfo {
     return {
-      title: this.$t('都内の最新感染動向') as string,
+      title: this.$t('市内の最新感染動向') as string,
     }
   },
 })
