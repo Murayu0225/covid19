@@ -32,6 +32,7 @@
 import { mdiChartTimelineVariant } from '@mdi/js'
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
+
 import MonitoringCommentCard from '@/components/MonitoringCommentCard.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
@@ -39,6 +40,7 @@ import Data from '@/data/data.json'
 import News from '@/data/news.json'
 import TokyoAlert from '@/data/tokyo_alert.json'
 import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
+
 export default Vue.extend({
   components: {
     PageHeader,
@@ -47,6 +49,7 @@ export default Vue.extend({
   },
   data() {
     const { lastUpdate } = Data
+
     return {
       TokyoAlert,
       headerItem: {
@@ -85,18 +88,23 @@ export default Vue.extend({
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+
     @include lessThan($small) {
       flex-direction: column;
       align-items: baseline;
     }
   }
+
   .UpdatedAt {
     @include font-size(14);
+
     color: $gray-3;
     margin-bottom: 0.2rem;
   }
+
   .Annotation {
     @include font-size(12);
+
     color: $gray-3;
     @include largerThan($small) {
       margin: 0 0 0 auto;
