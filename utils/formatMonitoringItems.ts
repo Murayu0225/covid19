@@ -1,7 +1,5 @@
 // monitoring_items.json の型チェック用
 
-import { getCommaSeparatedNumberToFixedFunction } from '@/utils/monitoringStatusValueFormatters'
-
 type DataKey =
   | '新規陽性患者数'
   | '新規陽性患者数（参考値）'
