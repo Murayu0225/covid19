@@ -1,26 +1,26 @@
 <template>
   <div class="WhatsNewKanagawa">
-    <div class="WhatsNew-heading">
-      <h3 class="WhatsNew-title">
-        <v-icon size="2.4rem" class="WhatsNew-title-icon">
+    <div class="WhatsNewKanagawa-heading">
+      <h3 class="WhatsNewKanagawa-title">
+        <v-icon size="2.4rem" class="WhatsNewKanagawa-title-icon">
           {{ mdiInformation }}
         </v-icon>
         {{ $t('神奈川県からの最新のお知らせ') }}
       </h3>
-      <div class="WhatsNew-linkGroup">
+      <div class="WhatsNewKanagawa-linkGroup">
         <lazy-link-to-information-about-emergency-measure v-if="isEmergency" />
       </div>
     </div>
-    <ul class="WhatsNew-list">
-      <li v-for="(item, i) in items" :key="i" class="WhatsNew-list-item">
-        <app-link :to="item.url" class="WhatsNew-list-item-anchor">
+    <ul class="WhatsNewKanagawa-list">
+      <li v-for="(item, i) in items" :key="i" class="WhatsNewKanagawa-list-item">
+        <app-link :to="item.url" class="WhatsNewKanagawa-list-item-anchor">
           <time
-            class="WhatsNew-list-item-anchor-time px-2"
+            class="WhatsNewKanagawa-list-item-anchor-time px-2"
             :datetime="formattedDate(item.date)"
           >
             {{ formattedDateForDisplay(item.date) }}
           </time>
-          <span class="WhatsNew-list-item-anchor-link">
+          <span class="WhatsNewKanagawa-list-item-anchor-link">
             {{ item.text }}
           </span>
         </app-link>
@@ -68,20 +68,20 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-.WhatsNew {
+.WhatsNewKanagawa {
   @include card-container();
 
   padding: 10px;
   margin-bottom: 20px;
 
-  .WhatsNew-heading {
+  .WhatsNewKanagawa-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 12px;
 
-    .WhatsNew-title {
+    .WhatsNewKanagawa-title {
       display: flex;
       align-items: center;
       color: $gray-2;
@@ -91,7 +91,7 @@ export default Vue.extend({
       }
     }
 
-    .WhatsNew-linkGroup {
+    .WhatsNewKanagawa-linkGroup {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -103,7 +103,7 @@ export default Vue.extend({
     }
   }
 
-  .WhatsNew-list {
+  .WhatsNewKanagawa-list {
     padding-left: 0;
     list-style-type: none;
 
