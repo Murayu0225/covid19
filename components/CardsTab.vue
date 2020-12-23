@@ -23,8 +23,10 @@ import { mdiChartTimelineVariant } from '@mdi/js'
 import Vue from 'vue'
 
 import { EventBus, TOGGLE_EVENT } from '@/utils/tab-event-bus.ts'
+
 const CardsMonitoring = () => import('@/components/CardsMonitoring.vue')
 const CardsReference = () => import('@/components/CardsReference.vue')
+
 export default Vue.extend({
   components: {
     CardsMonitoring,
@@ -53,6 +55,7 @@ export default Vue.extend({
   border-bottom: 1px solid $gray-2;
   background: $gray-5;
 }
+
 .v-tab {
   top: 1px;
   margin: 0 8px;
@@ -60,9 +63,11 @@ export default Vue.extend({
   border-radius: 4px 4px 0 0;
   font-weight: bold !important;
   @include font-size(16, true);
+
   &:focus {
     outline: dotted $gray-3 1px;
   }
+
   &--active {
     color: $gray-2 !important;
     background: $gray-5;
@@ -72,6 +77,7 @@ export default Vue.extend({
       background-color: transparent;
     }
   }
+
   &:not(.v-tab--active) {
     color: $green-1 !important;
     background: $white;
@@ -86,12 +92,15 @@ export default Vue.extend({
     }
   }
 }
+
 .v-tabs-items {
   background-color: transparent !important;
 }
+
 @function px2vw($px, $vw: 768) {
   @return $px / $vw * 100vw;
 }
+
 @include lessThan($medium) {
   .v-slide-group__content {
     width: 100%;
@@ -104,6 +113,7 @@ export default Vue.extend({
     padding: 0 8px !important;
   }
 }
+
 @include lessThan($small) {
   .v-tab {
     font-size: px2vw(20, 600) !important;
