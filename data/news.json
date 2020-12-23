@@ -1,6 +1,12 @@
 {
     "newsItems": [
         {
+            "date": "2020\/12\/23",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/kurashi\/kyubyo\/1008444\/index.html",
+            "text": "年末年始に急病になったとき"
+        },
+
+        {
             "date": "2020\/12\/21",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019215.html",
             "text": "施設の再開等の情報について（12月21日更新）"
@@ -22,11 +28,6 @@
             "date": "2020\/12\/1",
             "url": "https:\/\/www.okippa.life\/20201021_sagamihara\/?utm_source=qrcode_sagamihara&utm_medium=flyer_official&utm_campaign=202011",
             "text": "簡易型宅配ボックス配付"
-        },
-        {
-            "date": "2020\/12\/1",
-            "url": "https:\/\/sagamihara-stopcovid19.netlify.app\/",
-            "text": "【当サイトに関するニュース】スマートフォンにおいてデータが表示されない場合は、ここからサイトを再読み込みして、画面をスクロールしてください。"
         }
     ]
 }
