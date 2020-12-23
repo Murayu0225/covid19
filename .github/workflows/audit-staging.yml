@@ -21,7 +21,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v3
         with:
           urls: |
-            https://sagamihara-covid19.netlify.app/
+            https://sagamihara-stopcovid19.netlify.app/
           uploadArtifacts: true
 
       - name: Use Node.js

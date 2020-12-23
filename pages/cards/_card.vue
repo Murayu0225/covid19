@@ -7,23 +7,28 @@
 // ---- 項目一覧
 // 検査陽性者の状況
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
+import MonitoringItemsOverviewCard from '@/components/cards/MonitoringItemsOverviewCard.vue'
 /* eslint-enable simple-import-sort/sort */
 
 import { getLinksLanguageAlternative } from '@/utils/i18nUtils'
 
 export default {
   components: {
-    // ---- モニタリング項目
     ConfirmedCasesDetailsCard,
+    MonitoringItemsOverviewCard,
   },
   data() {
     let title, updatedAt, cardComponent
     switch (this.$route.params.card) {
       // NOTE: 以下，ブラウザでの表示順に合わせて条件分岐を行う
-      // ---- モニタリング項目
+      // ---- 項目一覧
       // 検査陽性者の状況
       case 'details-of-confirmed-cases':
         cardComponent = 'confirmed-cases-details-card'
+        break
+      // モニタリング状況
+      case 'monitoring-items-overview':
+        cardComponent = 'monitoring-items-overview-card'
     }
 
     return {
