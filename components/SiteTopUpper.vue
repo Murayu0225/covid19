@@ -42,6 +42,7 @@ import WhatsNew from '@/components/WhatsNew.vue'
 import WhatsNewKanagawa from '@/components/WhatsnewKanagawa.vue'
 import Data from '@/data/data.json'
 import News from '@/data/news.json'
+import KanagawaNews from '@/data/news_kanagawa.json'
 import TokyoAlert from '@/data/tokyo_alert.json'
 import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
 
@@ -62,6 +63,7 @@ export default Vue.extend({
       },
       lastUpdate,
       newsItems: News.newsItems,
+      kanagawanewsItems: KanagawaNews.kanagawanewsItems,
       showStaticInfo: false,
     }
   },
