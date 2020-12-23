@@ -12,7 +12,10 @@
       </div>
     </div>
     <ul class="WhatsNewKanagawa-list">
-      <li v-for="(item, i) in items" :key="i" class="WhatsNewKanagawa-list-item">
+      <li
+        v-for="(item, i) in items"
+        :key="i"
+        class="WhatsNewKanagawa-list-item">
         <app-link :to="item.url" class="WhatsNewKanagawa-list-item-anchor">
           <time
             class="WhatsNewKanagawa-list-item-anchor-time px-2"
