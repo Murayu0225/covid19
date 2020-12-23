@@ -1,7 +1,7 @@
 <template>
   <div v-scroll="onScroll">
     <site-top-upper />
-    <lazy-cards-tab v-if="$vuetify.breakpoint.smAndUp" />
+    <lazy-cards-tab v-if="$vuetify.breakpoint.smAndUp || showCardsTab" />
   </div>
 </template>
 

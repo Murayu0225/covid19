@@ -8,7 +8,7 @@ import Vue from 'vue'
 
 // モニタリング項目
 const ConfirmedCasesAttributesCard = () =>
-  import('@/components/cards/MonitoringItemsOverviewCard.vue')
+  import('@/components/cards/ConfirmedCasesAttributesCard.vue')
 /* eslint-enable simple-import-sort/sort */
 
 export default Vue.extend({
