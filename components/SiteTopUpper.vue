@@ -16,6 +16,7 @@
       </div>
     </div>
     <whats-new class="mb-4" :items="newsItems" :is-emergency="false" />
+    <whats-new-kanagawa class="mb-4" :items="kanagawanewsItems" :is-emergency="false" />
     <lazy-tokyo-alert-card v-if="TokyoAlert.alert" />
     <lazy-static-info
       v-if="$vuetify.breakpoint.smAndUp || showStaticInfo"
@@ -34,6 +35,7 @@ import { MetaInfo } from 'vue-meta'
 
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
+import WhatsNewKanagawa from '@/components/WhatsnewKanagawa.vue'
 import Data from '@/data/data.json'
 import News from '@/data/news.json'
 import TokyoAlert from '@/data/tokyo_alert.json'
@@ -43,6 +45,7 @@ export default Vue.extend({
   components: {
     PageHeader,
     WhatsNew,
+    WhatsNewKanagawa
   },
   data() {
     const { lastUpdate } = Data
