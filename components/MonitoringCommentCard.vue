@@ -20,24 +20,6 @@
         {{ $t('新型コロナウイルス対策ページ（相模原市公式サイト）') }}
       </app-link>
     </div>
-    <div class="MonitoringComment-comments">
-      <v-row>
-        <v-col cols="12" sm="12" md="6" lg="6">
-          <h4>{{ $t('感染状況') }}</h4>
-          <monitoring-comment-frame
-            :level="monitoringComment['総括コメント-感染状況'].level - 1"
-            :comment="commentMonitoring('総括コメント-感染状況')"
-          />
-        </v-col>
-        <v-col cols="12" sm="12" md="6" lg="6">
-          <h4>{{ $t('医療提供体制') }}</h4>
-          <monitoring-comment-frame
-            :level="monitoringComment['総括コメント-医療提供体制'].level - 1"
-            :comment="commentMonitoring('総括コメント-医療提供体制')"
-          />
-        </v-col>
-      </v-row>
-    </div>
   </div>
 </template>
 
