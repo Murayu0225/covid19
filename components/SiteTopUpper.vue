@@ -16,12 +16,12 @@
       </div>
     </div>
     <whats-new class="mb-4" :items="newsItems" :is-emergency="false" />
-    <!--<monitoring-comment-card />-->
-    <!--<lazy-tokyo-alert-card v-if="TokyoAlert.alert" />-->
+    <monitoring-comment-card />
+    <lazy-tokyo-alert-card v-if="TokyoAlert.alert" />
     <lazy-static-info
       v-if="$vuetify.breakpoint.smAndUp || showStaticInfo"
       class="mb-4"
-      :url="'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019896.html'"
+      :url="'https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html'"
       :text="$t('自分や家族の症状に不安や心配があればまずは電話相談をどうぞ')"
       :btn-text="$t('相談の手順を見る')"
     />
@@ -33,7 +33,7 @@ import { mdiChartTimelineVariant } from '@mdi/js'
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 
-// import MonitoringCommentCard from '@/components/MonitoringCommentCard.vue'
+import MonitoringCommentCard from '@/components/MonitoringCommentCard.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
 import Data from '@/data/data.json'
@@ -45,7 +45,7 @@ export default Vue.extend({
   components: {
     PageHeader,
     WhatsNew,
-    // MonitoringCommentCard,
+    MonitoringCommentCard,
   },
   data() {
     const { lastUpdate } = Data
