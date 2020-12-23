@@ -16,12 +16,12 @@
       </div>
     </div>
     <whats-new class="mb-4" :items="newsItems" :is-emergency="false" />
-    <monitoring-comment-card />
-    <lazy-tokyo-alert-card v-if="TokyoAlert.alert" />
+    <!--<monitoring-comment-card />-->
+    <!--<lazy-tokyo-alert-card v-if="TokyoAlert.alert" />-->
     <lazy-static-info
       v-if="$vuetify.breakpoint.smAndUp || showStaticInfo"
       class="mb-4"
-      :url="'https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html'"
+      :url="'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019896.html'"
       :text="$t('自分や家族の症状に不安や心配があればまずは電話相談をどうぞ')"
       :btn-text="$t('相談の手順を見る')"
     />
@@ -54,7 +54,7 @@ export default Vue.extend({
       TokyoAlert,
       headerItem: {
         iconPath: mdiChartTimelineVariant,
-        title: this.$t('都内の最新感染動向'),
+        title: this.$t('市内の最新感染動向'),
       },
       lastUpdate,
       newsItems: News.newsItems,
@@ -76,7 +76,7 @@ export default Vue.extend({
   },
   head(): MetaInfo {
     return {
-      title: this.$t('都内の最新感染動向') as string,
+      title: this.$t('市内の最新感染動向') as string,
     }
   },
 })
