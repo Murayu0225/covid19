@@ -104,7 +104,7 @@ export default Vue.extend({
 
   .Annotation {
     @include font-size(12);
-    
+
     color: $gray-3;
     @include largerThan($small) {
       margin: 0 0 0 auto;
