@@ -1,5 +1,5 @@
 # 相模原市 新型コロナウイルス感染症対策サイト
-
+![Auto-i18n Generator](https://github.com/Murayu0225/covid19/workflows/Auto-i18n%20Generator/badge.svg)
 ### developmentブランチステータス（Netlify）
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4261c080-decb-4f4a-ac12-7dbbba702b26/deploy-status)](https://app.netlify.com/sites/dev-sagamihara-stopcovid19/deploys)
 
