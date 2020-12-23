@@ -17,11 +17,16 @@
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/seisaku\/1019908.html",
             "text": "国、県の新型コロナウイルス感染症対策を踏まえた本市の対応について（12月8日更新）"
         },
-        
+
         {
             "date": "2020\/12\/1",
             "url": "https:\/\/www.okippa.life\/20201021_sagamihara\/?utm_source=qrcode_sagamihara&utm_medium=flyer_official&utm_campaign=202011",
             "text": "簡易型宅配ボックス配付"
+        },
+        {
+            "date": "2020\/12\/1",
+            "url": "https:\/\/sagamihara-stopcovid19.netlify.app\/",
+            "text": "【当サイトに関するニュース】スマートフォンにおいてデータが表示されない場合は、ここからサイトを再読み込みして、画面をスクロールしてください。"
         }
     ]
 }
