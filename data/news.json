@@ -1,9 +1,19 @@
 {
     "newsItems": [
         {
+            "date": "2020\/12\/21",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019215.html",
+            "text": "施設の再開等の情報について（12月21日更新）"
+        },
+        {
             "date": "2020\/12\/20",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/sangyo\/sangyo\/1021369\/index.html",
             "text": "サンキューさがみはら！最大25％戻ってくるキャンペーン"
+        },
+        {
+            "date": "2020\/12\/8",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/seisaku\/1019908.html",
+            "text": "国、県の新型コロナウイルス感染症対策を踏まえた本市の対応について（12月8日更新）"
         },
         {
             "date": "2020\/12\/1",
