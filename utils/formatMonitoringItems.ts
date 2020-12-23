@@ -20,9 +20,9 @@ type DataCommentKey = '総括コメント-感染状況' | '総括コメント-�
 
 type RawData = {
   新規陽性患者数: string
-  '新規陽性患者数（参考値）': number
+  '新規陽性患者数（参考値）': string
   人口10万人当たりの累積陽性者数: string
-  '人口10万人当たりの累積陽性者数（参考値）': number
+  '人口10万人当たりの累積陽性者数（参考値）': string
   陽性患者増加比: string
   '陽性患者増加比（参考値）': string
   感染経路不明者の割合: string
@@ -78,7 +78,7 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
       unit: unitPerson,
     },
     '新規陽性患者数（参考値）': {
-      value: toNumberIn10thPlace(rawDataObj['新規陽性患者数（参考値）']),
+      value: rawDataObj['新規陽性患者数（参考値）'],
       unit: unitPerson,
     },
     人口10万人当たりの累積陽性者数: {
@@ -86,9 +86,7 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
       unit: unitPerson,
     },
     '人口10万人当たりの累積陽性者数（参考値）': {
-      value: toNumberIn10thPlace(
-        rawDataObj['人口10万人当たりの累積陽性者数（参考値）']
-      ),
+      value: rawDataObj['人口10万人当たりの累積陽性者数（参考値）'],
       unit: unitPerson,
     },
     陽性患者増加比: {

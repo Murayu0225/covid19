@@ -7,7 +7,7 @@
       <ul :class="$style.group">
         <li :class="[$style.box, $style.parent]">
           <div :class="$style.content">
-            <span>{{ $t('陽性率') }}</span>
+            <span>{{ $t('（５）陽性率') }}</span>
             <monitoring-items-overview-table-value-with-translatable-unit
               :value="items['陽性率'].value"
               :unit="items['陽性率'].unit"
@@ -31,7 +31,7 @@
       <ul :class="$style.group">
         <li :class="[$style.box, $style.parent]">
           <div :class="$style.content">
-            <span>{{ $t('入院患者数') }}</span>
+            <span>{{ $t('（６）入院患者数') }}</span>
             <monitoring-items-overview-table-value-with-translatable-unit
               :value="items['入院患者数'].value"
               :unit="items['入院患者数'].unit"
