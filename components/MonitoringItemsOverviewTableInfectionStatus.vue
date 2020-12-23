@@ -2,7 +2,7 @@
   <ul :class="$style.container">
     <li :class="[$style.box, $style.parent]">
       <div :class="$style.content">
-        <span>{{ $t('新規陽性患者数') }}</span>
+        <span>{{ $t('（１）新規陽性患者数') }}</span>
         <monitoring-items-overview-table-value-with-translatable-unit
           :value="items['新規陽性患者数'].value"
           :unit="items['新規陽性患者数'].unit"
@@ -19,7 +19,7 @@
     </li>
     <li :class="[$style.box, $style.parent]">
       <div :class="$style.content">
-        <span>{{ $t('人口10万人当たりの累積陽性者数') }}</span>
+        <span>{{ $t('（２）人口10万人当たりの累積陽性者数') }}</span>
         <monitoring-items-overview-table-value-with-translatable-unit
           :value="items['人口10万人当たりの累積陽性者数'].value"
           :unit="items['人口10万人当たりの累積陽性者数'].unit"
@@ -38,7 +38,7 @@
     </li>
     <li :class="[$style.box, $style.parent]">
       <div :class="$style.content">
-        <span>{{ $t('陽性患者増加比') }}</span>
+        <span>{{ $t('（３）陽性患者増加比') }}</span>
         <monitoring-items-overview-table-value-with-translatable-unit
           :value="items['陽性患者増加比'].value"
           :unit="items['陽性患者増加比'].unit"
@@ -55,7 +55,7 @@
     </li>
     <li :class="[$style.box, $style.parent]">
       <div :class="$style.content">
-        <span>{{ $t('感染経路不明者の割合') }}</span>
+        <span>{{ $t('（４）感染経路不明者の割合') }}</span>
         <monitoring-items-overview-table-value-with-translatable-unit
           :value="items['感染経路不明者の割合'].value"
           :unit="items['感染経路不明者の割合'].unit"
