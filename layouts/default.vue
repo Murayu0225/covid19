@@ -179,7 +179,6 @@ export default Vue.extend({
           name: 'apple-mobile-web-app-title',
           content: `${this.$t('相模原市')} ${this.$t(
             '新型コロナウイルス感染症'
-            '新型コロナウイルス感染症'
           )} ${this.$t('対策サイト')}`,
         },
         {
