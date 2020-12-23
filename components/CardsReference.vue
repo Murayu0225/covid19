@@ -7,14 +7,14 @@
 import Vue from 'vue'
 
 // モニタリング項目
-const ConfirmedCasesAttributesCard = () =>
-  import('@/components/cards/ConfirmedCasesAttributesCard.vue')
+const ConfirmedCasesDetailsCard = () =>
+  import('@/components/cards/ConfirmedCasesDetailsCard.vue')
 /* eslint-enable simple-import-sort/sort */
 
 export default Vue.extend({
   data() {
     return {
-      rows: [[ConfirmedCasesAttributesCard]],
+      rows: [[ConfirmedCasesDetailsCard]],
     }
   },
 })
