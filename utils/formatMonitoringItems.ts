@@ -1,34 +1,34 @@
 // monitoring_items.json の型チェック用
 
-import { getCommaSeparatedNumberToFixedFunction } from '@/utils/monitoringStatusValueFormatters'
-
 type DataKey =
-  | '(1)新規陽性者数'
-  | '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 '
-  | '(3)新規陽性者における接触歴等不明者（人数）'
-  | '(3)新規陽性者における接触歴等不明者（増加比）'
-  | '(4)PCR・抗原検査（陽性率）'
-  | '(4)PCR・抗原検査（検査人数）'
-  | '(5)救急医療の東京ルールの適用件数'
-  | '(6)入院患者数'
-  | '(6)入院患者確保病床数'
-  | '(7)重症患者数'
-  | '(7)重症患者確保病床数'
+  | '新規陽性患者数'
+  | '新規陽性患者数（参考値）'
+  | '人口10万人当たりの累積陽性者数'
+  | '人口10万人当たりの累積陽性者数（参考値）'
+  | '陽性患者増加比'
+  | '陽性患者増加比（参考値）'
+  | '感染経路不明者の割合'
+  | '感染経路不明者の割合（参考値）'
+  | '陽性率'
+  | '陽性率（参考値）'
+  | '入院患者数'
+  | '入院患者数（参考値）'
 
 type DataCommentKey = '総括コメント-感染状況' | '総括コメント-医療提供体制'
 
 type RawData = {
-  '(1)新規陽性者数': number
-  '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 ': number
-  '(3)新規陽性者における接触歴等不明者（人数）': number
-  '(3)新規陽性者における接触歴等不明者（増加比）': number
-  '(4)PCR・抗原検査（陽性率）': number
-  '(4)PCR・抗原検査（検査人数）': number
-  '(5)救急医療の東京ルールの適用件数': number
-  '(6)入院患者数': number
-  '(6)入院患者確保病床数': string
-  '(7)重症患者数': number
-  '(7)重症患者確保病床数': string
+  新規陽性患者数: string
+  '新規陽性患者数（参考値）': string
+  人口10万人当たりの累積陽性者数: string
+  '人口10万人当たりの累積陽性者数（参考値）': string
+  陽性患者増加比: string
+  '陽性患者増加比（参考値）': string
+  感染経路不明者の割合: string
+  '感染経路不明者の割合（参考値）': string
+  陽性率: string
+  '陽性率（参考値）': string
+  入院患者数: string
+  '入院患者数（参考値）': string
 }
 
 interface Comment {
@@ -66,68 +66,55 @@ export type Unit = {
  */
 export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
   const unitPerson: Unit = { text: '人', translatable: true }
-  const unitReports: Unit = {
-    text: '件.reports',
-    translatable: true,
-  }
   const unitPercentage: Unit = { text: '%', translatable: false }
 
-  const toInteger = getCommaSeparatedNumberToFixedFunction(0)
-  const toNumberIn10thPlace = getCommaSeparatedNumberToFixedFunction(1)
-
   return {
-    '(1)新規陽性者数': {
-      value: toNumberIn10thPlace(rawDataObj['(1)新規陽性者数']),
+    新規陽性患者数: {
+      value: rawDataObj['新規陽性患者数'],
       unit: unitPerson,
     },
-    '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 ': {
-      value: toNumberIn10thPlace(
-        rawDataObj[
-          '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 '
-        ]
-      ),
-      unit: unitReports,
-    },
-    '(3)新規陽性者における接触歴等不明者（人数）': {
-      value: toNumberIn10thPlace(
-        rawDataObj['(3)新規陽性者における接触歴等不明者（人数）']
-      ),
+    '新規陽性患者数（参考値）': {
+      value: rawDataObj['新規陽性患者数（参考値）'],
       unit: unitPerson,
     },
-    '(3)新規陽性者における接触歴等不明者（増加比）': {
-      value: toNumberIn10thPlace(
-        rawDataObj['(3)新規陽性者における接触歴等不明者（増加比）']
-      ),
+    人口10万人当たりの累積陽性者数: {
+      value: rawDataObj['人口10万人当たりの累積陽性者数'],
+      unit: unitPerson,
+    },
+    '人口10万人当たりの累積陽性者数（参考値）': {
+      value: rawDataObj['人口10万人当たりの累積陽性者数（参考値）'],
+      unit: unitPerson,
+    },
+    陽性患者増加比: {
+      value: rawDataObj['陽性患者増加比'],
       unit: unitPercentage,
     },
-    '(4)PCR・抗原検査（検査人数）': {
-      value: toNumberIn10thPlace(rawDataObj['(4)PCR・抗原検査（検査人数）']),
-      unit: unitPerson,
-    },
-    '(4)PCR・抗原検査（陽性率）': {
-      value: toNumberIn10thPlace(rawDataObj['(4)PCR・抗原検査（陽性率）']),
+    '陽性患者増加比（参考値）': {
+      value: rawDataObj['陽性患者増加比（参考値）'],
       unit: unitPercentage,
     },
-    '(5)救急医療の東京ルールの適用件数': {
-      value: toNumberIn10thPlace(
-        rawDataObj['(5)救急医療の東京ルールの適用件数']
-      ),
-      unit: unitReports,
+    感染経路不明者の割合: {
+      value: rawDataObj['感染経路不明者の割合'],
+      unit: unitPercentage,
     },
-    '(6)入院患者数': {
-      value: toInteger(rawDataObj['(6)入院患者数']),
+    '感染経路不明者の割合（参考値）': {
+      value: rawDataObj['感染経路不明者の割合（参考値）'],
+      unit: unitPercentage,
+    },
+    陽性率: {
+      value: rawDataObj['陽性率'],
+      unit: unitPercentage,
+    },
+    '陽性率（参考値）': {
+      value: rawDataObj['陽性率（参考値）'],
+      unit: unitPercentage,
+    },
+    入院患者数: {
+      value: rawDataObj['入院患者数'],
       unit: unitPerson,
     },
-    '(6)入院患者確保病床数': {
-      value: rawDataObj['(6)入院患者確保病床数'],
-      unit: null,
-    },
-    '(7)重症患者数': {
-      value: toInteger(rawDataObj['(7)重症患者数']),
-      unit: unitPerson,
-    },
-    '(7)重症患者確保病床数': {
-      value: rawDataObj['(7)重症患者確保病床数'],
+    '入院患者数（参考値）': {
+      value: rawDataObj['入院患者数（参考値）'],
       unit: null,
     },
   }

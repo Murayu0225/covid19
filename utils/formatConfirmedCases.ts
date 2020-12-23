@@ -5,37 +5,29 @@ type DataType = {
       value: number
       children: [
         {
-          attr: '入院中'
+          attr: '治療中'
           value: number
           children: [
             {
-              attr: '軽症・中等症'
+              attr: '医療機関'
               value: number
             },
             {
-              attr: '重症'
+              attr: '自宅療養'
+              value: number
+            },
+            {
+              attr: '宿泊療養'
               value: number
             }
           ]
         },
         {
-          attr: '宿泊療養'
-          value: number
-        },
-        {
-          attr: '自宅療養'
-          value: number
-        },
-        {
-          attr: '調査中'
-          value: number
-        },
-        {
-          attr: '退院'
-          value: number
-        },
-        {
           attr: '死亡'
+          value: number
+        },
+        {
+          attr: '回復'
           value: number
         }
       ]
@@ -44,15 +36,13 @@ type DataType = {
 }
 
 type ConfirmedCasesType = {
-  陽性者数: number
-  入院中: number
-  軽症中等症: number
-  重症: number
-  宿泊療養: number
+  陽性患者数: number
+  治療中: number
+  医療機関: number
   自宅療養: number
-  調査中: number
+  宿泊療養: number
   死亡: number
-  退院: number
+  回復: number
 }
 
 interface ChildData {
@@ -95,14 +85,12 @@ function getSelectedItem(data: DataType, key: string) {
  */
 export default (data: DataType) => {
   return {
-    陽性者数: getSelectedItem(data, '陽性患者数'),
-    入院中: getSelectedItem(data, '入院中'),
-    軽症中等症: getSelectedItem(data, '軽症・中等症'),
-    重症: getSelectedItem(data, '重症'),
-    宿泊療養: getSelectedItem(data, '宿泊療養'),
+    陽性患者数: getSelectedItem(data, '陽性患者数'),
+    治療中: getSelectedItem(data, '治療中'),
+    医療機関: getSelectedItem(data, '医療機関'),
     自宅療養: getSelectedItem(data, '自宅療養'),
-    調査中: getSelectedItem(data, '調査中'),
+    宿泊療養: getSelectedItem(data, '宿泊療養'),
     死亡: getSelectedItem(data, '死亡'),
-    退院: getSelectedItem(data, '退院'),
+    回復: getSelectedItem(data, '回復'),
   } as ConfirmedCasesType
 }

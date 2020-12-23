@@ -1,11 +1,5 @@
 {
-    "newsItems": [
-        {
-            "date": "2020\/12\/23",
-            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/kurashi\/kyubyo\/1008444\/index.html",
-            "text": "年末年始に急病になったとき"
-        },
-
+    "kanagawanewsItems": [
         {
             "date": "2020\/12\/21",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019215.html",
@@ -23,7 +17,7 @@
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/seisaku\/1019908.html",
             "text": "国、県の新型コロナウイルス感染症対策を踏まえた本市の対応について（12月8日更新）"
         },
-
+        
         {
             "date": "2020\/12\/1",
             "url": "https:\/\/www.okippa.life\/20201021_sagamihara\/?utm_source=qrcode_sagamihara&utm_medium=flyer_official&utm_campaign=202011",

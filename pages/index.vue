@@ -8,7 +8,6 @@
 <script lang="ts">
 import Vue from 'vue'
 import { ThisTypedComponentOptionsWithRecordProps } from 'vue/types/options'
-
 type Data = {
   showCardsTab: boolean
 }
@@ -17,7 +16,6 @@ type Methods = {
 }
 type Computed = {}
 type Props = {}
-
 const options: ThisTypedComponentOptionsWithRecordProps<
   Vue,
   Data,
@@ -36,6 +34,5 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     },
   },
 }
-
 export default options
 </script>

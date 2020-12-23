@@ -39,7 +39,8 @@
       </v-icon>
 
       <nav class="SideNavigation-Menu">
-        <!--        <div class="SideNavigation-Language">
+        <!--
+        <div class="SideNavigation-Language">
           <div
             v-if="this.$i18n.locales.length > 1"
             class="SideNavigation-Language"
@@ -141,7 +142,8 @@ export default Vue.extend({
         {
           iconPath: mdiAccountMultiple,
           title: this.$t('市民の皆様へ'),
-          link: 'https://www.metro.tokyo.lg.jp/tosei/tosei/news/2019-ncov.html',
+          link:
+            'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/index.html',
         },
         {
           iconPath: mdiDomain,
@@ -150,19 +152,18 @@ export default Vue.extend({
           divider: true,
         },
         {
-          title: this.$t('相模原市新型コロナウイルス感染症対策本部報'),
+          title: this.$t('市民利用施設に関する情報'),
           link:
-            'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1010035/index.html',
+            'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019215.html',
         },
         {
-          title: this.$t('市民利用施設・都主催イベントに関する情報'),
-          link:
-            'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html',
+          title: this.$t('相模原市医師会 新型コロナウイルス特設サイト'),
+          link: 'https://www.sagamihara.kanagawa.med.or.jp/covid19',
         },
         {
           title: this.$t('市長からのメッセージ'),
           link:
-            'https://www.metro.tokyo.lg.jp/tosei/governor/governor/katsudo/2020/03/03_00.html',
+            'https://www.city.sagamihara.kanagawa.jp/channel/1012225/1019894/1021411.html',
         },
         {
           title: this.$t('当サイトについて'),
@@ -170,7 +171,7 @@ export default Vue.extend({
         },
         {
           title: this.$t('相模原市公式ホームページ'),
-          link: 'https://www.metro.tokyo.lg.jp/',
+          link: 'https://www.city.sagamihara.kanagawa.jp/index.html',
         },
       ]
     },
