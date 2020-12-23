@@ -21,7 +21,6 @@
 <script lang="ts">
 import { mdiChartTimelineVariant } from '@mdi/js'
 import Vue from 'vue'
-
 import { EventBus, TOGGLE_EVENT } from '@/utils/tab-event-bus.ts'
 const CardsMonitoring = () => import('@/components/CardsMonitoring.vue')
 const CardsReference = () => import('@/components/CardsReference.vue')
@@ -34,8 +33,8 @@ export default Vue.extend({
     return {
       tab: null,
       items: [
-        { label: this.$t('項目一覧'), component: CardsMonitoring },
-        { label: this.$t('その他'), component: CardsReference },
+        { label: this.$t('モニタリング項目'), component: CardsMonitoring },
+        { label: this.$t('その他 参考指標'), component: CardsReference },
       ],
       mdiChartTimelineVariant,
     }
