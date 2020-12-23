@@ -30,7 +30,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
   },
   methods: {
     onScroll() {
-      this.showCardsTab = true
+      this.showCardsTab = false
     },
   },
 }
