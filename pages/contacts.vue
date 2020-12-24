@@ -29,13 +29,13 @@
               {{ $t('新型コロナウイルス感染症の予防・検査・医療に関すること') }}
             </td>
             <td class="bureau importantContact">
-              {{ $t('新型コロナコールセンター') }}
+              {{ $t('相模原市 新型コロナウイルス感染症相談センター') }}
             </td>
             <td class="tel">
-              <a href="tel:0570-550571" class="importantContact">0570-550571</a
+              <a href="tel:042-769-9237" class="importantContact">042-769-9237</a
               ><br />
               <p class="caution">
-                {{ $t(`午前9時00分から午後10時00分（土日祝含む）`) }}
+                {{ $t(`24時間対応`) }}
               </p>
               <p class="caution">
                 {{
@@ -50,28 +50,36 @@
             <td class="content importantContact" v-bind="headingAttrs">
               {{
                 $t(
-                  '感染防止徹底宣言ステッカー、感染拡大防止協力金等に関すること'
+                  'かかりつけ医がない等受診に困った場合'
                 )
               }}
             </td>
             <td class="bureau importantContact">
-              {{ $t('東京都ステッカー申請・感染拡大防止協力金相談センター') }}
+              {{ $t('神奈川県 発熱等診療予約センター') }}
             </td>
             <td class="tel">
-              <a href="tel:03-5388-0567" class="importantContact"
-                >03-5388-0567</a
-              ><br />
-              <p class="caution">
-                {{ $t('午前9時00分から午後7時00分（土日祝含む）') }}
-              </p>
+              <ul>
+                <li>
+                  {{ $t('通常時') }}<br /><a
+                    href="tel:0570-048914"
+                    >0570-048914</a
+                  >
+                </li>
+                <li>
+                  {{ $t('つながらない場合') }}<br /><a
+                    href="tel:042-285-1015"
+                    >042-286-1015</a
+                  >
+                </li>
+              </ul>
             </td>
           </tr>
           <tr>
             <td class="content" v-bind="headingAttrs">
               {{ $t('本サイトの管理・運営に関すること') }}
             </td>
-            <td class="bureau">{{ $t('政策企画局') }}</td>
-            <td class="tel"><a href="tel:03-5388-2171">03-5388-2171</a></td>
+            <td class="bureau">{{ $t('当ページ製作者直通メールアドレス') }}</td>
+            <td class="tel"><a href="mailto:covid19_s@assistant-app.com?subject=お問い合わせ件名：&amp;body=お問い合わせ内容を記入してください：">covid19_s@assistant-app.com</a></td>
           </tr>
           <tr>
             <td class="content" v-bind="headingAttrs">
@@ -127,8 +135,8 @@
               <ul>
                 <li>
                   {{ $t('資金繰りに関すること') }}<br /><a
-                    href="tel:03-5320-4877"
-                    >03-5320-4877</a
+                    href="tel:042-851-3193"
+                    >042-851-3193</a
                   >
                 </li>
                 <li>
@@ -144,37 +152,6 @@
                 </li>
               </ul>
             </td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('都立学校に関すること') }}
-            </td>
-            <td class="bureau">{{ $t('教育庁') }}</td>
-            <td class="tel"><a href="tel:03-5320-6705">03-5320-6705</a></td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('スムーズビズに関すること') }}
-            </td>
-            <td class="bureau">{{ $t('都市整備局') }}</td>
-            <td class="tel"><a href="tel:03-5388-3317">03-5388-3317</a></td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('都営交通に関すること') }}
-            </td>
-            <td class="bureau">{{ $t('交通局') }}</td>
-            <td class="tel">
-              <a href="tel:03-3816-5700">03-3816-5700</a><br />
-              {{ $t('（都営交通お客様センター）') }}
-            </td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('ご家庭でのマスク等の捨て方に関すること') }}
-            </td>
-            <td class="bureau">{{ $t('環境局') }}</td>
-            <td class="tel"><a href="tel:03-5388-3581">03-5388-3581</a></td>
           </tr>
         </tbody>
       </table>
