@@ -7,6 +7,7 @@
 // ---- 項目一覧
 // 検査陽性者の状況
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
+import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard'
 import MonitoringItemsOverviewCard from '@/components/cards/MonitoringItemsOverviewCard.vue'
 /* eslint-enable simple-import-sort/sort */
 
@@ -15,6 +16,7 @@ import { getLinksLanguageAlternative } from '@/utils/i18nUtils'
 export default {
   components: {
     ConfirmedCasesDetailsCard,
+    Con
     MonitoringItemsOverviewCard,
   },
   data() {
@@ -26,6 +28,8 @@ export default {
       case 'details-of-confirmed-cases':
         cardComponent = 'confirmed-cases-details-card'
         break
+      case 'number-of-confirmed-cases':
+        cardComponent = 'confirmed-cases-number-card'
       // モニタリング状況
       case 'monitoring-items-overview':
         cardComponent = 'monitoring-items-overview-card'
