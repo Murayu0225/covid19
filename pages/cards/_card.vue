@@ -16,7 +16,7 @@ import { getLinksLanguageAlternative } from '@/utils/i18nUtils'
 export default {
   components: {
     ConfirmedCasesDetailsCard,
-    Con
+    ConfirmedCasesNumberCard,
     MonitoringItemsOverviewCard,
   },
   data() {
