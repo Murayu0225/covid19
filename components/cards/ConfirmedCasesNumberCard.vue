@@ -11,23 +11,10 @@
         :by-date="true"
       >
         <template v-slot:additionalDescription>
-          <div class="Description-ExternalLink">
-            <app-link
-              to="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/todokedehcyouseisya.html"
-            >
-              {{ $t('届出保健所別の内訳') }}
-            </app-link>
-          </div>
           <span>{{ $t('（注）') }}</span>
           <ul>
             <li>
-              {{ $t('保健所から発生届が提出された日を基準とする') }}
-            </li>
-            <li>
-              {{ $t('医療機関等が行った検査も含む') }}
-            </li>
-            <li>
-              {{ $t('チャーター機帰国者、クルーズ船乗客等は含まれていない') }}
+              {{ $t('在日米陸軍関係者は、含めない') }}
             </li>
           </ul>
         </template>

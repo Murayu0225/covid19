@@ -9,12 +9,17 @@ import Vue from 'vue'
 // モニタリング項目
 const MonitoringItemsOverviewCard = () =>
   import('@/components/cards/MonitoringItemsOverviewCard.vue')
+// 報告日別陽性者数
+const ConfirmedCasesNumberCard　= () =>
+  import('@/components/cards/ConfirmedCasesNumberCard.vue')
 /* eslint-enable simple-import-sort/sort */
 
 export default Vue.extend({
   data() {
     return {
-      rows: [[MonitoringItemsOverviewCard]],
+      rows: [
+        [MonitoringItemsOverviewCard, ConfirmedCasesNumberCard],
+      ],
     }
   },
 })
