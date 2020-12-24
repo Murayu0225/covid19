@@ -30,6 +30,7 @@ export default {
         break
       case 'number-of-confirmed-cases':
         cardComponent = 'confirmed-cases-number-card'
+        break
       // モニタリング状況
       case 'monitoring-items-overview':
         cardComponent = 'monitoring-items-overview-card'
