@@ -19,7 +19,7 @@
             <th class="text-center" scope="col">
               {{ $t('お問い合わせ内容') }}
             </th>
-            <th class="text-center" scope="col">{{ $t('局名') }}</th>
+            <th class="text-center" scope="col">{{ $t('担当名') }}</th>
             <th class="text-center tel" scope="col">{{ $t('電話番号') }}</th>
           </tr>
         </thead>
@@ -73,84 +73,12 @@
             <td class="content" v-bind="headingAttrs">
               {{ $t('本サイトの管理・運営に関すること') }}
             </td>
-            <td class="bureau">{{ $t('当ページ製作者直通メールアドレス') }}</td>
+            <td class="bureau">{{ $t('当ページ製作者直通メールアドレス（個人）') }}</td>
             <td class="tel">
               <a
                 href="mailto:covid19_s@assistant-app.com?subject=お問い合わせ件名：&amp;body=お問い合わせ内容を記入してください："
                 >covid19_s@assistant-app.com</a
               >
-            </td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('新型コロナウイルス感染症対策本部会議に関すること')
-              }}<br />{{ $t('都庁来庁者データに関すること') }}
-            </td>
-            <td class="bureau">{{ $t('総務局') }}</td>
-            <td class="tel">
-              <ul>
-                <li>
-                  {{ $t('新型コロナウイルス感染症対策本部会議に関すること') }}
-                  <br />
-                  <a href="tel:03-5388-2453"> 03-5388-2453 </a>
-                </li>
-                <li>
-                  {{ $t('都庁来庁者データに関すること') }}
-                  <br />
-                  <a href="tel:03-5388-2319"> 03-5388-2319 </a>
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('都公式ホームページに関すること') }}<br />{{
-                $t('都公式SNSアカウントに関すること')
-              }}
-            </td>
-            <td class="bureau">{{ $t('生活文化局') }}</td>
-            <td class="tel">
-              <ul>
-                <li>
-                  {{ $t('都公式ホームページに関すること') }}<br /><a
-                    href="tel:03-5388-3061"
-                    >03-5388-3061</a
-                  >
-                </li>
-                <li>
-                  {{ $t('都公式SNSアカウントに関すること') }}<br /><a
-                    href="tel:03-5388-3094"
-                    >03-5388-3094</a
-                  >
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('中小企業支援、テレワークに関すること') }}
-            </td>
-            <td class="bureau">{{ $t('産業労働局') }}</td>
-            <td class="tel">
-              <ul>
-                <li>
-                  {{ $t('資金繰りに関すること') }}<br /><a
-                    href="tel:042-851-3193"
-                    >042-851-3193</a
-                  >
-                </li>
-                <li>
-                  {{ $t('経営に関すること') }}<br /><a href="tel:03-3251-7881"
-                    >03-3251-7881</a
-                  >
-                </li>
-                <li>
-                  {{ $t('労働関係に関すること') }}<br /><a
-                    href="tel:0570-00-6110"
-                    >0570-00-6110</a
-                  >
-                </li>
-              </ul>
             </td>
           </tr>
         </tbody>
