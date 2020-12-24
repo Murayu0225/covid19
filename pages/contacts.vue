@@ -32,7 +32,8 @@
               {{ $t('相模原市 新型コロナウイルス感染症相談センター') }}
             </td>
             <td class="tel">
-              <a href="tel:042-769-9237" class="importantContact">042-769-9237</a
+              <a href="tel:042-769-9237" class="importantContact"
+                >042-769-9237</a
               ><br />
               <p class="caution">
                 {{ $t(`24時間対応`) }}
@@ -48,11 +49,7 @@
           </tr>
           <tr>
             <td class="content importantContact" v-bind="headingAttrs">
-              {{
-                $t(
-                  'かかりつけ医がない等受診に困った場合'
-                )
-              }}
+              {{ $t('かかりつけ医がない等受診に困った場合') }}
             </td>
             <td class="bureau importantContact">
               {{ $t('神奈川県 発熱等診療予約センター') }}
@@ -60,14 +57,12 @@
             <td class="tel">
               <ul>
                 <li>
-                  {{ $t('通常時') }}<br /><a
-                    href="tel:0570-048914"
+                  {{ $t('通常時') }}<br /><a href="tel:0570-048914"
                     >0570-048914</a
                   >
                 </li>
                 <li>
-                  {{ $t('つながらない場合') }}<br /><a
-                    href="tel:042-285-1015"
+                  {{ $t('つながらない場合') }}<br /><a href="tel:042-285-1015"
                     >042-286-1015</a
                   >
                 </li>
@@ -79,7 +74,12 @@
               {{ $t('本サイトの管理・運営に関すること') }}
             </td>
             <td class="bureau">{{ $t('当ページ製作者直通メールアドレス') }}</td>
-            <td class="tel"><a href="mailto:covid19_s@assistant-app.com?subject=お問い合わせ件名：&amp;body=お問い合わせ内容を記入してください：">covid19_s@assistant-app.com</a></td>
+            <td class="tel">
+              <a
+                href="mailto:covid19_s@assistant-app.com?subject=お問い合わせ件名：&amp;body=お問い合わせ内容を記入してください："
+                >covid19_s@assistant-app.com</a
+              >
+            </td>
           </tr>
           <tr>
             <td class="content" v-bind="headingAttrs">
