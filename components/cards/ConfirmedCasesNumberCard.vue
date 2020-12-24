@@ -9,18 +9,7 @@
         :date="date"
         :unit="$t('人')"
         :by-date="true"
-        :url="'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000068'"
       >
-        <template v-slot:description>
-          <app-link
-            :to="`${
-              $i18n.locale !== 'ja' ? $i18n.locale : ''
-            }/cards/positive-number-by-developed-date`"
-            class="Description-Link"
-          >
-            {{ $t('発症日別による陽性者数の推移はこちら') }}
-          </app-link>
-        </template>
         <template v-slot:additionalDescription>
           <div class="Description-ExternalLink">
             <app-link

@@ -73,7 +73,9 @@
             <td class="content" v-bind="headingAttrs">
               {{ $t('本サイトの管理・運営に関すること') }}
             </td>
-            <td class="bureau">{{ $t('当ページ製作者直通メールアドレス（個人）') }}</td>
+            <td class="bureau">
+              {{$t('当ページ製作者直通メールアドレス（個人）') }}
+            </td>
             <td class="tel">
               <a
                 href="mailto:covid19_s@assistant-app.com?subject=お問い合わせ件名：&amp;body=お問い合わせ内容を記入してください："
