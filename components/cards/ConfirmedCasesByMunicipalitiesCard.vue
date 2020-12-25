@@ -15,7 +15,7 @@
               {{
                 $t(
                   '毎日の発生数等によっては、個人が特定されるおそれがあるため、区別の陽性患者数については週報とする'
-                  ) 
+                ) 
               }}
             </li>
           </ul>
@@ -61,14 +61,6 @@ export default {
         { text: this.$t('陽性者数'), value: 'count', align: 'end' },
       ]
     }
-
-    // データを追加
-    municipalitiesTable.datasets = datasets.data
-      .filter((d) => d.label !== '小計')
-      .map((d) => {
-        const label = this.$t(d.label)
-        const count = countFormatter(d.count)
-      })
 
     const info = {
       sText: this.$t('{date}の累計', {
