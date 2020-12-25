@@ -19,7 +19,7 @@ export default {
     ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
     MonitoringItemsOverviewCard,
-    ConfirmedCasesByMunicipalitiesCard
+    ConfirmedCasesByMunicipalitiesCard,
   },
   data() {
     let title, updatedAt, cardComponent

@@ -12,7 +12,11 @@
           <span>{{ $t('（注）') }}</span>
           <ul>
             <li>
-              {{ $t('毎日の発生数等によっては、個人が特定されるおそれがあるため、区別の陽性患者数については週報とする') }}
+              {{
+                $t(
+                  '毎日の発生数等によっては、個人が特定されるおそれがあるため、区別の陽性患者数については週報とする'
+                  ) 
+              }}
             </li>
           </ul>
         </template>
@@ -64,13 +68,6 @@ export default {
       .map((d) => {
         const label = this.$t(d.label)
         const count = countFormatter(d.count)
-
-        if (this.$i18n.locale === 'ja') {
-          const ruby = this.$t(d.ruby)
-          return { label, count }
-        } else {
-          return { label, count }
-        }
       })
 
     const info = {
