@@ -15,7 +15,7 @@
               {{
                 $t(
                   '毎日の発生数等によっては、個人が特定されるおそれがあるため、区別の陽性患者数については週報とする'
-                  )
+                )
               }}
             </li>
           </ul>
@@ -27,6 +27,7 @@
 
 <script>
 import dayjs from 'dayjs'
+
 import Data from '@/data/patient.json'
 import ConfirmedCasesByMunicipalitiesTable from '~/components/ConfirmedCasesByMunicipalitiesTable.vue'
 import { getCommaSeparatedNumberToFixedFunction } from '~/utils/monitoringStatusValueFormatters'
