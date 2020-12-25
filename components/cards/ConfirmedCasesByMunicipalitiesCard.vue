@@ -31,7 +31,6 @@ import dayjs from 'dayjs'
 import Data from '@/data/patient.json'
 import ConfirmedCasesByMunicipalitiesTable from '~/components/ConfirmedCasesByMunicipalitiesTable.vue'
 
-
 export default {
   components: {
     ConfirmedCasesByMunicipalitiesTable,
