@@ -67,6 +67,7 @@ export type Unit = {
 export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
   const unitPerson: Unit = { text: '人', translatable: true }
   const unitPercentage: Unit = { text: '%', translatable: false }
+  const unitSpace: Unit = { text: ' ', translatable: false}
 
   return {
     新規陽性患者数: {
@@ -87,7 +88,7 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
     },
     陽性患者増加比: {
       value: rawDataObj['陽性患者増加比'],
-      unit: null,
+      unit: unitSpace,
     },
     '陽性患者増加比（参考値）': {
       value: rawDataObj['陽性患者増加比（参考値）'],
