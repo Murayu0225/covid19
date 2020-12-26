@@ -67,7 +67,7 @@ export type Unit = {
 export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
   const unitPerson: Unit = { text: '人', translatable: true }
   const unitPercentage: Unit = { text: '%', translatable: false }
-  const unitSpace: Unit = { text: ' ', translatable: false}
+  const unitSpace: Unit = { text: ' ', translatable: false }
 
   return {
     新規陽性患者数: {
