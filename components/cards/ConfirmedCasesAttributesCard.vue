@@ -163,7 +163,6 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       const url =
         `${endpoint}/v1/Covid19Patient?limit=${this.itemsPerPage}` +
         (this.endCursor ? `&cursor=${encodeURIComponent(this.endCursor)}` : '')
-        
       return await fetch(url)
         .then((response) => response.json())
         .then((data) => ({ patientsData: data[0], metaData: data[1] }))
