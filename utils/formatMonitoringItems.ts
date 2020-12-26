@@ -87,7 +87,7 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
     },
     陽性患者増加比: {
       value: rawDataObj['陽性患者増加比'],
-      unit: unitPercentage,
+      unit: null,
     },
     '陽性患者増加比（参考値）': {
       value: rawDataObj['陽性患者増加比（参考値）'],
