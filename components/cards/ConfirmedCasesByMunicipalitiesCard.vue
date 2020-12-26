@@ -60,7 +60,7 @@ export default {
       ]
     }
     // データをソート
-    const areaOrder = ['特別区', '多摩地域', '島しょ地域', null]
+    const areaOrder = ['相模原市', null]
     datasets.data
       .sort((a, b) => {
         // 全体をふりがなでソート
