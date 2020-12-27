@@ -28,6 +28,11 @@ const config: NuxtConfig = {
         content: 'https://sagamihara-stopcovid19.netlify.app/',
       },
       {
+        hid: 'og:image',
+        property: 'og:image',
+        content:'https://sagamihara-stopcovid19.netlify.app/ogp.png/'
+      },
+      {
         hid: 'twitter:card',
         name: 'twitter:card',
         content: 'summary_large_image',
@@ -35,12 +40,12 @@ const config: NuxtConfig = {
       {
         hid: 'twitter:site',
         name: 'twitter:site',
-        content: '@tokyo_bousai',
+        content: '@yuuuuu_mmmmu',
       },
       {
         hid: 'twitter:creator',
         name: 'twitter:creator',
-        content: '@tokyo_bousai',
+        content: '@yuuuuu_mmmmu',
       },
       {
         hid: 'fb:app_id',
