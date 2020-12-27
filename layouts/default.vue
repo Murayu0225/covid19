@@ -172,7 +172,7 @@ export default Vue.extend({
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.$tc('ogp.og:image'),
+          content: 'https://sagamihara-stopcovid19.netlify.app/ogp.png/',
         },
         {
           hid: 'apple-mobile-web-app-title',
@@ -184,7 +184,7 @@ export default Vue.extend({
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: this.$tc('ogp.og:image'),
+          content: 'https://sagamihara-stopcovid19.netlify.app/ogp.png/',
         },
       ],
     }
