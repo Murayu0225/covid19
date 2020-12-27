@@ -244,7 +244,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
         {
           lText: lastDayData,
           sText: `${this.$t('{date} の数値', {
-            date: this.$d(lastDay, 'dateWithoutYear'),
+            date: this.$d(lastDay, 'date'),
           })}（${this.$t('７日間移動平均')}）`,
           sTextUnder: `（${this.$t('前日比')}: ${dayBeforeRatio} ${
             this.unit
@@ -322,7 +322,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
             title(tooltipItem, data) {
               if (tooltipItem[0].datasetIndex! < 2) {
                 const label = data.labels![tooltipItem[0].index!] as string
-                return self.$d(getComplementedDate(label), 'dateWithoutYear')
+                return self.$d(getComplementedDate(label), 'date')
               }
               return ''
             },
