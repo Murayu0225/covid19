@@ -30,7 +30,7 @@ const config: NuxtConfig = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content:'https://sagamihara-stopcovid19.netlify.app/ogp.png/'
+        content: 'https://sagamihara-stopcovid19.netlify.app/ogp.png/'
       },
       {
         hid: 'twitter:card',
