@@ -130,6 +130,7 @@ const config: NuxtConfig = {
   },
   googleAnalytics: {
     id: process.env.GOOGLE_ANALYTICS_ID, // .env.production などに設定してください。
+    debug: true,
   },
   /*
    ** @nuxtjs/gtm config
