@@ -130,7 +130,7 @@ const config: NuxtConfig = {
     },
   },
   googleAnalytics: {
-    id: 'G-9KPZ2TSQGQ'
+    id: 'UA-186200186-1'
   },
   /*
    ** @nuxtjs/gtm config
