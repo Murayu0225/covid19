@@ -41,8 +41,8 @@ jobs:
           cat .env.production
           yarn run generate:deploy --fail-on-page-error
         env:
-          GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
-          GTM_CONTAINER_ID: GTM-KM56HH8
+          GOOGLE_ANALYTICS_ID=G-9KPZ2TSQGQ
+          GTM_CONTAINER_ID=GTM-KM56HH8
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
