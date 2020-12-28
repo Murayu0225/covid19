@@ -135,7 +135,7 @@ const config: NuxtConfig = {
    ** @nuxtjs/gtm config
    */
   gtm: {
-    id: process.env.GTM_CONTAINER_ID,
+    id: 'GTM-KM56HH8',
     pageTracking: true,
     enabled: true,
   },
