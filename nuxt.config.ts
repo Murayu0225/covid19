@@ -129,7 +129,7 @@ const config: NuxtConfig = {
     },
   },
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID, // .env.production などに設定してください。
+    id: 'G-9KPZ2TSQGQ' // .env.production などに設定してください。
   },
   /*
    ** @nuxtjs/gtm config
