@@ -108,6 +108,7 @@ const config: NuxtConfig = {
     'nuxt-svg-loader',
     ['vue-scrollto/nuxt', { duration: 1000, offset: -72 }],
     'nuxt-webfontloader',
+    '@nuxtjs/google-analytics'
   ],
   /*
    ** vuetify module configuration
@@ -129,8 +130,7 @@ const config: NuxtConfig = {
     },
   },
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID, // .env.production などに設定してください。
-    debug: true,
+    id: 'G-9KPZ2TSQGQ'
   },
   /*
    ** @nuxtjs/gtm config
