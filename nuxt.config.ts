@@ -109,6 +109,7 @@ const config: NuxtConfig = {
     ['vue-scrollto/nuxt', { duration: 1000, offset: -72 }],
     'nuxt-webfontloader',
     '@nuxtjs/google-analytics',
+    '@nuxtjs/sitemap',
   ],
   /*
    ** vuetify module configuration
