@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/cache@v1
+      - uses: actions/cache@v2
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -52,7 +52,7 @@ jobs:
               } ] | sort_by(.metrics) | .[] | [.metrics, .score, .url] ) | @csv' \
           | csv2md | tee "${LH_SUMMARY_FILE}"
 
-      - uses: actions/github-script@0.9.0
+      - uses: actions/github-script@v3.1.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
