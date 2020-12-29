@@ -141,6 +141,25 @@ const config: NuxtConfig = {
     pageTracking: true,
     enabled: true,
   },
+  sitemap: {
+    path: '/sitemap.xml',
+    // host名を設定
+    hostname: 'https://dev-sagamihara-stopcovid19.netlify.app',
+    // 静的に設定した場合も、サイトマップを生成する設定
+    generate: true,
+    // 除外したいページがあれば追加 
+    // 例 /contact 等
+    exclude: [],
+    //　動的なルーティングがあれば下記のように追加
+    //　ここでは利用しないためコメントアウト
+    // routes() {      
+    //   const paths = []
+    //   for (let i = 1; i <= 5; i++) {
+    //     paths.push('page/' + i)
+    //   }
+    //   return paths
+    // }
+  },
   /*
    * nuxt-i18n による自動リダイレクトを停止したためコメントアウト
    * @todo 「Cookieがあるときのみ、その言語にリダイレクトする」を実装する場合は復活させる
