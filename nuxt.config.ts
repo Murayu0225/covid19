@@ -109,7 +109,6 @@ const config: NuxtConfig = {
     ['vue-scrollto/nuxt', { duration: 1000, offset: -72 }],
     'nuxt-webfontloader',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/sitemap',
   ],
   /*
    ** vuetify module configuration
@@ -140,21 +139,6 @@ const config: NuxtConfig = {
     id: process.env.GTM_CONTAINER_ID,
     pageTracking: true,
     enabled: true,
-  },
-  sitemap: {
-    path: '/sitemap.xml',
-    hostname: 'https://sagamihara-stopcovid19.netlify.app',
-    routes (callback) {
-      const api = 'https://sagamihara-stopcovid19.netlify.app/'
-      axios.get(api)
-        .then((response) => {
-          const posts = response.data
-          const routes = posts.map((post) => {
-            return post.url
-          })
-          callback(null, routes)
-        })
-        .catch(callback)
   },
   /*
    * nuxt-i18n による自動リダイレクトを停止したためコメントアウト
@@ -246,4 +230,4 @@ const config: NuxtConfig = {
   },
 }
 
-,export: default config
+export default config
