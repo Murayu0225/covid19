@@ -2,7 +2,7 @@
   <v-col cols="12" md="6" class="DataCard">
     <client-only>
       <data-view
-        :title="$t('モニタリング状況（集計期間：12月14日〜12月20日）')"
+        :title="$t('モニタリング状況（集計期間：12月21日〜12月27日）')"
         title-id="monitoring-items-overview"
         :date="monitoringItemsData.date"
       >
