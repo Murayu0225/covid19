@@ -8,35 +8,35 @@
                 "area": "相模原市",
                 "label": "緑区",
                 "ruby": "みどりく",
-                "count": 172
+                "count": 202
             },
             {
                 "code": 131031,
                 "area": "相模原市",
                 "label": "中央区",
                 "ruby": "ちゅうおうく",
-                "count": 281
+                "count": 318
             },
             {
                 "code": 131032,
                 "area": "相模原市",
                 "label": "南区",
                 "ruby": "みなみく",
-                "count": 399
+                "count": 436
             },
             {
                 "code": null,
                 "area": null,
                 "label": "市外",
                 "ruby": null,
-                "count": 125
+                "count": 135
             },
             {
                 "code": null,
                 "area": null,
                 "label": "小計",
                 "ruby": null,
-                "count": 977
+                "count": 1091
             }
         ]
     }
