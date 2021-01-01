@@ -15,7 +15,11 @@
             <app-link
               to="https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html"
             >
-              {{ $t('新型コロナウイルス感染症に関する相模原市発表資料（発生状況等）') }}
+              {{
+                $t(
+                  '新型コロナウイルス感染症に関する相模原市発表資料（発生状況等）'
+                )
+              }}
             </app-link>
           </div>
           <span>{{ $t('（注）') }}</span>
