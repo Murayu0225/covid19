@@ -64,6 +64,21 @@ export default {
   margin-bottom: 10px;
 }
 
+section {
+  margin: 0 0 20px;
+
+  /* h タグが連続するため DataView-Content の margin を少し打ち消す */
+  &:first-child {
+    margin-top: -10px;
+  }
+
+  h4 {
+    margin: 5px 0 10px;
+    font-weight: normal;
+    @include font-size(16);
+  }
+}
+
 .button {
   color: $green-1 !important;
   &:hover {
@@ -71,5 +86,10 @@ export default {
   }
 
   @include button-text('sm');
+}
+
+dfn {
+  font-style: normal;
+  font-weight: bold;
 }
 </style>
