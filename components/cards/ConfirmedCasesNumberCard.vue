@@ -18,12 +18,21 @@
             </li>
           </ul>
         </template>
+        <div>
+          <app-link
+            :class="$style.button"
+            to="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/monitoring.html"
+          >
+            {{ $t('最新のモニタリング項目の分析・総括コメントについて') }}
+          </app-link>
+        </div>
       </time-bar-chart>
     </client-only>
   </v-col>
 </template>
 
 <script>
+import AppLink from '@/components/AppLink.vue'
 import TimeBarChart from '@/components/TimeBarChart.vue'
 import Data from '@/data/data.json'
 import formatGraph from '@/utils/formatGraph'
@@ -31,6 +40,7 @@ import formatGraph from '@/utils/formatGraph'
 export default {
   components: {
     TimeBarChart,
+    AppLink,
   },
   data() {
     // 感染者数グラフ
@@ -52,5 +62,14 @@ export default {
 }
 .Description-ExternalLink {
   margin-bottom: 10px;
+}
+
+.button {
+  color: $green-1 !important;
+  &:hover {
+    color: $white !important;
+  }
+
+  @include button-text('sm');
 }
 </style>
