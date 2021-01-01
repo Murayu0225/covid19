@@ -11,6 +11,13 @@
         :by-date="true"
       >
         <template v-slot:additionalDescription>
+          <div class="Description-ExternalLink">
+            <app-link
+              to="https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html"
+            >
+              {{ $t('新型コロナウイルス感染症に関する相模原市発表資料（発生状況等）') }}
+            </app-link>
+          </div>
           <span>{{ $t('（注）') }}</span>
           <ul>
             <li>
@@ -18,14 +25,6 @@
             </li>
           </ul>
         </template>
-        <div>
-          <app-link
-            :class="$style.button"
-            to="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/monitoring.html"
-          >
-            {{ $t('最新のモニタリング項目の分析・総括コメントについて') }}
-          </app-link>
-        </div>
       </time-bar-chart>
     </client-only>
   </v-col>
@@ -62,34 +61,5 @@ export default {
 }
 .Description-ExternalLink {
   margin-bottom: 10px;
-}
-
-section {
-  margin: 0 0 20px;
-
-  /* h タグが連続するため DataView-Content の margin を少し打ち消す */
-  &:first-child {
-    margin-top: -10px;
-  }
-
-  h4 {
-    margin: 5px 0 10px;
-    font-weight: normal;
-    @include font-size(16);
-  }
-}
-
-.button {
-  color: $green-1 !important;
-  &:hover {
-    color: $white !important;
-  }
-
-  @include button-text('sm');
-}
-
-dfn {
-  font-style: normal;
-  font-weight: bold;
 }
 </style>
