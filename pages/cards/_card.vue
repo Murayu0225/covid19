@@ -48,7 +48,7 @@ export default {
     }
   },
   head() {
-    const url = 'https://sagamihara-stopcovid19.netlify.app/'
+    const url = 'https://sagamihara-stopcovid19.com/'
     const timestamp = new Date().getTime()
     const ogpImage =
       this.$i18n.locale === 'ja'

@@ -25,7 +25,7 @@ const config: NuxtConfig = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://sagamihara-stopcovid19.netlify.app/',
+        content: 'https://sagamihara-stopcovid19.com/',
       },
       {
         hid: 'twitter:card',

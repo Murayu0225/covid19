@@ -1,9 +1,7 @@
 <template>
   <div v-if="isDevelopmentMode" class="DevelopmentModeMark">
     開発中（development mode）
-    <app-link to="https://sagamihara-stopcovid19.netlify.app/">
-      公開サイトへ
-    </app-link>
+    <app-link to="https://sagamihara-stopcovid19.com/"> 公開サイトへ </app-link>
   </div>
 </template>
 
