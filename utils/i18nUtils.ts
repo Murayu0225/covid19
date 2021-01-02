@@ -10,9 +10,9 @@ export const getLinksLanguageAlternative = (
   const getFullPathWihLocale = (locale: string) => {
     const pathLocale = locale === 'ja' ? '' : `/${locale}`
     if (routeBaseName === 'index') {
-      return `https://sagamihara-stopcovid19.netlify.app/${pathLocale}`
+      return `https://sagamihara-stopcovid19.com/${pathLocale}`
     } else {
-      return `https://sagamihara-stopcovid19.netlify.app/${pathLocale}/${routeBaseName}`
+      return `https://sagamihara-stopcovid19.com/${pathLocale}/${routeBaseName}`
     }
   }
 
