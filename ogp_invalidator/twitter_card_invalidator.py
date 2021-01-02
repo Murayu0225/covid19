@@ -13,7 +13,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-o', '--out', action='store_true', help='output screenshots.')
 args = parser.parse_args()
 
-HOST = 'https://sagamihara-stopcovid19.netlify.app/'
+HOST = 'https://sagamihara-stopcovid19.com/'
 OUT_DIR = 'out'
 
 PATHS = (

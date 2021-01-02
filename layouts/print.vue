@@ -24,9 +24,7 @@
             <p class="PrintMeta-Text">
               {{ $t('※最新の情報はWebページをご覧ください') }}
             </p>
-            <p class="PrintMeta-Link">
-              https://sagamihara-stopcovid19.netlify.app/
-            </p>
+            <p class="PrintMeta-Link">https://sagamihara-stopcovid19.com/</p>
           </div>
         </div>
       </div>
@@ -72,7 +70,7 @@ export default Vue.extend({
       link: [
         {
           rel: 'canonical',
-          href: `https://sagamihara-stopcovid19.netlify.app/${this.$route.path}`,
+          href: `https://sagamihara-stopcovid19.com/${this.$route.path}`,
         },
       ],
     }
