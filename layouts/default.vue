@@ -150,7 +150,7 @@ export default Vue.extend({
         {
           hid: 'og:url',
           property: 'og:url',
-          content: `https://sagamihara-stopcovid19.com/`,
+          content: `https://sagamihara-stopcovid19.com/${this.$route.path}`,
         },
         ogLocale,
         {
