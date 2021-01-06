@@ -74,7 +74,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: `${url}/`,
+          content: `${url}${this.$route.path}/`,
         },
         {
           hid: 'og:title',
