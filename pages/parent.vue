@@ -20,7 +20,7 @@
     <static-card>
       <h3>
         <app-link
-          to="https://tokyodouga.jp/playlist/"
+          to="https://tokyodouga.jp/playlist/ohayoschool.html"
           :icon-size="24"
           >{{ $t('TOKYOおはようスクール') }}
         </app-link>
