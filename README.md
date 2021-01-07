@@ -7,6 +7,8 @@
 ### masterブランチステータス（Netlify）
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9910630e-2d39-45eb-a501-c93b9ba17836/deploy-status)](https://app.netlify.com/sites/sagamihara-stopcovid19/deploys)
 
+![相模原市　新型コロナウイルス対策サイト](https://sagamihara-stopcovid19.com)
+
 ## 貢献の仕方
 Issues にあるいろいろな修正にご協力いただけると嬉しいです。
 
