@@ -70,6 +70,7 @@ export default Vue.extend({
 
   padding: 10px;
   margin-bottom: 20px;
+  border-color: red;
 
   .MonitoringComment-heading {
     display: flex;
