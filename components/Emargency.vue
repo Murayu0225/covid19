@@ -31,8 +31,6 @@
             )
           }}
         </li>
-        <p>
-        </p>
       </ul>
       <v-icon color="#D9D9D9">{{ mdiChevronRight }}</v-icon>
       <app-link
