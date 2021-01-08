@@ -1,33 +1,32 @@
 {
     "newsItems": [
         {
+            "date": "2021\/01\/08",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/01\/0108_01.pdf",
+            "text": "緊急事態宣言に伴う本市の対応について（PDF492.8K）"
+        },
+
+        {
+            "date": "2021\/01\/07",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/mayor\/1022467.html",
+            "text": "新型コロナウイルス感染症に係る緊急事態宣言の発令に対する市長コメント（1月7日掲載）"
+        },
+        {
+            "date": "2021\/01\/07",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019215.html",
+            "text": "施設の再開等の情報について（１月７日更新）"
+        },
+
+        {
             "date": "2020\/12\/25",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019896.html",
             "text": "新型コロナウイルス感染症に関する各種相談窓口（12月25日更新）"
         },
 
         {
-            "date": "2020\/12\/23",
-            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/kurashi\/kyubyo\/1008444\/index.html",
-            "text": "年末年始に急病になったとき"
-        },
-
-        {
-            "date": "2020\/12\/21",
-            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019215.html",
-            "text": "施設の再開等の情報について（12月21日更新）"
-        },
-
-        {
-            "date": "2020\/12\/20",
+            "date": "2020\/12\/01",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/sangyo\/sangyo\/1021369\/index.html",
             "text": "サンキューさがみはら！最大25％戻ってくるキャンペーン"
-        },
-
-        {
-            "date": "2020\/12\/8",
-            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/seisaku\/1019908.html",
-            "text": "国、県の新型コロナウイルス感染症対策を踏まえた本市の対応について（12月8日更新）"
         }
     ]
 }

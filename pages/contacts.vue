@@ -79,7 +79,7 @@
             <td class="tel">
               <a
                 href="mailto:covid19_s@assistant-app.com?subject=お問い合わせ件名：&amp;body=お問い合わせ内容を記入してください："
-                >covid19_s@assistant-app.com</a
+                >contact@sagamihara-stopcovid19.com</a
               >
             </td>
           </tr>
