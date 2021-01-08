@@ -14,7 +14,7 @@ type DataKey =
   | '入院患者数'
   | '入院患者数（参考値）'
 
-type DataCommentKey = '総括コメント-感染状況' | '総括コメント-医療提供体制'
+type DataCommentKey = '緊急事態宣言' | '総括コメント-医療提供体制'
 
 type RawData = {
   新規陽性患者数: string
@@ -40,7 +40,7 @@ interface Comment {
 }
 
 type RawDataComment = {
-  '総括コメント-感染状況': Comment
+  '緊急事態宣言': Comment
   '総括コメント-医療提供体制': Comment
 }
 
@@ -140,11 +140,11 @@ export const formatMonitoringComment = (
   rawDataObj: RawDataComment
 ): MonitoringCommentItems => {
   return {
-    '総括コメント-感染状況': {
-      level: rawDataObj['総括コメント-感染状況'].level,
+    '緊急事態宣言': {
+      level: rawDataObj['緊急事態宣言'].level,
       display: {
-        '@ja': rawDataObj['総括コメント-感染状況'].display['@ja'],
-        '@en': rawDataObj['総括コメント-感染状況'].display['@en'],
+        '@ja': rawDataObj['緊急事態宣言'].display['@ja'],
+        '@en': rawDataObj['緊急事態宣言'].display['@en'],
       },
     },
     '総括コメント-医療提供体制': {
