@@ -38,7 +38,7 @@
       </ul>
       <v-icon color="#D9D9D9">{{ mdiChevronRight }}</v-icon>
       <app-link
-        to="https://www.city.sagamihara.kanagawa.jp/shisei/seisaku/1022474.html
+        to="https://www.city.sagamihara.kanagawa.jp/shisei/seisaku/1022474.html"
       >
         {{ $t('緊急事態宣言に伴う本市の対応について') }}
       </app-link>
