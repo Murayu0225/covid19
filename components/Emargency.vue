@@ -1,19 +1,25 @@
 <template>
-  <div class="Emargency">
-    <div class="Emargency-heading">
-      <h3 class="Emargency-title">
-        {{ $t('緊急事態宣言について') }}
+  <div class="MonitoringComment">
+    <div class="MonitoringComment-heading">
+      <h3 class="MonitoringComment-title">
+        {{ $t('緊急事態宣言の発令について') }}
       </h3>
     </div>
-    <div class="Emargency-description">
+    <div class="MonitoringComment-description">
       <p>
         {{
-          $t('現在、緊急事態宣言が発令中です。感染拡大防止にご協力ください。')
+          $t(
+            '現在、緊急事態宣言が発令されています。感染拡大防止にご協力ください。'
+          )
         }}
       </p>
       <ul>
         <li>
-          {{ $t('生活に必要な場合を除いて、徹底して外出を自粛してください。') }}
+          {{
+            $t(
+              '生活に必要な場合を除いて、徹底して外出を自粛してください。'
+            )
+          }}
         </li>
         <li>
           {{
@@ -30,31 +36,12 @@
           }}
         </li>
       </ul>
-      <p>
-        {{
-          $t(
-            '自覚なく感染を広めてしまう可能性があることを意識し、行動をお願いいたします。'
-          )
-        }}
-      </p>
       <v-icon color="#D9D9D9">{{ mdiChevronRight }}</v-icon>
-      <app-link to="https://www.city.sagamihara.kanagawa.jp/mayor/1022467.html">
-        {{
-          $t(
-            '新型コロナウイルス感染症に係る緊急事態宣言の発令に対する市長コメント（1月7日掲載）'
-          )
-        }}
+      <app-link
+        to="https://www.city.sagamihara.kanagawa.jp/shisei/seisaku/1022474.html
+      >
+        {{ $t('緊急事態宣言に伴う本市の対応について') }}
       </app-link>
-    </div>
-    <div class="Emargency-comments">
-      <v-row>
-        <v-col cols="12" sm="12" md="6" lg="6">
-          <h4>{{ $t('緊急事態宣言') }}</h4>
-          <monitoring-comment-frame
-            :comment="commentMonitoring('緊急事態宣言')"
-          />
-        </v-col>
-      </v-row>
     </div>
   </div>
 </template>
@@ -64,26 +51,13 @@ import { mdiChevronRight } from '@mdi/js'
 import Vue from 'vue'
 
 import AppLink from '@/components/AppLink.vue'
-import MonitoringCommentFrame from '@/components/MonitoringCommentFrame.vue'
-import monitoringItemsData from '@/data/monitoring_items.json'
-import {
-  formatMonitoringComment,
-  MonitoringComment,
-} from '@/utils/formatMonitoringItems'
-type CommentKey = {
-  [key: string]: MonitoringComment
-}
+
 export default Vue.extend({
   components: {
     AppLink,
-    MonitoringCommentFrame,
   },
   data() {
-    const monitoringComment: CommentKey = formatMonitoringComment(
-      monitoringItemsData.data
-    )
     return {
-      monitoringComment,
       mdiChevronRight,
     }
   },
@@ -91,16 +65,19 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-.Emargency {
+.MonitoringComment {
   @include card-container();
+
   padding: 10px;
   margin-bottom: 20px;
-  .Emargency-heading {
+
+  .MonitoringComment-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    .Emargency-title {
+
+    .MonitoringComment-title {
       display: flex;
       align-items: center;
       padding: 12px;
@@ -108,21 +85,26 @@ export default Vue.extend({
       @include card-h2();
     }
   }
-  .Emargency-description {
+
+  .MonitoringComment-description {
     padding: 12px;
+
     @include font-size(14);
     > a {
       text-decoration: none;
       @include text-link();
     }
   }
-  .Emargency-comments {
+
+  .MonitoringComment-comments {
     h4 {
       margin-bottom: 10px;
       color: $gray-3;
       font-weight: normal;
+
       @include font-size(14);
     }
+
     margin: 0 10px;
   }
 }
