@@ -8,40 +8,42 @@
     <div class="Emargency-description">
       <p>
         {{
-          $t(
-            '現在、緊急事態宣言が発令中です。感染拡大防止にご協力ください。'
-          )
+          $t('現在、緊急事態宣言が発令中です。感染拡大防止にご協力ください。')
         }}
       </p>
       <ul>
-          <li>
-            {{
-            $t('生活に必要な場合を除いて、徹底して外出を自粛してください。')
+        <li>
+          {{ $t('生活に必要な場合を除いて、徹底して外出を自粛してください。') }}
+        </li>
+        <li>
+          {{
+            $t(
+              '慌てて買いだめなどはせず、代表者が一名で買い物に行くようにしてください。'
+            )
           }}
-          </li>
-          <li>
-            {{
-            $t('慌てて買いだめなどはせず、代表者が一名で買い物に行くようにしてください。')
+        </li>
+        <li>
+          {{
+            $t(
+              '流水、石けんによるこまめな手洗い、マスクの着用、定期的な換気など、感染予防対策を徹底してください。'
+            )
           }}
-          </li>
-          <li>
-            {{
-            $t('流水、石けんによるこまめな手洗い、マスクの着用、定期的な換気など、感染予防対策を徹底してください。')
-          }}
-          </li>
+        </li>
       </ul>
       <p>
-          {{
-              $t(
-                  '自覚なく感染を広めてしまう可能性があることを意識し、行動をお願いいたします。'
-              )
-          }}
-      </p>          
+        {{
+          $t(
+            '自覚なく感染を広めてしまう可能性があることを意識し、行動をお願いいたします。'
+          )
+        }}
+      </p>
       <v-icon color="#D9D9D9">{{ mdiChevronRight }}</v-icon>
-      <app-link
-        to="https://www.city.sagamihara.kanagawa.jp/mayor/1022467.html"
-      >
-        {{ $t('新型コロナウイルス感染症に係る緊急事態宣言の発令に対する市長コメント（1月7日掲載）') }}
+      <app-link to="https://www.city.sagamihara.kanagawa.jp/mayor/1022467.html">
+        {{
+          $t(
+            '新型コロナウイルス感染症に係る緊急事態宣言の発令に対する市長コメント（1月7日掲載）'
+          )
+        }}
       </app-link>
     </div>
     <div class="Emargency-comments">
@@ -60,6 +62,7 @@
 <script lang="ts">
 import { mdiChevronRight } from '@mdi/js'
 import Vue from 'vue'
+
 import AppLink from '@/components/AppLink.vue'
 import MonitoringCommentFrame from '@/components/MonitoringCommentFrame.vue'
 import monitoringItemsData from '@/data/monitoring_items.json'
