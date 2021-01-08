@@ -40,8 +40,7 @@ interface Comment {
 }
 
 type RawDataComment = {
-  緊急事態宣言: Comment
-  '総括コメント-医療提供体制': Comment
+  '緊急事態宣言': Comment
 }
 
 // -----------------------------------------
@@ -140,18 +139,10 @@ export const formatMonitoringComment = (
   rawDataObj: RawDataComment
 ): MonitoringCommentItems => {
   return {
-    緊急事態宣言: {
-      level: rawDataObj['緊急事態宣言'].level,
+    '緊急事態宣言': {
       display: {
         '@ja': rawDataObj['緊急事態宣言'].display['@ja'],
         '@en': rawDataObj['緊急事態宣言'].display['@en'],
-      },
-    },
-    '総括コメント-医療提供体制': {
-      level: rawDataObj['総括コメント-医療提供体制'].level,
-      display: {
-        '@ja': rawDataObj['総括コメント-医療提供体制'].display['@ja'],
-        '@en': rawDataObj['総括コメント-医療提供体制'].display['@en'],
       },
     },
   }

@@ -87,13 +87,6 @@ export default Vue.extend({
       mdiChevronRight,
     }
   },
-  methods: {
-    commentMonitoring(item: string) {
-      return ['ja', 'ja-basic'].includes(this.$root.$i18n.locale)
-        ? this.monitoringComment[item].display['@ja']
-        : this.monitoringComment[item].display['@en']
-    },
-  },
 })
 </script>
 
