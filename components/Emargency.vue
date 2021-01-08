@@ -2,7 +2,7 @@
   <div class="MonitoringComment">
     <div class="MonitoringComment-heading">
       <h3 class="MonitoringComment-title">
-        {{ $t('緊急事態宣言の発令について') }}
+        {{ $t('緊急事態宣言発令中！') }}
       </h3>
     </div>
     <div class="MonitoringComment-description">
