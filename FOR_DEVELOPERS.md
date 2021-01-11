@@ -125,9 +125,9 @@ $ vagrant up
 
 | ブランチ | HTML類がbuildされ、更新されるブランチ | 更新されるWebサイト |
 | ---- | ---- | ---- |
-|`master`|`production`|本番サイト https://stopcovid19.metro.tokyo.lg.jp/|
-|`staging`|`gh-pages`|ステージングサイト https://stg-covid19-tokyo.netlify.app/|
-|`development`|`dev-pages`|開発用サイト https://dev-covid19-tokyo.netlify.app/|
+|`master`|`production`|本番サイト https://sagamihara-stopcovid19.com/|
+|`staging`|`gh-pages`|ステージングサイト https://staging-sagamihra-stopcovid19.com/|
+|`development`|`dev-pages`|開発用サイト https://dev-sagamihara-stopcovid19.netlify.app/|
 
 ---
 
@@ -145,14 +145,6 @@ Pull Request を送る際のブランチは、以下のネーミングルール�
 
 | 目的 | ブランチ | 確認URL | Pull requestsを出せる人 | 備考 |
 | ---- | ---- | ---- | ---- | ---- |
-| 開発 | development | https://dev-covid19-tokyo.netlify.app/ | 全開発者 | base branch。基本は、この`development`ブランチに Pull Requestを送ってください。 |
-| ステージング | staging | https://stg-covid19-tokyo.netlify.app/ | 管理者のみ | 本番前の最終確認用。管理者以外の Pull Request は禁止です。 |
-| 本番 | master | https://stopcovid19.metro.tokyo.lg.jp/ | 管理者のみ | 管理者以外の Pull Request は禁止です。 |
-
-### 5-2. システムで利用しているブランチ
-
-| 目的 | ブランチ | 確認URL | 備考 |
-| ---- | -------- | ---- | ---- |
-| 本番サイトHTML | production | https://stopcovid19.metro.tokyo.lg.jp/ | 静的ビルドされたHTMLが置いてある場所 |
-| ステージングサイト HTML | gh-pages | https://stg-covid19-tokyo.netlify.app/ | 静的ビルドされたHTMLが置いてある場所 |
-| OGP作業用 | deploy/new_ogp | なし | OGPの更新用 |
+| 開発 | development | https://dev-sagamihara-stopcovid19.netlify.app/ | 全開発者 | base branch。基本は、この`development`ブランチに Pull Requestを送ってください。 |
+| ステージング | staging | https://staging-sagamihara-stopcovid19.com/ | 管理者のみ | 本番前の最終確認用。管理者以外の Pull Request は禁止です。 |
+| 本番 | master | https://sagamihara-stopcovid19.com/ | 管理者のみ | 管理者以外の Pull Request は禁止です。 |
