@@ -49,13 +49,13 @@ export default {
       municipalitiesTable.headers = [
         { text: this.$t('地域'), value: 'area' },
         { text: this.$t('ふりがな'), value: 'ruby' },
-        { text: this.$t('区市町村'), value: 'label' },
+        { text: this.$t('区'), value: 'label' },
         { text: this.$t('陽性者数'), value: 'count', align: 'end' },
       ]
     } else {
       municipalitiesTable.headers = [
         { text: this.$t('地域'), value: 'area' },
-        { text: this.$t('区市町村'), value: 'label' },
+        { text: this.$t('区'), value: 'label' },
         { text: this.$t('陽性者数'), value: 'count', align: 'end' },
       ]
     }
