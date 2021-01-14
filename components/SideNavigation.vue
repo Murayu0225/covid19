@@ -143,7 +143,7 @@ export default Vue.extend({
           iconPath: mdiAccountMultiple,
           title: this.$t('市民の皆様へ'),
           link:
-            'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/index.html',
+            'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1020293.html',
         },
         {
           iconPath: mdiDomain,
@@ -163,7 +163,7 @@ export default Vue.extend({
         {
           title: this.$t('市長からのメッセージ'),
           link:
-            'https://www.city.sagamihara.kanagawa.jp/channel/1012225/1019894/1021411.html',
+            'https://www.city.sagamihara.kanagawa.jp/channel/1012225/1019894/index.html',
         },
         {
           title: this.$t('当サイトについて'),
