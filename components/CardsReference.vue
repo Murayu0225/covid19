@@ -11,6 +11,9 @@ const ConfirmedCasesDetailsCard = () =>
   import('@/components/cards/ConfirmedCasesDetailsCard.vue')
 const ConfirmedCasesByMunicipalitiesCard = () =>
   import('@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue')
+// 下記の項目は、次回のアップデート時に更新
+// const PositiveNumberByDevelopedDateCard = ()=>
+// ここまで
 /* eslint-enable simple-import-sort/sort */
 
 export default Vue.extend({
