@@ -7,6 +7,8 @@
 ### masterブランチステータス（Netlify）
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9910630e-2d39-45eb-a501-c93b9ba17836/deploy-status)](https://app.netlify.com/sites/sagamihara-stopcovid19/deploys)
 
+データ更新を手伝っていただける方大募集しています！（手伝いたい方は、このレポジトリをフォークしてデータ入力したものをブランチ名**add/YYYY-MM-DD**の形でPull Requestを行ってください）
+
 [相模原市　新型コロナウイルス対策サイト](https://sagamihara-stopcovid19.com)
 
 ## 貢献の仕方
