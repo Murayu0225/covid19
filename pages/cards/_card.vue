@@ -10,8 +10,9 @@ import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsC
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard'
 import MonitoringItemsOverviewCard from '@/components/cards/MonitoringItemsOverviewCard.vue'
 import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
-import PositiveNumberByDevelopedDateCard from '@/components/cards/PositiveNumberByDevelopedDateCard.vue'
-import PositiveNumberByDiagnosedDateCard from '@/components/cards/PositiveNumberByDiagnosedDateCard.vue'
+// 下記のデータは、現在作成中のもの
+// import PositiveNumberByDevelopedDateCard from '@/components/cards/PositiveNumberByDevelopedDateCard.vue'
+// import PositiveNumberByDiagnosedDateCard from '@/components/cards/PositiveNumberByDiagnosedDateCard.vue'
 /* eslint-enable simple-import-sort/sort */
 
 import { getLinksLanguageAlternative } from '@/utils/i18nUtils'
@@ -22,8 +23,9 @@ export default {
     ConfirmedCasesNumberCard,
     MonitoringItemsOverviewCard,
     ConfirmedCasesByMunicipalitiesCard,
-    PositiveNumberByDevelopedDateCard,
-    PositiveNumberByDiagnosedDateCard,
+    // 更新時にコメントアウトを解除
+    // PositiveNumberByDevelopedDateCard,
+    // PositiveNumberByDiagnosedDateCard,
   },
   data() {
     let title, updatedAt, cardComponent
@@ -43,12 +45,13 @@ export default {
         break
       case 'number-of-confirmed-cases-by-municipalities':
         cardComponent = 'confirmed-cases-by-municipalities-card'
-        break
-      case 'positive-number-by-developed-date':
-        cardComponent = 'positive-number-by-developed-date-card'
-        break
-      case 'positive-number-by-diagnosed-date':
-        cardComponent = 'positive-number-by-diagnosed-date-card'
+        // 更新時にコメントアウトを解除
+        // break
+      // case 'positive-number-by-developed-date':
+        // cardComponent = 'positive-number-by-developed-date-card'
+        // break
+      // case 'positive-number-by-diagnosed-date':
+        // cardComponent = 'positive-number-by-diagnosed-date-card'
     }
 
     return {

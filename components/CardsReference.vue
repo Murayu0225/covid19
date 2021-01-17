@@ -11,10 +11,11 @@ const ConfirmedCasesDetailsCard = () =>
   import('@/components/cards/ConfirmedCasesDetailsCard.vue')
 const ConfirmedCasesByMunicipalitiesCard = () =>
   import('@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue')
-const PositiveNumberByDevelopedDateCard = () =>
-  import('@/components/cards/PositiveNumberByDevelopedDateCard.vue')
-const PositiveNumberByDiagnosedDateCard = () =>
-  import('@/components/cards/PositiveNumberByDiagnosedDateCard.vue')
+// 更新時にコメントアウトを削除
+// const PositiveNumberByDevelopedDateCard = () =>
+  // import('@/components/cards/PositiveNumberByDevelopedDateCard.vue')
+// const PositiveNumberByDiagnosedDateCard = () =>
+  // import('@/components/cards/PositiveNumberByDiagnosedDateCard.vue')
 /* eslint-enable simple-import-sort/sort */
 
 export default Vue.extend({
@@ -22,7 +23,7 @@ export default Vue.extend({
     return {
       rows: [
         [ConfirmedCasesDetailsCard, ConfirmedCasesByMunicipalitiesCard],
-        [PositiveNumberByDevelopedDateCard, PositiveNumberByDiagnosedDateCard],
+        // [PositiveNumberByDevelopedDateCard, PositiveNumberByDiagnosedDateCard],
       ],
     }
   },
