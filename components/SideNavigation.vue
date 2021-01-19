@@ -85,7 +85,7 @@
         </i18n>
         <br />
         <small class="SideNavigation-Copyright">
-          &copy; 2020 Yu Muramatsu
+          &copy; 2020 sagamihara-stopcovid19.com
         </small>
       </footer>
     </div>
