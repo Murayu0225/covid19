@@ -77,8 +77,7 @@
               {{ $t('本サイト製作者直通メールアドレス（個人）') }}
             </td>
             <td class="tel">
-              <a
-               href="mailto:contact@sagamihara-stopcovid19.com"
+              <a href="mailto:contact@sagamihara-stopcovid19.com"
                 >contact@sagamihara-stopcovid19.com</a
               ><br />
               <p class="caution">
