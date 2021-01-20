@@ -171,7 +171,7 @@ export default Vue.extend({
         },
         {
           title: this.$t('支援者の方々'),
-          link: this.localPath('/contributor'),
+          link: this.localePath('/contributor'),
         },
         {
           title: this.$t('お問い合わせ先一覧'),
