@@ -78,7 +78,7 @@
             </td>
             <td class="tel">
               <a
-                href="mailto:covid19_s@assistant-app.com?subject=お問い合わせ件名：&amp;body=お問い合わせ内容を記入してください："
+                href="mailto:contact@sagamihara-stopcovid19.com?subject=お問い合わせ件名：&amp;body=お問い合わせ内容を記入してください："
                 >contact@sagamihara-stopcovid19.com</a
               >
             </td>
