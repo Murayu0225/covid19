@@ -11,16 +11,16 @@
       }}<br />
       <ul>
           <li>
-              {{ $t('○○　○○ 様')}}
+              {{ $t('○○　○○ 様') }}
           </li>
           <li>
-              {{ $t('×× 様')}}
+              {{ $t('×× 様') }}
           </li>
           <li>
-              {{ $t('△△ 様')}}
+              {{ $t('△△ 様') }}
           </li>
           <li>
-              {{ $t('○○　○○ 様')}}
+              {{ $t('○○　○○ 様') }}
           </li>
       <br />
       {{ $t('上記の方々に感謝です！') }}
@@ -71,8 +71,8 @@ import StaticCard from '@/components/StaticCard.vue'
 export default Vue.extend({
   components: {
     PageHeader,
-    StaticCard,
     AppLink,
+    StaticCard,
   },
   head(): MetaInfo {
     return {
