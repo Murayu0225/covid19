@@ -58,13 +58,13 @@
       <footer class="SideNavigation-Footer">
         <div class="SideNavigation-Social">
           <app-link
-            to="https://github.com/Murayu0225/covid19"
+            to="https://twitter.com/sagami_covid19"
             :show-icon="false"
             class="SideNavigation-SocialLink"
           >
             <picture>
-              <source srcset="/github.webp" type="image/webp" />
-              <img src="/github.png" width="130" height="130" alt="GitHub" />
+              <source srcset="/twitter.webp" type="image/webp" />
+              <img src="/twitter.png" width="130" height="130" alt="Twitter" />
             </picture>
           </app-link>
         </div>
