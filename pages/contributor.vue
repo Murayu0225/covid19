@@ -67,14 +67,12 @@ import { MetaInfo } from 'vue-meta'
 import AppLink from '@/components/AppLink.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import StaticCard from '@/components/StaticCard.vue'
-import StaticCard from '@/components/StaticCard.vue'
 
 export default Vue.extend({
   components: {
     PageHeader,
     StaticCard,
-    AppLin,
-    StaticCardk,
+    AppLink,
   },
   head(): MetaInfo {
     return {
