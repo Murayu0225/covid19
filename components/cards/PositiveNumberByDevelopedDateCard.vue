@@ -26,6 +26,13 @@
                 )
               }}
             </li>
+            <li>
+              {{
+                $t(
+                  'このデータはテスト段階のものであり、予告なしに削除される場合もある'
+                )
+              }}
+            </li>
           </ul>
         </template>
         <template v-slot:additionalInfoPanel>

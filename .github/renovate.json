@@ -4,7 +4,7 @@
     "labels": ["renovate"],
     "lockFileMaintenance": {
         "enabled": true,
-        "schedule": ["before 5pm on wednesday"]
+        "schedule": ["before 5pm"]
     },
     "patch": {
         "automerge": true

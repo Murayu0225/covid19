@@ -78,7 +78,7 @@
             </td>
             <td class="tel">
               <a
-                href="mailto:contact@sagamihara-stopcovid19.com"
+               href="mailto:contact@sagamihara-stopcovid19.com"
                 >contact@sagamihara-stopcovid19.com</a
               ><br />
               <p class="caution">
