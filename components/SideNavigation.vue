@@ -67,6 +67,16 @@
               <img src="/twitter.png" width="130" height="130" alt="Twitter" />
             </picture>
           </app-link>
+          <app-link
+            to="https://github.com/Murayu0225/covid19"
+            :show-icon="false"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/github.webp" type="image/webp" />
+              <img src="/github.png" width="130" height="130" alt="GitHub" />
+            </picture>
+          </app-link>
         </div>
         <i18n
           tag="small"
