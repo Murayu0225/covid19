@@ -1,4 +1,4 @@
-# 相模原市 新型コロナウイルス感染症対策サイト
+# 相模原市 新型コロナウイルス感染症対策サイト (非公式)
 ![Auto-i18n Generator](https://github.com/Murayu0225/covid19/workflows/Auto-i18n%20Generator/badge.svg)
 ### developmentブランチステータス（Netlify）
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4261c080-decb-4f4a-ac12-7dbbba702b26/deploy-status)](https://app.netlify.com/sites/dev-sagamihara-stopcovid19/deploys)
@@ -9,7 +9,7 @@
 
 データ更新を手伝っていただける方大募集しています！（手伝いたい方は、このレポジトリをフォークしてデータ入力したものをブランチ名**add/YYYY-MM-DD**の形でPull Requestを行ってください）
 
-[相模原市　新型コロナウイルス対策サイト](https://sagamihara-stopcovid19.com)
+[相模原市　新型コロナウイルス対策サイト (非公式)](https://sagamihara-stopcovid19.com)
 
 現在、新規データの作成中です。
 

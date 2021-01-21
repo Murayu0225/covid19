@@ -19,7 +19,7 @@
           />
           <div class="SideNavigation-HeaderText">
             {{ $t('menu/新型コロナウイルス感染症') }}<br />{{
-              $t('menu/対策サイト')
+              $t('menu/対策サイト (非公式)')
             }}
           </div>
         </app-link>
@@ -85,7 +85,7 @@
         </i18n>
         <br />
         <small class="SideNavigation-Copyright">
-          &copy; 2020 sagamihara-stopcovid19.com
+          &copy; 2020 Yu Muramatsu
         </small>
       </footer>
     </div>
