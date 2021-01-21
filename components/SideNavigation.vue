@@ -58,6 +58,16 @@
       <footer class="SideNavigation-Footer">
         <div class="SideNavigation-Social">
           <app-link
+            to="https://line.me/R/ti/p/%40360lkhth"
+            :show-icon="false"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/line.webp" type="image/webp" />
+              <img src="/line.png" width="130" height="130" alt="LINE" />
+            </picture>
+          </app-link>
+          <app-link
             to="https://twitter.com/sagami_covid19"
             :show-icon="false"
             class="SideNavigation-SocialLink"
@@ -75,6 +85,16 @@
             <picture>
               <source srcset="/github.webp" type="image/webp" />
               <img src="/github.png" width="130" height="130" alt="GitHub" />
+            </picture>
+          </app-link>
+          <app-link
+            to="https://www.youtube.com/user/SagamiharaCityOffice/videos"
+            :show-icon="false"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/youtube.webp" type="image/webp" />
+              <img src="/youtube.png" width="130" height="130" alt="YouTube" />
             </picture>
           </app-link>
         </div>

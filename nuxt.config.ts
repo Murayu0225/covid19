@@ -35,12 +35,12 @@ const config: NuxtConfig = {
       {
         hid: 'twitter:site',
         name: 'twitter:site',
-        content: '@yuuuuu_mmmmu',
+        content: '@sagami_covid19',
       },
       {
         hid: 'twitter:creator',
         name: 'twitter:creator',
-        content: '@yuuuuu_mmmmu',
+        content: '@sagami_covid19',
       },
       {
         hid: 'fb:app_id',
