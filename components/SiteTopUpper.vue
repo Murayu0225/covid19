@@ -15,8 +15,7 @@
         <span>{{ $t('注釈') }}</span>
       </div>
     </div>
-    <whats-new class="mb-4" :items="newsItems" :is-emergency="false" />
-    <emargency />
+    <whats-new class="mb-4" :items="newsItems" :is-emergency="true" />
     <monitoring-comment-card />
     <lazy-tokyo-alert-card v-if="TokyoAlert.alert" />
     <lazy-static-info
