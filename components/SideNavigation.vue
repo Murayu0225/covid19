@@ -200,14 +200,15 @@ export default Vue.extend({
           title: this.$t('市長からのメッセージ'),
           link:
             'https://www.city.sagamihara.kanagawa.jp/channel/1012225/1019894/index.html',
-        },
-        {
-          title: this.$t('当サイトについて'),
-          link: this.localePath('/about'),
+          divider: true,
         },
         {
           title: this.$t('お問い合わせ先一覧'),
           link: this.localePath('/contacts'),
+        },
+        {
+          title: this.$t('当サイトについて'),
+          link: this.localePath('/about'),
         },
         {
           title: this.$t('相模原市公式ホームページ'),
