@@ -170,6 +170,12 @@ export default Vue.extend({
           link: this.localePath('/'),
         },
         {
+          svg: 'CovidIcon',
+          title: this.$t('新型コロナウイルス感染症が心配なときに.nav'),
+          link:
+            'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019896.html',
+        },
+        {
           iconPath: mdiAccountMultiple,
           title: this.$t('市民の皆様へ'),
           link:
