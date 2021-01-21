@@ -1,6 +1,8 @@
 <template>
   <span class="link-to-information-about-emergency-measure">
-    <app-link to="https://www.city.sagamihara.kanagawa.jp/shisei/seisaku/1022474.html">
+    <app-link
+      to="https://www.city.sagamihara.kanagawa.jp/shisei/seisaku/1022474.html"
+    >
       <v-icon
         size="2rem"
         class="link-to-information-about-emergency-measure-icon"

@@ -33,7 +33,6 @@ import { mdiChartTimelineVariant } from '@mdi/js'
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 
-import Emargency from '@/components/Emargency.vue'
 import MonitoringCommentCard from '@/components/MonitoringCommentCard.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
@@ -47,7 +46,6 @@ export default Vue.extend({
     PageHeader,
     WhatsNew,
     MonitoringCommentCard,
-    Emargency,
   },
   data() {
     const { lastUpdate } = Data
