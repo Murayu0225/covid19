@@ -45,13 +45,12 @@ export default {
         break
       case 'number-of-confirmed-cases-by-municipalities':
         cardComponent = 'confirmed-cases-by-municipalities-card'
-      // 下記のデータを2021年2月1日のアップデートで実装
         break
       case 'positive-number-by-developed-date':
         cardComponent = 'positive-number-by-developed-date-card'
         break
       case 'positive-number-by-diagnosed-date':
-         cardComponent = 'positive-number-by-diagnosed-date-card'
+        cardComponent = 'positive-number-by-diagnosed-date-card'
     }
 
     return {
