@@ -2,12 +2,17 @@
   <v-col cols="12" md="6" class="DataCard">
     <client-only>
       <data-view
-        :title="$t('モニタリング状況（集計期間：12月28日〜1月3日）')"
+        :title="$t('モニタリング状況（集計期間：1月4日〜1月10日）')"
         title-id="monitoring-items-overview"
         :date="monitoringItemsData.date"
       >
         <template v-slot:additionalDescription>
           <span>{{ $t('（注）') }}</span>
+          <ul>
+            <li>
+              {{ $t('このデータの更新は、毎週土曜日に行う') }}
+            </li>
+          </ul>
           <ul>
             <li>
               {{ $t('[ ] 内の数値は、前週の数値である') }}

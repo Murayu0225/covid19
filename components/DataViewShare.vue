@@ -193,7 +193,7 @@ export default Vue.extend({
       const url = `https://twitter.com/intent/tweet?text=${
         this.title
       } / ${this.$t('相模原市')}${this.$t('新型コロナウイルス感染症')}${this.$t(
-        '対策サイト'
+        '対策サイト (非公式)'
       )}&url=${this.permalink(true)}&hashtags=StopCovid19JP`
       window.open(url)
     },

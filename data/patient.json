@@ -1,35 +1,35 @@
 {
-    "date": "2020\/01\/11 09:30",
+    "date": "2020\/01\/18 09:30",
     "datasets": {
-        "date": "2020\/01\/11",
+        "date": "2020\/01\/18",
         "data": [
             {
                 "code": 131030,
                 "area": "相模原市",
                 "label": "緑区",
                 "ruby": "みどりく",
-                "count": 265
+                "count": 322
             },
             {
                 "code": 131031,
                 "area": "相模原市",
                 "label": "中央区",
                 "ruby": "ちゅうおうく",
-                "count": 458
+                "count": 593
             },
             {
                 "code": 131032,
                 "area": "相模原市",
                 "label": "南区",
                 "ruby": "みなみく",
-                "count": 654
+                "count": 811
             },
             {
                 "code": null,
                 "area": null,
                 "label": "市外",
                 "ruby": null,
-                "count": 190
+                "count": 222
             },
             {
                 "code": null,
