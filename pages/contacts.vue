@@ -77,10 +77,16 @@
               {{ $t('本サイト製作者直通メールアドレス（個人）') }}
             </td>
             <td class="tel">
-              <a
-                href="mailto:covid19_s@assistant-app.com?subject=お問い合わせ件名：&amp;body=お問い合わせ内容を記入してください："
+              <a href="mailto:contact@sagamihara-stopcovid19.com"
                 >contact@sagamihara-stopcovid19.com</a
-              >
+              ><br />
+              <p class="caution">
+                {{
+                  $t(
+                    `お問い合わせの際は、氏名と共にお問い合わせ内容を記入していただきますようお願いいたします。`
+                  )
+                }}
+              </p>
             </td>
           </tr>
         </tbody>

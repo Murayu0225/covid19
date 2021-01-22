@@ -18,8 +18,8 @@
             :alt="$t('相模原市')"
           />
           <div class="SideNavigation-HeaderText">
-            {{ $t('menu/新型コロナウイルス感染症') }}<br />{{
-              $t('menu/対策サイト')
+            {{ $t('新型コロナウイルス感染症') }}<br />{{
+              $t('対策サイト (非公式)')
             }}
           </div>
         </app-link>
@@ -58,6 +58,26 @@
       <footer class="SideNavigation-Footer">
         <div class="SideNavigation-Social">
           <app-link
+            to="https://line.me/R/ti/p/%40360lkhth"
+            :show-icon="false"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/line.webp" type="image/webp" />
+              <img src="/line.png" width="130" height="130" alt="LINE" />
+            </picture>
+          </app-link>
+          <app-link
+            to="https://twitter.com/sagami_covid19"
+            :show-icon="false"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/twitter.webp" type="image/webp" />
+              <img src="/twitter.png" width="130" height="130" alt="Twitter" />
+            </picture>
+          </app-link>
+          <app-link
             to="https://github.com/Murayu0225/covid19"
             :show-icon="false"
             class="SideNavigation-SocialLink"
@@ -65,6 +85,16 @@
             <picture>
               <source srcset="/github.webp" type="image/webp" />
               <img src="/github.png" width="130" height="130" alt="GitHub" />
+            </picture>
+          </app-link>
+          <app-link
+            to="https://www.youtube.com/user/SagamiharaCityOffice/videos"
+            :show-icon="false"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/youtube.webp" type="image/webp" />
+              <img src="/youtube.png" width="130" height="130" alt="YouTube" />
             </picture>
           </app-link>
         </div>
@@ -140,10 +170,16 @@ export default Vue.extend({
           link: this.localePath('/'),
         },
         {
+          svg: 'CovidIcon',
+          title: this.$t('新型コロナウイルス感染症が心配なときに.nav'),
+          link:
+            'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019896.html',
+        },
+        {
           iconPath: mdiAccountMultiple,
           title: this.$t('市民の皆様へ'),
           link:
-            'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/index.html',
+            'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1020293.html',
         },
         {
           iconPath: mdiDomain,
@@ -163,15 +199,16 @@ export default Vue.extend({
         {
           title: this.$t('市長からのメッセージ'),
           link:
-            'https://www.city.sagamihara.kanagawa.jp/channel/1012225/1019894/1021411.html',
-        },
-        {
-          title: this.$t('当サイトについて'),
-          link: this.localePath('/about'),
+            'https://www.city.sagamihara.kanagawa.jp/channel/1012225/1019894/index.html',
+          divider: true,
         },
         {
           title: this.$t('お問い合わせ先一覧'),
           link: this.localePath('/contacts'),
+        },
+        {
+          title: this.$t('当サイトについて'),
+          link: this.localePath('/about'),
         },
         {
           title: this.$t('相模原市公式ホームページ'),

@@ -35,12 +35,12 @@ const config: NuxtConfig = {
       {
         hid: 'twitter:site',
         name: 'twitter:site',
-        content: '@yuuuuu_mmmmu',
+        content: '@sagami_covid19',
       },
       {
         hid: 'twitter:creator',
         name: 'twitter:creator',
-        content: '@yuuuuu_mmmmu',
+        content: '@sagami_covid19',
       },
       {
         hid: 'fb:app_id',
@@ -179,7 +179,7 @@ const config: NuxtConfig = {
     whitelistPatterns: [/(col|row)/],
   },
   manifest: {
-    name: '相模原市 新型コロナウイルス感染症対策サイト',
+    name: '相模原市 新型コロナウイルス感染症対策サイト (非公式)',
     theme_color: '#085c6c',
     background_color: '#ffffff',
     display: 'standalone',
