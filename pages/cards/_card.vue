@@ -21,6 +21,7 @@ export default {
   components: {
     ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
+    MonitoringConfirmedCasesNumberCard,
     MonitoringItemsOverviewCard,
     ConfirmedCasesByMunicipalitiesCard,
     // 下記のデータを2021年2月1日のアップデートで実装
@@ -38,6 +39,9 @@ export default {
         break
       case 'number-of-confirmed-cases':
         cardComponent = 'confirmed-cases-number-card'
+        break
+      case 'number-of-confirmed-cases-by-municipalities':
+        cardComponent = 'confirmed-cases-by-municipalities-card'
         break
       // モニタリング状況
       case 'monitoring-items-overview':
