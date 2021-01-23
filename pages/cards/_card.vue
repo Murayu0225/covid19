@@ -7,7 +7,8 @@
 // ---- 項目一覧
 // 検査陽性者の状況
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
-import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard'
+import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
+import MonitoringConfirmedCasesNumberCard from'@/components/cards/MonitoringConfirmedCasesNumberCard.vue'
 import MonitoringItemsOverviewCard from '@/components/cards/MonitoringItemsOverviewCard.vue'
 import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
 // 下記のデータを2021年2月1日のアップデートで実装
