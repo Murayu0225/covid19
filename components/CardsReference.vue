@@ -12,8 +12,6 @@ const ConfirmedCasesDetailsCard = () =>
 const ConfirmedCasesByMunicipalitiesCard = () =>
   import('@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue')
 // 下記のデータを2021年2月1日のアップデートで実装
-const PositiveNumberByDevelopedDateCard = () =>
-  import('@/components/cards/PositiveNumberByDevelopedDateCard.vue')
 const PositiveNumberByDiagnosedDateCard = () =>
   import('@/components/cards/PositiveNumberByDiagnosedDateCard.vue')
 /* eslint-enable simple-import-sort/sort */
@@ -23,7 +21,7 @@ export default Vue.extend({
     return {
       rows: [
         [ConfirmedCasesDetailsCard, ConfirmedCasesByMunicipalitiesCard],
-        [PositiveNumberByDevelopedDateCard, PositiveNumberByDiagnosedDateCard],
+        [PositiveNumberByDiagnosedDateCard],
       ],
     }
   },

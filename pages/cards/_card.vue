@@ -12,7 +12,6 @@ import MonitoringConfirmedCasesNumberCard from '@/components/cards/MonitoringCon
 import MonitoringItemsOverviewCard from '@/components/cards/MonitoringItemsOverviewCard.vue'
 import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
 // 下記のデータを2021年2月1日のアップデートで実装
-import PositiveNumberByDevelopedDateCard from '@/components/cards/PositiveNumberByDevelopedDateCard.vue'
 import PositiveNumberByDiagnosedDateCard from '@/components/cards/PositiveNumberByDiagnosedDateCard.vue'
 /* eslint-enable simple-import-sort/sort */
 
@@ -26,7 +25,7 @@ export default {
     MonitoringItemsOverviewCard,
     ConfirmedCasesByMunicipalitiesCard,
     // 下記のデータを2021年2月1日のアップデートで実装
-    PositiveNumberByDevelopedDateCard,
+    // PositiveNumberByDevelopedDateCard,
     PositiveNumberByDiagnosedDateCard,
   },
   data() {
@@ -50,9 +49,6 @@ export default {
         break
       case 'number-of-confirmed-cases-by-municipalities':
         cardComponent = 'confirmed-cases-by-municipalities-card'
-        break
-      case 'positive-number-by-developed-date':
-        cardComponent = 'positive-number-by-developed-date-card'
         break
       case 'positive-number-by-diagnosed-date':
         cardComponent = 'positive-number-by-diagnosed-date-card'
