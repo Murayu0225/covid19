@@ -67,6 +67,24 @@
             </span>
           </div>
         </li>
+        <li :class="[$style.box]">
+          <div :class="$style.content">
+            <span>{{ $t('市内在住') }}</span>
+            <span>
+              <strong>{{ 市内在住.toLocaleString() }}</strong>
+              <span :class="$style.unit">{{ $t('人') }}</span>
+            </span>
+          </div>
+        </li>
+        <li :class="[$style.box]">
+          <div :class="$style.content">
+            <span>{{ $t('市外在住') }}</span>
+            <span>
+              <strong>{{ 市外在住.toLocaleString() }}</strong>
+              <span :class="$style.unit">{{ $t('人') }}</span>
+            </span>
+          </div>
+        </li>
       </ul>
     </li>
   </ul>
@@ -103,6 +121,14 @@ export default Vue.extend({
       required: true,
     },
     回復: {
+      type: Number,
+      required: true,
+    },
+    市内在住: {
+      type: Number,
+      required: true,
+    },
+    市外在住: {
       type: Number,
       required: true,
     },

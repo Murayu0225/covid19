@@ -1,23 +1,22 @@
 {
     "newsItems": [
         {
-            "date": "2021\/01\/21",
-            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/sangyo\/sangyo\/1021369\/index.html",
-            "text": "サンキューさがみはら！最大25％戻ってくるキャンペーン実施中"
-        },
-      
-        {
-            "date": "2021\/01\/20",
+            "date": "2021\/01\/22",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019215.html",
             "text": "施設等の休止について"
         },
       
         {
-            "date":"2021\/01\/19",
+            "date":"2021\/01\/22",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019175.html",
             "text": "イベント中止等のお知らせ"
         },
 
+        {
+            "date": "2021\/01\/21",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/sangyo\/sangyo\/1021369\/index.html",
+            "text": "サンキューさがみはら！最大25％戻ってくるキャンペーン実施中"
+        },
 
         {
             "date": "2021\/01\/08",

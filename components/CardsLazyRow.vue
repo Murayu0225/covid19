@@ -7,7 +7,7 @@
       v-scroll="onScroll"
       :value="actives[i]"
       :options="{ threshold: 0 }"
-      min-height="600"
+      min-height="500"
       min-width="50%"
     >
       <lazy-card-row v-if="actives[i]">
