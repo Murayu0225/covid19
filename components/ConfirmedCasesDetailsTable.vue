@@ -78,7 +78,9 @@
           <ul :class="$style.group">
             <li :class="[$style.box]">
               <div :class="$style.content">
-                <span>{{ $t('市外在住') }}</span>
+                <!-- eslint-disable vue/no-v-html-->
+                <span v-html="$t('市外在住')" />
+                <!-- eslint-enable vue/no-v-html-->
                 <span>
                   <strong>{{ 市外在住.toLocaleString() }}</strong>
                   <span :class="$style.unit">{{ $t('人') }}</span>
