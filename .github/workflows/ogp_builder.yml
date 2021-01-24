@@ -3,7 +3,7 @@ name: OGP Builder
 on:
   push:
     branches:
-      - dummy
+      - muster
 
 jobs:
   build:
