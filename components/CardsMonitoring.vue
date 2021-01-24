@@ -17,9 +17,7 @@ const ConfirmedCasesNumberCard = () =>
 export default Vue.extend({
   data() {
     return {
-      rows: [
-        [MonitoringItemsOverviewCard, ConfirmedCasesNumberCard],
-      ],
+      rows: [[MonitoringItemsOverviewCard, ConfirmedCasesNumberCard],],
     }
   },
 })
