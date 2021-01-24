@@ -29,7 +29,17 @@ type DataType = {
         {
           attr: '回復'
           value: number
-        }
+        },
+        {
+          attr: '市内在住'
+          value: number
+          children: [
+             {
+               attr: '市外在住'
+               value: number
+             }
+          ]
+        },
       ]
     }
   ]
@@ -43,6 +53,8 @@ type ConfirmedCasesType = {
   宿泊療養: number
   死亡: number
   回復: number
+  市内在住: number
+  市外在住: number
 }
 
 interface ChildData {
@@ -92,5 +104,7 @@ export default (data: DataType) => {
     宿泊療養: getSelectedItem(data, '宿泊療養'),
     死亡: getSelectedItem(data, '死亡'),
     回復: getSelectedItem(data, '回復'),
+    市内在住: getSelectedItem(data, '市内在住'),
+    市外在住: getSelectedItem(data, '市外在住'),
   } as ConfirmedCasesType
 }

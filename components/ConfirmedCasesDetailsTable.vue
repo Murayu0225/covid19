@@ -67,6 +67,28 @@
             </span>
           </div>
         </li>
+        <li :class="[$style.box, $style.parent]">
+          <div :class="$style.content">
+            <span>{{ $t('市内在住') }}</span>
+            <span>
+              <strong>{{ 市内在住.toLocaleString() }}</strong>
+              <span :class="$style.unit">{{ $t('人') }}</span>
+            </span>
+          </div>
+          <ul :class="$style.group">
+            <li :class="[$style.box]">
+              <div :class="$style.content">
+                <!-- eslint-disable vue/no-v-html-->
+                <span v-html="$t('市外在住')" />
+                <!-- eslint-enable vue/no-v-html-->
+                <span>
+                  <strong>{{ 市外在住.toLocaleString() }}</strong>
+                  <span :class="$style.unit">{{ $t('人') }}</span>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
