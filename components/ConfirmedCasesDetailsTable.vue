@@ -78,9 +78,7 @@
           <ul :class="$style.group">
             <li :class="[$style.box]">
               <div :class="$style.content">
-                <!-- eslint-disable vue/no-v-html-->
-                <span v-html="$t('市外在住')" />
-                <!-- eslint-enable vue/no-v-html-->
+                <span>{{ $t('市外在住') }}</span>
                 <span>
                   <strong>{{ 市外在住.toLocaleString() }}</strong>
                   <span :class="$style.unit">{{ $t('人') }}</span>
@@ -125,6 +123,14 @@ export default Vue.extend({
       required: true,
     },
     回復: {
+      type: Number,
+      required: true,
+    },
+    市内在住: {
+      type: Number,
+      trquired: true,
+    },
+    市外在住: {
       type: Number,
       required: true,
     },
