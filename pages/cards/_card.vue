@@ -8,7 +8,6 @@
 // 検査陽性者の状況
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
-import MonitoringConfirmedCasesNumberCard from '@/components/cards/MonitoringConfirmedCasesNumberCard.vue'
 import MonitoringItemsOverviewCard from '@/components/cards/MonitoringItemsOverviewCard.vue'
 import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
 // 下記のデータを2021年2月1日のアップデートで実装
@@ -21,7 +20,6 @@ export default {
   components: {
     ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
-    MonitoringConfirmedCasesNumberCard,
     MonitoringItemsOverviewCard,
     ConfirmedCasesByMunicipalitiesCard,
     // 下記のデータを2021年2月1日のアップデートで実装
@@ -39,9 +37,6 @@ export default {
         break
       case 'number-of-confirmed-cases':
         cardComponent = 'confirmed-cases-number-card'
-        break
-      case 'monitoring-confirmed-cases':
-        cardComponent = 'monitoring-confirmed-cases-number-card'
         break
       // モニタリング状況
       case 'monitoring-items-overview':

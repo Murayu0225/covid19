@@ -12,8 +12,6 @@ const MonitoringItemsOverviewCard = () =>
 // 報告日別陽性者数
 const ConfirmedCasesNumberCard = () =>
   import('@/components/cards/ConfirmedCasesNumberCard.vue')
-const MonitoringConfirmedCasesNumberCard = () =>
-  import('@/components/cards/MonitoringConfirmedCasesNumberCard.vue')
 /* eslint-enable simple-import-sort/sort */
 
 export default Vue.extend({
@@ -21,7 +19,6 @@ export default Vue.extend({
     return {
       rows: [
         [MonitoringItemsOverviewCard, ConfirmedCasesNumberCard],
-        [MonitoringConfirmedCasesNumberCard],
       ],
     }
   },
