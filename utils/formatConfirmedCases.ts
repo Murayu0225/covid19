@@ -34,12 +34,12 @@ type DataType = {
           attr: '市内在住'
           value: number
           children: [
-             {
-               attr: '市外在住'
-               value: number
-             }
+            {
+              attr: '市外在住'
+              value: number
+            }
           ]
-        },
+        }
       ]
     }
   ]
