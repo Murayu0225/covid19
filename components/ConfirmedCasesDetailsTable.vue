@@ -130,7 +130,7 @@ export default Vue.extend({
     },
     市内在住: {
       type: Number,
-      trquired: true,
+      required: true,
     },
     市外在住: {
       type: Number,
