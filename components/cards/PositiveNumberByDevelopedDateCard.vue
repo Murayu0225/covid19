@@ -9,6 +9,15 @@
         :date="positiveByDeveloped.date"
         :unit="$t('人')"
       >
+        <template v-slot:attentionNote>
+          <p>
+            {{
+              $t(
+                '相模原市のに関するデータの公開終了に伴い、2021年１月19日分の更新を持ってこのグラフのデータ更新を終了しました。'
+              )
+            }}
+          </p>
+        </template>
         <template v-slot:additionalDescription>
           <span>{{ $t('（注）') }}</span>
           <ul>

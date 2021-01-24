@@ -13,7 +13,7 @@
         :data-labels="dataLabels"
         :table-labels="tableLabels"
         :unit="$t('人')"
-        url="https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000068"
+        url="https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html"
       >
         <template v-slot:additionalDescription>
           <span>{{ $t('（注）') }}</span>
