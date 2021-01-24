@@ -22,7 +22,7 @@ export default Vue.extend({
       rows: [
         [MonitoringItemsOverviewCard, ConfirmedCasesNumberCard],
         [MonitoringConfirmedCasesNumberCard],
-        ],
+      ],
     }
   },
 })
