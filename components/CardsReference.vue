@@ -13,7 +13,7 @@ const ConfirmedCasesByMunicipalitiesCard = () =>
   import('@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue')
 // 下記のデータを2021年2月1日のアップデートで実装
 const PositiveNumberByDiagnosedDateCard = () =>
-  import('@/components/cards/PositiveNumberByDiagnosedDateCard.vue')
+  import ('@/components/cards/PositiveNumberByDiagnosedDateCard.vue')
 const PositiveNumberByDevelopedDateCard = () =>
  import( '@/components/cards/PositiveNumberByDevelopedDateCard.vue')
 /* eslint-enable simple-import-sort/sort */

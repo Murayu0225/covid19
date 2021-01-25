@@ -49,6 +49,7 @@ export default {
         break
       case 'positive-number-by-diagnosed-date':
         cardComponent = 'positive-number-by-diagnosed-date-card'
+        break
       case 'positive-number-by-developed-date':
         cardComponent = 'positive-number-by-developed-date-card'
     }
