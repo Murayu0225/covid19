@@ -1347,7 +1347,7 @@
         },
         {
             "diagnosed_date": "2021-01-19",
-            "count": 57
+            "count": 58
         },
         {
             "diagnosed_date": "2021-01-20",
@@ -1359,11 +1359,15 @@
         },
         {
             "diagnosed_date": "2021-01-22",
-            "count": 24
+            "count": 27
         },
         {
             "diagnosed_date": "2021-01-23",
-            "count": 23
+            "count": 45
+        },
+        {
+            "diagnosed_date": "2021-01-24",
+            "count": 2
         }
     ]
 }

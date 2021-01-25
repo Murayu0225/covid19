@@ -8,10 +8,12 @@
 // 検査陽性者の状況
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
+import MonitoringConfirmedCasesNumberCard from '@/components/cards/MonitoringConfirmedCasesNumberCard.vue'
 import MonitoringItemsOverviewCard from '@/components/cards/MonitoringItemsOverviewCard.vue'
 import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
 // 下記のデータを2021年2月1日のアップデートで実装
 import PositiveNumberByDiagnosedDateCard from '@/components/cards/PositiveNumberByDiagnosedDateCard.vue'
+import PositiveNumberByDevelopedDateCard from '@/components/cards/PositiveNumberByDevelopedDateCard.vue'
 /* eslint-enable simple-import-sort/sort */
 
 import { getLinksLanguageAlternative } from '@/utils/i18nUtils'
@@ -20,11 +22,13 @@ export default {
   components: {
     ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
+    MonitoringConfirmedCasesNumberCard,
     MonitoringItemsOverviewCard,
     ConfirmedCasesByMunicipalitiesCard,
     // 下記のデータを2021年2月1日のアップデートで実装
     // PositiveNumberByDevelopedDateCard,
     PositiveNumberByDiagnosedDateCard,
+    PositiveNumberByDevelopedDateCard,
   },
   data() {
     let title, updatedAt, cardComponent
@@ -38,6 +42,9 @@ export default {
       case 'number-of-confirmed-cases':
         cardComponent = 'confirmed-cases-number-card'
         break
+      case 'monitoring-number-of-confirmed-cases':
+        cardComponent = 'monitoring-confirmed-cases-number-card'
+        break
       // モニタリング状況
       case 'monitoring-items-overview':
         cardComponent = 'monitoring-items-overview-card'
@@ -47,6 +54,9 @@ export default {
         break
       case 'positive-number-by-diagnosed-date':
         cardComponent = 'positive-number-by-diagnosed-date-card'
+        break
+      case 'positive-number-by-developed-date':
+        cardComponent = 'positive-number-by-developed-date-card'
     }
 
     return {

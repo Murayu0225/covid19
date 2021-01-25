@@ -2,9 +2,8 @@
   <v-col cols="12" md="6" class="DataCard">
     <client-only>
       <monitoring-confirmed-cases-chart
-        :title="$t('モニタリング項目(1)')"
+        :title="$t('新規陽性者数')"
         title-id="monitoring-number-of-confirmed-cases"
-        :info-titles="[$t('新規陽性者数')]"
         chart-id="monitoring-confirmed-cases-chart"
         :chart-data="chartData"
         :get-formatter="getFormatter"
@@ -19,13 +18,7 @@
           <span>{{ $t('（注）') }}</span>
           <ul>
             <li>
-              {{ $t('保健所から発生届が提出された日を基準とする') }}
-            </li>
-            <li>
-              {{ $t('医療機関等が行った検査も含む') }}
-            </li>
-            <li>
-              {{ $t('チャーター機帰国者、クルーズ船乗客等は含まれていない') }}
+              {{ $t('在日米陸軍関係者は含めない') }}
             </li>
             <li>
               {{
