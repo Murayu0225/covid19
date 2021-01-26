@@ -3540,6 +3540,11 @@
             "diagnosed_date": "2021-01-25",
             "count": 28,
             "weekly_average_count": 38.0
+        },
+        {
+            "diagnosed_date": "2021-01-26",
+            "count": 19,
+            "weekly_average_count": 35.9
         }
     ]
 }
