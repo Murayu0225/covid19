@@ -1,15 +1,15 @@
 {
     "newsItems": [
         {
+            "date":"2021\/01\/25",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019175.html",
+            "text": "イベント中止等のお知らせ"
+        },
+
+        {
             "date": "2021\/01\/22",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019215.html",
             "text": "施設等の休止について"
-        },
-      
-        {
-            "date":"2021\/01\/22",
-            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019175.html",
-            "text": "イベント中止等のお知らせ"
         },
 
         {
