@@ -661,7 +661,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
         },
         animation: { duration: 0 },
       }
-      
+
       return options
     },
     scaledTicksYAxisMax() {
