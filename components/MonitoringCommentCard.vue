@@ -2,14 +2,14 @@
   <div class="MonitoringComment">
     <div class="MonitoringComment-heading">
       <h3 class="MonitoringComment-title">
-        {{ $t('当サイトの更新時間について') }}
+        {{ $t('当サイトについて') }}
       </h3>
     </div>
     <div class="MonitoringComment-description">
       <p>
         {{
           $t(
-            '当サイトは、個人が下記のリンクを参考にして作成しております。また、相模原市非公式です。当サイトの更新時間は、毎日18時〜22時となっております。'
+            '当サイトは、相模原市における新型コロナウイルス情報をグラフ化して、提供しております。個人が下記のリンクを参考にして作成しております。また、相模原市非公式となっております。当サイトの更新時間は、毎日18時〜22時です。'
           )
         }}
       </p>
