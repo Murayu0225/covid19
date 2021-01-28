@@ -1,5 +1,6 @@
 # 相模原市 新型コロナウイルス感染症対策サイト (非公式)
 ![Auto-i18n Generator](https://github.com/Murayu0225/covid19/workflows/Auto-i18n%20Generator/badge.svg)
+
 [相模原市　新型コロナウイルス対策サイト (非公式)](https://sagamihara-stopcovid19.com)
 
 ## 貢献の仕方
