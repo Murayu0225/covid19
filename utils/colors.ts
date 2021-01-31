@@ -17,12 +17,12 @@ const surfaceStyleB: SurfaceStyle = {
 
 const surfaceStyleC: SurfaceStyle = {
   strokeColor: '#053c47',
-  fillColor: '#c5e2c6',
+  fillColor: '#c8dae1',
 }
 
 const surfaceStyleD: SurfaceStyle = {
-  strokeColor: '#1b4d30',
-  fillColor: '#cbe1c8',
+  strokeColor: '#1b454d',
+  fillColor: '#c8dae1',
 }
 
 const surfaceStyleE: SurfaceStyle = {
@@ -31,8 +31,8 @@ const surfaceStyleE: SurfaceStyle = {
 }
 
 const surfaceStyleF: SurfaceStyle = {
-  strokeColor: '#1b4d30',
-  fillColor: '#1b4d30',
+  strokeColor: '#1b454d',
+  fillColor: '#1b454d',
 }
 
 const surfaceStyleG: SurfaceStyle = {
