@@ -34,7 +34,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      colors: ['#96cd5f', '#fffc4e', '#fdbe40', '#fa1629'],
+      colors: ['#5faecd', '#fffc4e', '#fdbe40', '#fa1629'],
     }
   },
 })
