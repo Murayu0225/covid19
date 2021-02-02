@@ -3579,7 +3579,7 @@
         {
             "diagnosed_date": "2021-02-02",
             "count": 12,
-            "weekly_average_count": "22.1"
+            "weekly_average_count": 22.1
         }
     ]
 }
