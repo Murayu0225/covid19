@@ -72,9 +72,7 @@ export default {
           if (this.dataKind === 'transition') {
             return {
               lText: lastDayData,
-              sText: `${formattedLastDay} ${this.$t('日別値')}（${this.$t(
-                '現在判明している人数であり、後日修正される場合がある'
-              )}）`,
+              sText: `${formattedLastDay} ${this.$t('日別値')}`,
               unit: this.unit,
             }
           }
