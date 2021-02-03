@@ -1,5 +1,5 @@
 {
-    "date": "2021\/02\/02 20:00",
+    "date": "2021\/02\/03 20:00",
     "data": [
         {
             "diagnosed_date": "2020-02-19",
@@ -3580,6 +3580,11 @@
             "diagnosed_date": "2021-02-02",
             "count": 12,
             "weekly_average_count": 22.1
+        },
+        {
+            "diagnosed_date": "2021-02-03",
+            "count": 30,
+            "weekly_average_count": 22.9
         }
     ]
 }
