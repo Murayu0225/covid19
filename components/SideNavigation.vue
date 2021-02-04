@@ -129,6 +129,7 @@ import {
   mdiClose,
   mdiDomain,
   mdiMenu,
+  mdiNeedle,
 } from '@mdi/js'
 import Vue from 'vue'
 import { TranslateResult } from 'vue-i18n'
@@ -185,12 +186,23 @@ export default Vue.extend({
           iconPath: mdiDomain,
           title: this.$t('企業の皆様・はたらく皆様へ'),
           link: this.localePath('/worker'),
+        },
+        {
+          iconPath: mdiNeedle,
+          title: this.$t('ワクチンについて'),
+          link:
+            'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1022588/index.html',
           divider: true,
         },
         {
           title: this.$t('市民利用施設に関する情報'),
           link:
             'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019215.html',
+        },
+        {
+          title: this.$t('イベントに関する情報'),
+          link:
+            'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019175.html',
         },
         {
           title: this.$t('相模原市医師会 新型コロナウイルス特設サイト'),
@@ -205,6 +217,12 @@ export default Vue.extend({
         {
           title: this.$t('お問い合わせ先一覧'),
           link: this.localePath('/contacts'),
+        },
+        {
+          title: this.$t(
+            '改善・アンケートフォームはこちら（外部サービスを使用しています）'
+          ),
+          link: 'https://forms.gle/Vf9ZwjZq7aFjhzjCA',
         },
         {
           title: this.$t('当サイトについて'),
