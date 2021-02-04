@@ -1,5 +1,5 @@
 {
-    "date": "2021\/01\/30 20:00",
+    "date": "2021\/02\/04 20:00",
     "data": [
         {
             "diagnosed_date": "2020-02-19",
@@ -3565,6 +3565,31 @@
             "diagnosed_date": "2021-01-30",
             "count": 25,
             "weekly_average_count": 25.7
+        },
+        {
+            "diagnosed_date": "2021-01-31",
+            "count": 29,
+            "weekly_average_count": 25.0
+        },
+        {
+            "diagnosed_date": "2021-02-01",
+            "count": 15,
+            "weekly_average_count": 23.1
+        },
+        {
+            "diagnosed_date": "2021-02-02",
+            "count": 12,
+            "weekly_average_count": 22.1
+        },
+        {
+            "diagnosed_date": "2021-02-03",
+            "count": 30,
+            "weekly_average_count": 22.9
+        },
+        {
+            "diagnosed_date": "2021-02-04",
+            "count": 31,
+            "weekly_average_count": 22.7
         }
     ]
 }
