@@ -16,6 +16,7 @@
       </div>
     </div>
     <whats-new class="mb-4" :items="newsItems" :is-emergency="true" />
+    <detail-data />
     <monitoring-comment-card />
     <lazy-tokyo-alert-card v-if="TokyoAlert.alert" />
     <lazy-static-info
@@ -33,6 +34,7 @@ import { mdiChartTimelineVariant } from '@mdi/js'
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 
+import DetailData from '@/components/DetailData.vue'
 import MonitoringCommentCard from '@/components/MonitoringCommentCard.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
@@ -46,6 +48,7 @@ export default Vue.extend({
     PageHeader,
     WhatsNew,
     MonitoringCommentCard,
+    DetailData,
   },
   data() {
     const { lastUpdate } = Data
