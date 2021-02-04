@@ -219,6 +219,12 @@ export default Vue.extend({
           link: this.localePath('/contacts'),
         },
         {
+          title: this.$t(
+            '改善・アンケートフォームはこちら（外部サービスを使用しています）'
+          ),
+          link: 'https://forms.gle/Vf9ZwjZq7aFjhzjCA',
+        },
+        {
           title: this.$t('当サイトについて'),
           link: this.localePath('/about'),
         },
