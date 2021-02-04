@@ -30,8 +30,8 @@
       <div class="InfectionMedicalcareprovisionStatus-description">
         {{ $t('10歳未満')
         }}<span>{{ statuses.data['10歳未満'].toLocaleString() }}人</span>
-        {{ $t('10代') }}
-        <span>{{ statuses.data['10代'].toLocaleString() }}人</span>
+        {{ $t('10代')
+        }}<span>{{ statuses.data['10代'].toLocaleString() }}人</span>
         {{ $t('20代')
         }}<span>{{ statuses.data['20代'].toLocaleString() }}人</span>
         {{ $t('30代')
@@ -51,9 +51,9 @@
         {{ $t('100歳以上')
         }}<span>{{ statuses.data['100歳以上'].toLocaleString() }}人</span>
         {{ $t('男性')
-        }}<span>{{ statuses.data['男性'].toLocaleString() }}床</span>
+        }}<span>{{ statuses.data['男性'].toLocaleString() }}人</span>
         {{ $t('女性')
-        }}<span>{{ statuses.data['女性'].toLocaleString() }}床</span>
+        }}<span>{{ statuses.data['女性'].toLocaleString() }}人</span>
       </div>
     </div>
     <div class="InfectionMedicalcareprovisionStatus-Box">
@@ -69,14 +69,14 @@
         }}<span
           >{{ statuses.data['1日当たりの検査人数'].toLocaleString() }}人</span
         >
-        {{ $t('累計検査人数') }}
-        <span>{{ statuses.data['累計検査人数'].toLocaleString() }}床</span>
+        （{{ $t('累計検査人数') }}
+        <span>{{ statuses.data['累計検査人数'].toLocaleString() }}人</span>）
         {{ $t('1日当たりの検査件数')
         }}<span
           >{{ statuses.data['1日当たりの検査件数'].toLocaleString() }}人</span
         >
         （{{ $t('累計検査件数')
-        }}<span>{{ statuses.data['累計検査件数'].toLocaleString() }}床</span>）
+        }}<span>{{ statuses.data['累計検査件数'].toLocaleString() }}人</span>）
       </div>
     </div>
   </div>
