@@ -95,6 +95,9 @@ export default Vue.extend({
       date: dayjs(InfectionMedicalcareprovisionStatus.date).format(
         'YYYY年MM月DD日'
       ),
+      statisticDate: dayjs(
+        InfectionMedicalcareprovisionStatus.data['検査統計日時']
+      ).format('MM/DD'),
     }
   },
 })
