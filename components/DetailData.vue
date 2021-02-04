@@ -2,81 +2,55 @@
   <div class="InfectionMedicalcareprovisionStatus">
     <div class="InfectionMedicalcareprovisionStatus-heading">
       <h3 class="InfectionMedicalcareprovisionStatus-title">
-        {{ $t('感染状況') }}
+        {{ $t('感染状況・医療提供体制（サマリ）') }}
         {{ date }}時点
       </h3>
     </div>
     <div class="InfectionMedicalcareprovisionStatus-Box">
       <div class="InfectionMedicalcareprovisionStatus-Headline">
         <app-link
-          to="https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html"
-        >
-          {{ $t('陽性者数') }}
-        </app-link>
-      </div>
-      <div class="InfectionMedicalcareprovisionStatus-description">
-        {{ $t('本日の陽性者数')
-        }}<span>{{ statuses.data['本日の陽性者数'].toLocaleString() }}人</span>
-      </div>
-    </div>
-    <div class="InfectionMedicalcareprovisionStatus-Box">
-      <div class="InfectionMedicalcareprovisionStatus-Headline">
-        <app-link
-          to="https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1020286.html"
+          to="https://www.fukushihoken.metro.tokyo.lg.jp/hodo/saishin/hassei.html"
         >
           {{ $t('感染状況') }}
         </app-link>
       </div>
       <div class="InfectionMedicalcareprovisionStatus-description">
-        {{ $t('10歳未満')
-        }}<span>{{ statuses.data['10歳未満'].toLocaleString() }}人</span>
-        {{ $t('10代')
-        }}<span>{{ statuses.data['10代'].toLocaleString() }}人</span>
-        {{ $t('20代')
-        }}<span>{{ statuses.data['20代'].toLocaleString() }}人</span>
-        {{ $t('30代')
-        }}<span>{{ statuses.data['30代'].toLocaleString() }}人</span>
-        {{ $t('40代')
-        }}<span>{{ statuses.data['40代'].toLocaleString() }}人</span>
-        {{ $t('50代')
-        }}<span>{{ statuses.data['50代'].toLocaleString() }}人</span>
-        {{ $t('60代')
-        }}<span>{{ statuses.data['60代'].toLocaleString() }}人</span>
-        {{ $t('70代')
-        }}<span>{{ statuses.data['70代'].toLocaleString() }}人</span>
-        {{ $t('80代')
-        }}<span>{{ statuses.data['80代'].toLocaleString() }}人</span>
-        {{ $t('90代')
-        }}<span>{{ statuses.data['90代'].toLocaleString() }}人</span>
-        {{ $t('100歳以上')
-        }}<span>{{ statuses.data['100歳以上'].toLocaleString() }}人</span>
-        {{ $t('男性')
-        }}<span>{{ statuses.data['男性'].toLocaleString() }}人</span>
-        {{ $t('女性')
-        }}<span>{{ statuses.data['女性'].toLocaleString() }}人</span>
+        {{ $t('新規陽性者')
+        }}<span>{{ statuses.data['新規陽性者'].toLocaleString() }}人</span> /
+        {{ $t('検査数')
+        }}<span>{{ statuses.data['検査数'].toLocaleString() }}件</span>（{{
+          statisticDate
+        }}{{ $t('参考値') }}）、 {{ $t('うち65歳以上の高齢者数')
+        }}<span
+          >{{
+            statuses.data['うち65歳以上の高齢者数'].toLocaleString()
+          }}人</span
+        >、 {{ $t('死亡者数')
+        }}<span>{{ statuses.data['死亡者数'].toLocaleString() }}人</span>、
+        {{ $t('都外からの持込検体による陽性数')
+        }}<span>{{
+          statuses.data['都外からの持込検体による陽性数'].toLocaleString()
+        }}</span>
       </div>
     </div>
     <div class="InfectionMedicalcareprovisionStatus-Box">
       <div class="InfectionMedicalcareprovisionStatus-Headline">
         <app-link
-          to="https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1020286.html"
+          to="https://stopcovid19.metro.tokyo.lg.jp/cards/details-of-confirmed-cases/"
         >
-          {{ $t('市衛生研究所におけるPCR検査実績') }}
+          {{ $t('医療提供体制') }}
         </app-link>
       </div>
       <div class="InfectionMedicalcareprovisionStatus-description">
-        {{ $t('1日当たりの検査人数')
-        }}<span
-          >{{ statuses.data['1日当たりの検査人数'].toLocaleString() }}人</span
-        >
-        （{{ $t('累計検査人数') }}
-        <span>{{ statuses.data['累計検査人数'].toLocaleString() }}人</span>）
-        {{ $t('1日当たりの検査件数')
-        }}<span
-          >{{ statuses.data['1日当たりの検査件数'].toLocaleString() }}人</span
-        >
-        （{{ $t('累計検査件数')
-        }}<span>{{ statuses.data['累計検査件数'].toLocaleString() }}人</span>）
+        {{ $t('入院数')
+        }}<span>{{ statuses.data['入院数'].toLocaleString() }}人</span> （{{
+          $t('確保病床数')
+        }}<span>{{ statuses.data['確保病床数'].toLocaleString() }}床</span>）、
+        {{ $t('うち重症者数')
+        }}<span>{{ statuses.data['うち重症者数'].toLocaleString() }}人</span>
+        （{{ $t('うち重症病床数')
+        }}<span>{{ statuses.data['うち重症病床数'].toLocaleString() }}床</span
+        >）
       </div>
     </div>
   </div>
@@ -149,7 +123,7 @@ export default Vue.extend({
       margin: 0;
 
       > span {
-        color: #008830;
+        color: #053c47;
       }
 
       > a {
