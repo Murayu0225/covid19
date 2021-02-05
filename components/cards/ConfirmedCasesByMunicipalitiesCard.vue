@@ -28,7 +28,7 @@
 <script>
 import dayjs from 'dayjs'
 
-import Data from '@/data/patient.json'
+import Data from '@/data/data.json'
 import ConfirmedCasesByMunicipalitiesTable from '~/components/ConfirmedCasesByMunicipalitiesTable.vue'
 import { getCommaSeparatedNumberToFixedFunction } from '~/utils/monitoringStatusValueFormatters'
 const countFormatter = getCommaSeparatedNumberToFixedFunction()
