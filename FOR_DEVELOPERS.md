@@ -134,7 +134,7 @@ $ vagrant up
 | ブランチ | HTML類がbuildされ、更新されるブランチ | 更新されるWebサイト |
 | ---- | ---- | ---- |
 |`master`|`production`|本番サイト https://sagamihara-stopcovid19.com/|
-|`staging`|`gh-pages`|ステージングサイト https://staging-sagamihra-stopcovid19.com/|
+|`staging`|`gh-pages`|ステージングサイト https://staging.sagamihra-stopcovid19.com/|
 |`development`|`dev-pages`|開発用サイト https://dev-sagamihara-stopcovid19.netlify.app/|
 
 ---
