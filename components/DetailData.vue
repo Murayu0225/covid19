@@ -2,26 +2,12 @@
   <div class="InfectionMedicalcareprovisionStatus">
     <div class="InfectionMedicalcareprovisionStatus-heading">
       <h3 class="InfectionMedicalcareprovisionStatus-title">
-        {{ $t('本日の感染状況') }}
+        {{ $t('検査数・陽性者の詳細') }}
         {{ date }}時点
       </h3>
-    </div>
-    <div class="InfectionMedicalcareprovisionStatus-Box">
-      <div class="InfectionMedicalcareprovisionStatus-Headline">
-        <app-link
-          to="https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html"
-        >
-          {{ $t('感染状況') }}
-        </app-link>
-      </div>
-      <div class="InfectionMedicalcareprovisionStatus-description">
-        {{ $t('新規陽性者')
-        }}<span>{{ statuses.data['新規陽性者'].toLocaleString() }}人</span>、
-        {{ $t('死亡者数')
-        }}<span>{{ statuses.data['死亡者数'].toLocaleString() }}人</span>、
-        {{ $t('累計陽性者数')
-        }}<span>{{ statuses.data['累計陽性者数'].toLocaleString() }}人</span>
-      </div>
+      <h4 class="InfectionMedicalcareprovisionStatus-title">
+        {{ $t('このデータは、平日のみ更新') }}
+      </h4>
     </div>
     <div class="InfectionMedicalcareprovisionStatus-Box">
       <div class="InfectionMedicalcareprovisionStatus-Headline">
@@ -34,9 +20,9 @@
       <div class="InfectionMedicalcareprovisionStatus-description">
         {{ $t('1日当たりの検査人数')
         }}<span
-          >{{ statuses.data['1日当たりの検査人数'].toLocaleString() }}件</span
+          >{{ statuses.data['1日当たりの検査人数'].toLocaleString() }}人</span
         >、{{ $t('累計検査人数')
-        }}<span>{{ statuses.data['累計検査人数'].toLocaleString() }}件</span>、
+        }}<span>{{ statuses.data['累計検査人数'].toLocaleString() }}人</span>、
         {{ $t('1日当たりの検査件数')
         }}<span
           >{{ statuses.data['1日当たりの検査件数'].toLocaleString() }}件</span
@@ -56,7 +42,10 @@
         {{ $t('男性')
         }}<span>{{ statuses.data['男性'].toLocaleString() }}人</span>、
         {{ $t('女性')
-        }}<span>{{ statuses.data['女性'].toLocaleString() }}人</span><br />
+        }}<span>{{ statuses.data['女性'].toLocaleString() }}人</span>、
+        {{ $t('累計陽性者数')
+        }}<span>{{ statuses.data['累計陽性者数'].toLocaleString() }}人</span
+        ><br />
         {{ $t('10歳未満：')
         }}<span>{{ statuses.data['10歳未満'].toLocaleString() }}人</span>、
         {{ $t('10代：')
