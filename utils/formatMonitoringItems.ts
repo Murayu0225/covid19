@@ -1,8 +1,6 @@
 // monitoring_items.json の型チェック用
 
 type DataKey =
-  | '新規陽性患者数'
-  | '新規陽性患者数（参考値）'
   | '人口10万人当たりの累積陽性者数'
   | '人口10万人当たりの累積陽性者数（参考値）'
   | '陽性患者増加比'
@@ -11,14 +9,18 @@ type DataKey =
   | '感染経路不明者の割合（参考値）'
   | '陽性率'
   | '陽性率（参考値）'
-  | '入院患者数'
-  | '入院患者数（参考値）'
+  | '病床の逼迫具合'
+  | '病床の逼迫具合（参考値）'
+  | '重症者用病床の逼迫具合'
+  | '重症者用病床の逼迫具合（参考値）'
+  | '人口10万人当たりの療養者数'
+  | '人口10万人当たりの療養者数（参考値）'
 
 type DataCommentKey = '総括コメント-感染状況' | '総括コメント-医療提供体制'
 
+// 小数の桁が自動的に四捨五入されるのを防ぐためにString値にしている
+
 type RawData = {
-  新規陽性患者数: string
-  '新規陽性患者数（参考値）': string
   人口10万人当たりの累積陽性者数: string
   '人口10万人当たりの累積陽性者数（参考値）': string
   陽性患者増加比: string
@@ -27,8 +29,12 @@ type RawData = {
   '感染経路不明者の割合（参考値）': string
   陽性率: string
   '陽性率（参考値）': string
-  入院患者数: string
-  '入院患者数（参考値）': string
+  病床の逼迫具合: string
+  '病床の逼迫具合（参考値）': string
+  重症者用病床の逼迫具合: string
+  '重症者用病床の逼迫具合（参考値）': string
+  人口10万人当たりの療養者数: string
+  '人口10万人当たりの療養者数（参考値）': string
 }
 
 interface Comment {
@@ -70,14 +76,6 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
   const unitSpace: Unit = { text: ' ', translatable: false }
 
   return {
-    新規陽性患者数: {
-      value: rawDataObj['新規陽性患者数'],
-      unit: unitPerson,
-    },
-    '新規陽性患者数（参考値）': {
-      value: rawDataObj['新規陽性患者数（参考値）'],
-      unit: unitPerson,
-    },
     人口10万人当たりの累積陽性者数: {
       value: rawDataObj['人口10万人当たりの累積陽性者数'],
       unit: unitPerson,
@@ -100,7 +98,7 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
     },
     '感染経路不明者の割合（参考値）': {
       value: rawDataObj['感染経路不明者の割合（参考値）'],
-      unit: unitPercentage,
+      unit: null,
     },
     陽性率: {
       value: rawDataObj['陽性率'],
@@ -108,14 +106,30 @@ export const formatMonitoringItems = (rawDataObj: RawData): MonitoringItems => {
     },
     '陽性率（参考値）': {
       value: rawDataObj['陽性率（参考値）'],
+      unit: null,
+    },
+    病床の逼迫具合: {
+      value: rawDataObj['病床の逼迫具合'],
       unit: unitPercentage,
     },
-    入院患者数: {
-      value: rawDataObj['入院患者数'],
+    '病床の逼迫具合（参考値）': {
+      value: rawDataObj['病床の逼迫具合（参考値）'],
+      unit: null,
+    },
+    重症者用病床の逼迫具合: {
+      value: rawDataObj['重症者用病床の逼迫具合'],
+      unit: unitPercentage,
+    },
+    '重症者用病床の逼迫具合（参考値）': {
+      value: rawDataObj['重症者用病床の逼迫具合（参考値）'],
+      unit: null,
+    },
+    人口10万人当たりの療養者数: {
+      value: rawDataObj['人口10万人当たりの療養者数'],
       unit: unitPerson,
     },
-    '入院患者数（参考値）': {
-      value: rawDataObj['入院患者数（参考値）'],
+    '人口10万人当たりの療養者数（参考値）': {
+      value: rawDataObj['人口10万人当たりの療養者数（参考値）'],
       unit: null,
     },
   }
