@@ -3110,7 +3110,22 @@
             "diagnosed_date": "2021-02-04",
             "count": 31,
             "weekly_average_count": 22.7
+        },
+        {
+            "diagnosed_date": "2021-02-05",
+            "count": 21,
+            "weekly_average_count": 23.3
+        },
+        {
+            "diagnosed_date": "2021-02-06",
+            "count": 16,
+            "weekly_average_count": 22.0
+        },
+        {
+            "diagnosed_date": "2021-02-07",
+            "count": 16,
+            "weekly_average_count": 20.1
         }
     ],
-    "date": "2021\/02\/04 18:00"
+    "date": "2021\/02\/07 18:00"
 }

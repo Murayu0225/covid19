@@ -2,10 +2,28 @@
   <v-col cols="12" md="6" class="DataCard">
     <client-only>
       <data-view
-        :title="$t('モニタリング状況（集計期間：1月18日〜1月24日）')"
+        :title="
+          $t('モニタリング状況（{data}時点）', {
+            data: monitoringItemsData.updatedate,
+          })
+        "
         title-id="monitoring-items-overview"
         :date="monitoringItemsData.date"
       >
+        <template v-slot:description>
+          <p>
+            {{
+              $t(
+                '参考値における [ ] 内の数値は、ステージ4の指標である（ [ ] のついていない数値は、ステージ3の指標である）'
+              )
+            }}<br />
+            {{
+              $t(
+                '[ ] の書かれていない参考値は、ステージ3,4どちらとも同じ数値であることを示す'
+              )
+            }}
+          </p>
+        </template>
         <template v-slot:additionalDescription>
           <span>{{ $t('（注）') }}</span>
           <ul>
@@ -15,12 +33,9 @@
           </ul>
           <ul>
             <li>
-              {{ $t('[ ] 内の数値は、前週の数値である') }}
-            </li>
-            <li>
               {{
                 $t(
-                  '参考値は、国の新型コロナウィルス感染症対策分科会で示された「今後想定される感染状況と対策について」のステージ1から4までのうち、ステージ3の指標を掲載している'
+                  '参考値は、国の新型コロナウィルス感染症対策分科会で示された「今後想定される感染状況と対策について」のステージ1から4までのうち、ステージ3及び4の指標を掲載している'
                 )
               }}
             </li>
@@ -34,37 +49,38 @@
             <li>
               {{
                 $t(
-                  '（２）の数値は、｛直近1週間の累積新規陽性患者数/（本市人口/10万人）｝で計算'
+                  '（１）の数値は、｛直近1週間の累積新規陽性患者数/（本市人口/10万人）｝で計算'
                 )
               }}
             </li>
             <li>
               {{
                 $t(
-                  '（３）の数値は、｛当該週の新規陽性患者数/前週の新規陽性患者数｝で計算'
+                  '（２）の数値は、｛当該週の新規陽性患者数/前週の新規陽性患者数｝で計算'
                 )
               }}
             </li>
             <li>
               {{
                 $t(
-                  '（４）の数値は、｛直近1週間の感染経路不明者/直近1週間の新規陽性患者数｝で計算'
+                  '（３）の数値は、｛直近1週間の感染経路不明者/直近1週間の新規陽性患者数｝で計算'
                 )
               }}
             </li>
             <li>
               {{
                 $t(
-                  '（５）の数値は、｛直近1週間の新規陽性患者数/市衛生研究所と民間検査機関の検査人数の合計｝で計算'
+                  '（４）の数値は、｛直近1週間の新規陽性患者数/市衛生研究所と民間検査機関の検査人数の合計｝で計算'
                 )
               }}
             </li>
             <li>
               {{
-                $t(
-                  '（６）の数値は、｛当該週平日最終日時点の市公表分入院患者数｝である'
-                )
+                $t('（５）、（６）の数値は、｛入院者病床/利用可能病床｝である')
               }}
+            </li>
+            <li>
+              {{ $t('（７）の数値は、｛療養者数/（本市人口/10万人）｝である') }}
             </li>
             <li>
               {{ $t('速報値として公表するものであり、後日修正する場合がある') }}
@@ -91,6 +107,8 @@
 </template>
 
 <script>
+import dayjs from 'dayjs'
+
 import DataView from '@/components/DataView.vue'
 import MonitoringItemsOverviewTableInfectionStatus from '@/components/MonitoringItemsOverviewTableInfectionStatus.vue'
 import MonitoringItemsOverviewTableMedicalSystem from '@/components/MonitoringItemsOverviewTableMedicalSystem.vue'
@@ -108,6 +126,7 @@ export default {
     return {
       monitoringItemsData,
       monitoringItems,
+      date: dayjs(monitoringItemsData.date).format('YYYY年MM月DD日'),
     }
   },
 }
