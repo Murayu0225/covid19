@@ -3130,7 +3130,12 @@
             "diagnosed_date": "2021-02-08",
             "count": 3,
             "weekly_average_count": 18.4
+        },
+      {
+            "diagnosed_date": "2021-02-09",
+            "count":22,
+            "weekly_average_count": 19.9
         }
     ],
-    "date": "2021\/02\/08 18:00"
+    "date": "2021\/02\/09 18:00"
 }
