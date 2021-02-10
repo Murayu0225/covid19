@@ -3131,11 +3131,16 @@
             "count": 3,
             "weekly_average_count": 18.4
         },
-      {
+        {
             "diagnosed_date": "2021-02-09",
             "count":22,
             "weekly_average_count": 19.9
+        },
+        {
+            "diagnosed_date": "2021-02-10",
+            "count":27,
+            "weekly_average_count": 19.4
         }
     ],
-    "date": "2021\/02\/09 18:00"
+    "date": "2021\/02\/10 18:00"
 }
