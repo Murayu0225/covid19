@@ -22,6 +22,22 @@
     <static-card>
       <h3>
         <app-link
+          to="https://www.city.sagamihara.kanagawa.jp/shisei/seisaku/1022660.html"
+          :icon-size="24"
+          >{{ $t('新型コロナウイルス感染症「暮らし・経済支援対策」') }}
+        </app-link>
+      </h3>
+      <p>
+        {{
+          $t(
+            '本市では、新型コロナウイルス感染症の感染拡大防止対策を推進し、市民の皆様の命と暮らしを守るため、その時々の状況に合わせて必要な対策を講じています。対策の実施に当たっては、国や県の補助金等のほか、「新型コロナウイルス感染症対応地方創生臨時交付金」を活用しながら、本市の状況に合わせた市独自の対策を行っています。'
+          )
+        }}
+      </p>
+    </static-card>
+    <static-card>
+      <h3>
+        <app-link
           to="https://www.city.sagamihara.kanagawa.jp/sangyo/sangyo/1021369/index.html"
           :icon-size="24"
           >{{ $t('サンキューさがみはら！最大25％戻ってくるキャンペーン') }}
