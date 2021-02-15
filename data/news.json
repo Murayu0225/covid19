@@ -1,7 +1,12 @@
 {
     "newsItems": [
         {
-            "date": "2021\/02\/12",
+            "date": "2021\/02\/15",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/02\/0215_02.pdf",
+            "text": "新型コロナウイルスワクチン接種に係る取組状況等について （PDF 88.8KB）"
+        },
+        {
+            "date": "2021\/02\/15",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019175.html",
             "text": "イベント中止等のお知らせ"
         },
@@ -10,12 +15,6 @@
             "date": "2021\/02\/10",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/seisaku\/1022660.html",
             "text": "新型コロナウイルス感染症「暮らし・経済支援対策」"
-        },
-
-        {
-            "date": "2021\/02\/09",
-            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/02\/0209_02.pdf",
-            "text": "新型コロナウイルス感染症のワクチン接種に係る実施方式及び体制強化について （PDF 106.6KB）"
         }
     ]
 }
