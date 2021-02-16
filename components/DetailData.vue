@@ -15,6 +15,7 @@
           to="https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1020286.html"
         >
           {{ $t('PCR検査実績') }}
+          {{ pcr_date }}の検査分
         </app-link>
       </div>
       <div class="InfectionMedicalcareprovisionStatus-description">
