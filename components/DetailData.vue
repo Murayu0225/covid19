@@ -15,7 +15,6 @@
           to="https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1020286.html"
         >
           {{ $t('PCR検査実績') }}
-          {{ pcr_date }}の検査分
         </app-link>
       </div>
       <div class="InfectionMedicalcareprovisionStatus-description">
@@ -29,6 +28,8 @@
           >{{ statuses.data['1日当たりの検査件数'].toLocaleString() }}件</span
         >、{{ $t('累計検査件数')
         }}<span>{{ statuses.data['累計検査件数'].toLocaleString() }}件</span>
+        （{{ $t('PCR検査日時')
+        }}<span>{{ statuses.data['PCR検査日時'].toLocaleString() }}時点</span>）
       </div>
     </div>
     <div class="InfectionMedicalcareprovisionStatus-Box">
