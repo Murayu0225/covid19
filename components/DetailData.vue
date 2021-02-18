@@ -28,8 +28,6 @@
           >{{ statuses.data['1日当たりの検査件数'].toLocaleString() }}件</span
         >、{{ $t('累計検査件数')
         }}<span>{{ statuses.data['累計検査件数'].toLocaleString() }}件</span>
-        （{{ $t('PCR検査日時')
-        }}<span>{{ statuses.data['PCR検査日時'].toLocaleString() }}時点</span>）
       </div>
     </div>
     <div class="InfectionMedicalcareprovisionStatus-Box">
