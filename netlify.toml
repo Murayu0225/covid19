@@ -2,9 +2,3 @@
   from = "/*"
   to = "/404.html"
   status = 404
-[context.production]
-  command = ""
-[context.deploy-preview]
-  command = 'npm run generate && echo -e "/*\n  Basic-Auth: $BASIC_AUTH_ID:$BASIC_AUTH_PASS" > dist/_headers'
-[context.branch-deploy]
-  command = 'npm run generate && echo -e "/*\n  Basic-Auth: $BASIC_AUTH_ID:$BASIC_AUTH_PASS" > dist/_headers'
