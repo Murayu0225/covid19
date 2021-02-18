@@ -3,6 +3,8 @@
   to = "/404.html"
   status = 404
 [context.production]
-  command = "gatsby build"
+  command = ""
 [context.deploy-preview]
-  command = 'gatsby build && echo -e "/*\n  Basic-Auth: $BASIC_AUTH_ID:$BASIC_AUTH_PASS" > public/_headers'
+  command = 'npm run generate && echo -e "/*\n  Basic-Auth: $BASIC_AUTH_ID:$BASIC_AUTH_PASS" > dist/_headers'
+[context.branch-deploy]
+  command = 'npm run generate && echo -e "/*\n  Basic-Auth: $BASIC_AUTH_ID:$BASIC_AUTH_PASS" > dist/_headers'
