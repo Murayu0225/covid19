@@ -1514,7 +1514,7 @@
                 "children": [
                     {
                         "attr": "治療中",
-                        "value" 110,
+                        "value": 110,
                         "children": [
                             {
                                 "attr": "医療機関",
