@@ -1514,19 +1514,19 @@
                 "children": [
                     {
                         "attr": "治療中",
-                        "value": 178,
+                        "value" 110,
                         "children": [
                             {
                                 "attr": "医療機関",
-                                "value": 67
+                                "value": 55
                             },
                             {
                                 "attr": "宿泊療養",
-                                "value": 7
+                                "value": 10
                             },
                             {
                                 "attr": "自宅療養",
-                                "value": 104
+                                "value": 45
                             }
                         ]
                     },
