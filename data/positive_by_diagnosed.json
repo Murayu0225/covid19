@@ -1482,12 +1482,16 @@
         },
         {
             "diagnosed_date": "2021-02-22",
-            "count": 5
+            "count": 6
         },
         {
             "diagnosed_date": "2021-02-23",
-            "count": 2
+            "count": 3
+        },
+        {
+            "diagnosed_date": "2021-02-24",
+            "count": 3
         }
     ],
-    "date": "2021\/02\/24 18:00"
+    "date": "2021\/02\/25 18:00"
 }
