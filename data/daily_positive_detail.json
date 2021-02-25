@@ -3210,7 +3210,12 @@
             "diagnosed_date": "2021-02-24",
             "count": 4,
             "weekly_average_count": 10.1
+        },
+        {
+            "diagnosed_date": "2021-02-25",
+            "count": 5,
+            "weekly_average_count": 8.6
         }
     ],
-    "date": "2021\/02\/24 18:00"
+    "date": "2021\/02\/25 18:00"
 }
