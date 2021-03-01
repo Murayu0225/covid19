@@ -1,6 +1,12 @@
 {
     "newsItems": [
         {
+            "date": "2021\/03\/01",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/shisei\/koho\/1019215.html",
+            "text": "市設置施設の休止等の情報について"
+        },
+ 
+        {
             "date": "2021\/02\/26",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/02\/0226.pdf",
             "text": "新型コロナウイルスワクチン接種に関するコールセンターの開設について （PDF 104.7KB）"
