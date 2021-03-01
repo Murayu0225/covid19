@@ -1595,16 +1595,14 @@
                 "area": "相模原市",
                 "label": "南区",
                 "ruby": "みなみく",
-                "count": 1132
-              
+                "count": 1132  
             },
             {
                 "code": null,
                 "area": null,
                 "label": "市外",
                 "ruby": null,
-                "count": 329
-              
+                "count": 329 
             },
             {
                 "code": null,
@@ -1612,7 +1610,6 @@
                 "label": "小計",
                 "ruby": null,
                 "count": 2848
-              
             }
         ]
     }
