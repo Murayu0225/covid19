@@ -72,7 +72,6 @@
                   </p>
                   <p class="caution">
                     {{ $t(`詳しくは、{pdf}をご覧ください。`) }}
-                  </p>
                   <template v-slot:pdf>
                     <app-link
                       :to="
@@ -85,6 +84,7 @@
                       {{ $t('こちら(PDF 104.7KB)') }}
                     </app-link>
                   </template>
+                 </p>
                 </li>
               </ul>
             </td>
