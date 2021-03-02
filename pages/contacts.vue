@@ -49,6 +49,45 @@
           </tr>
           <tr>
             <td class="content importantContact" v-bind="headingAttrs">
+              {{ $t('新型コロナウイルスワクチン接種に関すること') }}
+            </td>
+            <td class="bureau importantContact">
+              {{ $t('相模原市 新型コロナウイルス接種コールセンター') }}
+            </td>
+            <td class="tel">
+              <ul>
+                <li>
+                  {{ $t('直通') }}<br /><a href="tel:042-767-2101"
+                    >042-767-2101</a
+                  >
+                </li>
+                <li>
+                  {{ $t('外国人専用ダイヤル（対応言語：英語、中国語、韓国語）') }}<br /><a href="tel:042-767-2104"
+                    >042-767-2104</a
+                  ><br />
+              <p class="caution">
+                {{ $t(`午前8時30から午後7時まで`) }}
+              </p>
+              <p class="caution">
+                {{ $t(`土・日、祝日も含む`) }}
+              </p>
+              <p class="caution">
+                {{ $t(`詳しくは、{pdf}をご覧ください。`) }}
+              </p>
+                <template v-slot:pdf>
+                  <app-link
+                    :to="$t('https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/019/191/02/0226.pdf')"
+                    :icon-size="16"
+                  >
+                    {{ $t('こちら(PDF 104.7KB)') }}
+                  </app-link>
+                </template>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="content importantContact" v-bind="headingAttrs">
               {{ $t('かかりつけ医がない等受診に困った場合') }}
             </td>
             <td class="bureau importantContact">
