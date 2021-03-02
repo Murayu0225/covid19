@@ -71,20 +71,21 @@
                     {{ $t(`土・日、祝日も含む`) }}
                   </p>
                   <p class="caution">
-                  　<i18n path="詳しくは、{pdf}をご覧ください。">
-                    <template v-slot:pdf>
-                      <app-link
-                        :to="
-                          $t(
-                            'https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/019/191/02/0226.pdf'
-                          )
-                        "
-                        :icon-size="16"
-                      >
-                        {{ $t('こちら(PDF 104.7KB)') }}
-                      </app-link>
-                    </template>
-                  　</i18n>
+                    　<i18n path="詳しくは、{pdf}をご覧ください。">
+                      <template v-slot:pdf>
+                        <app-link
+                          :to="
+                            $t(
+                              'https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/019/191/02/0226.pdf'
+                            )
+                          "
+                          :icon-size="16"
+                        >
+                          {{ $t('こちら(PDF 104.7KB)') }}
+                        </app-link>
+                      </template>
+                      　</i18n
+                    >
                   </p>
                 </li>
               </ul>
