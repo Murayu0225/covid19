@@ -72,19 +72,19 @@
                   </p>
                   <p class="caution">
                     {{ $t(`詳しくは、{pdf}をご覧ください。`) }}
-                  <template v-slot:pdf>
-                    <app-link
-                      :to="
-                        $t(
-                          'https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/019/191/02/0226.pdf'
-                        )
-                      "
-                      :icon-size="16"
-                    >
-                      {{ $t('こちら(PDF 104.7KB)') }}
-                    </app-link>
-                  </template>
-                 </p>
+                    <template v-slot:pdf>
+                      <app-link
+                        :to="
+                          $t(
+                            'https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/019/191/02/0226.pdf'
+                          )
+                        "
+                        :icon-size="16"
+                      >
+                        {{ $t('こちら(PDF 104.7KB)') }}
+                      </app-link>
+                    </template>
+                  </p>
                 </li>
               </ul>
             </td>
