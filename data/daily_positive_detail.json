@@ -3180,7 +3180,67 @@
             "diagnosed_date": "2021-02-18",
             "count": 16,
             "weekly_average_count": 12.9
+        },
+        {
+            "diagnosed_date": "2021-02-19",
+            "count": 15,
+            "weekly_average_count": 10.1
+        },
+        {
+            "diagnosed_date": "2021-02-20",
+            "count": 11,
+            "weekly_average_count": 10.3
+        },
+        {
+            "diagnosed_date": "2021-02-21",
+            "count": 17,
+            "weekly_average_count": 11.4
+        },
+        {
+            "diagnosed_date": "2021-02-22",
+            "count": 3,
+            "weekly_average_count": 11.1
+        },
+        {
+            "diagnosed_date": "2021-02-23",
+            "count": 5,
+            "weekly_average_count": 10.9
+        },
+        {
+            "diagnosed_date": "2021-02-24",
+            "count": 4,
+            "weekly_average_count": 10.1
+        },
+        {
+            "diagnosed_date": "2021-02-25",
+            "count": 5,
+            "weekly_average_count": 8.6
+        },
+        {
+            "diagnosed_date": "2021-02-26",
+            "count": 12,
+            "weekly_average_count": 8.1
+        },
+        {
+            "diagnosed_date": "2021-02-27",
+            "count": 25,
+            "weekly_average_count": 10.1
+        },
+        {
+            "diagnosed_date": "2021-02-28",
+            "count": 34,
+            "weekly_average_count": 12.6
+        },
+        {
+            "diagnosed_date": "2021-03-01",
+            "count": 12,
+            "weekly_average_count": 13.9
+        },
+        {
+            "diagnosed_date": "2021-03-02",
+            "count": 10,
+            "weekly_average_count": 14.6
         }
     ],
-    "date": "2021\/02\/18 18:00"
+    "date": "2021\/03\/02 18:00"
 }
