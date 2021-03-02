@@ -71,7 +71,7 @@
                     {{ $t(`土・日、祝日も含む`) }}
                   </p>
                   <p class="caution">
-                    {{ $t(`詳しくは、{pdf}をご覧ください。`) }}
+                  　<i18n path="詳しくは、{pdf}をご覧ください。">
                     <template v-slot:pdf>
                       <app-link
                         :to="
@@ -84,6 +84,7 @@
                         {{ $t('こちら(PDF 104.7KB)') }}
                       </app-link>
                     </template>
+                  　</i18n>
                   </p>
                 </li>
               </ul>
