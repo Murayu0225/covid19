@@ -64,29 +64,30 @@
                 </li>
                 <li>
                   {{ $t('外国人専用ダイヤル（対応言語：英語、中国語、韓国語）')
-                  }}<br /><a href="tel:042-767-2104">042-767-2104</a></li><br />
-                  <p class="caution">
-                    {{ $t(`どちらとも、午前8時30分から午後7時まで`) }}
-                  </p>
-                  <p class="caution">
-                    {{ $t(`土・日、祝日も含む`) }}
-                  </p>
-                  <p class="caution">
-                    <i18n path="詳しくは、{pdf}をご参照ください。">
-                      <template v-slot:pdf>
-                        <app-link
-                          :to="
-                            $t(
-                              'https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/019/191/02/0226.pdf'
-                            )
-                          "
-                        >
-                          {{ $t('こちら(PDF 104.7KB)') }}
-                        </app-link>
-                      </template>
-                    </i18n
-                    >
-                  </p>
+                  }}<br /><a href="tel:042-767-2104">042-767-2104</a>
+                </li>
+                <br />
+                <p class="caution">
+                  {{ $t(`どちらとも、午前8時30分から午後7時まで`) }}
+                </p>
+                <p class="caution">
+                  {{ $t(`土・日、祝日も含む`) }}
+                </p>
+                <p class="caution">
+                  <i18n path="詳しくは、{pdf}をご参照ください。">
+                    <template v-slot:pdf>
+                      <app-link
+                        :to="
+                          $t(
+                            'https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/019/191/02/0226.pdf'
+                          )
+                        "
+                      >
+                        {{ $t('こちら(PDF 104.7KB)') }}
+                      </app-link>
+                    </template>
+                  </i18n>
+                </p>
               </ul>
             </td>
           </tr>
@@ -108,29 +109,29 @@
                   {{ $t('つながらない場合') }}<br /><a href="tel:042-285-1015"
                     >042-286-1015</a
                   >
-                </li><br />
-                 <p class="caution">
-                    {{ $t(`どちらとも、午前9時から午後9時まで`) }}
-                  </p>
-                  <p class="caution">
-                    {{ $t(`土・日、祝日も含む`) }}
-                  </p>
-                  <p class="caution">
-                    <i18n path="詳しくは、{kanagawa}をご参照ください。">
-                      <template v-slot:kanagawa>
+                </li>
+                <br />
+                <p class="caution">
+                  {{ $t(`どちらとも、午前9時から午後9時まで`) }}
+                </p>
+                <p class="caution">
+                  {{ $t(`土・日、祝日も含む`) }}
+                </p>
+                <p class="caution">
+                  <i18n path="詳しくは、{kanagawa}をご参照ください。">
+                    <template v-slot:kanagawa>
                       <app-link
-                          :to="
-                            $t(
-                              'https://www.pref.kanagawa.jp/docs/ga4/hatsunetsunado.html'
-                            )
-                          "
-                        >
-                          {{ $t('こちら') }}
-                        </app-link>
-                      </template>
-                    </i18n
-                    >
-                  </p>
+                        :to="
+                          $t(
+                            'https://www.pref.kanagawa.jp/docs/ga4/hatsunetsunado.html'
+                          )
+                        "
+                      >
+                        {{ $t('こちら') }}
+                      </app-link>
+                    </template>
+                  </i18n>
+                </p>
               </ul>
             </td>
           </tr>
