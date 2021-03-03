@@ -35,6 +35,7 @@
               <a href="tel:042-769-9237" class="importantContact"
                 >042-769-9237</a
               ><br />
+              <br />
               <p class="caution">
                 {{ $t(`24時間対応`) }}
               </p>
