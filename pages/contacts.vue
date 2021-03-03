@@ -144,6 +144,7 @@
               <a href="mailto:contact@sagamihara-stopcovid19.com"
                 >contact@sagamihara-stopcovid19.com</a
               ><br />
+              <br />
               <p class="caution">
                 {{
                   $t(
