@@ -116,7 +116,7 @@
                     {{ $t(`土・日、祝日も含む`) }}
                   </p>
                   <p class="caution">
-                    　<i18n path="詳しくは、{kanagawa}をご参照ください。">
+                    <i18n path="詳しくは、{kanagawa}をご参照ください。">
                       <template v-slot:kanagawa>
                       <app-link
                           :to="
@@ -128,7 +128,7 @@
                           {{ $t('こちら') }}
                         </app-link>
                       </template>
-                      　</i18n
+                    </i18n
                     >
                   </p>
               </ul>
