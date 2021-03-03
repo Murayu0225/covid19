@@ -22,7 +22,6 @@ jobs:
         with:
           urls: |
             https://sagamihara-stopcovid19.com/
-            https://staging.sagamihra-stopcovid19.com/
           uploadArtifacts: true
 
       - name: Use Node.js
