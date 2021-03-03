@@ -1,7 +1,7 @@
 {
     "extends": ["config:base"],
     "timezone": "Asia/Tokyo",
-    "labels": ["renovate"],
+    "labels": ["renovate","waiting-review"],
     "lockFileMaintenance": {
         "enabled": true,
         "schedule": ["before 5pm"]

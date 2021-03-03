@@ -35,6 +35,7 @@
               <a href="tel:042-769-9237" class="importantContact"
                 >042-769-9237</a
               ><br />
+              <br />
               <p class="caution">
                 {{ $t(`24時間対応`) }}
               </p>
@@ -45,6 +46,49 @@
                   )
                 }}
               </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="content importantContact" v-bind="headingAttrs">
+              {{ $t('新型コロナウイルスワクチン接種に関すること') }}
+            </td>
+            <td class="bureau importantContact">
+              {{ $t('相模原市 新型コロナウイルス接種コールセンター') }}
+            </td>
+            <td class="tel">
+              <ul>
+                <li>
+                  {{ $t('直通') }}<br /><a href="tel:042-767-2101"
+                    >042-767-2101</a
+                  >
+                </li>
+                <li>
+                  {{ $t('外国人専用ダイヤル（対応言語：英語、中国語、韓国語）')
+                  }}<br /><a href="tel:042-767-2104">042-767-2104</a>
+                </li>
+                <br />
+                <p class="caution">
+                  {{ $t(`どちらも、午前8時30分から午後7時まで`) }}
+                </p>
+                <p class="caution">
+                  {{ $t(`土・日、祝日も含む`) }}
+                </p>
+                <p class="caution">
+                  <i18n path="詳しくは、{pdf}をご参照ください。">
+                    <template v-slot:pdf>
+                      <app-link
+                        :to="
+                          $t(
+                            'https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/019/191/02/0226.pdf'
+                          )
+                        "
+                      >
+                        {{ $t('こちら(PDF 104.7KB)') }}
+                      </app-link>
+                    </template>
+                  </i18n>
+                </p>
+              </ul>
             </td>
           </tr>
           <tr>
@@ -66,6 +110,28 @@
                     >042-286-1015</a
                   >
                 </li>
+                <br />
+                <p class="caution">
+                  {{ $t(`どちらも、午前9時から午後9時まで`) }}
+                </p>
+                <p class="caution">
+                  {{ $t(`土・日、祝日も含む`) }}
+                </p>
+                <p class="caution">
+                  <i18n path="詳しくは、{kanagawa}をご参照ください。">
+                    <template v-slot:kanagawa>
+                      <app-link
+                        :to="
+                          $t(
+                            'https://www.pref.kanagawa.jp/docs/ga4/hatsunetsunado.html'
+                          )
+                        "
+                      >
+                        {{ $t('こちら') }}
+                      </app-link>
+                    </template>
+                  </i18n>
+                </p>
               </ul>
             </td>
           </tr>
@@ -80,6 +146,7 @@
               <a href="mailto:contact@sagamihara-stopcovid19.com"
                 >contact@sagamihara-stopcovid19.com</a
               ><br />
+              <br />
               <p class="caution">
                 {{
                   $t(
