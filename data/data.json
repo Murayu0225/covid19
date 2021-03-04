@@ -1541,42 +1541,42 @@
         "children": [
             {
                 "attr": "陽性患者数",
-                "date": "2021\/03\/03 09:30",
-                "value": 2870,
+                "date": "2021\/03\/04 09:30",
+                "value": 2889,
                 "children": [
                     {
                         "attr": "治療中",
-                        "value": 138,
+                        "value": 142,
                         "children": [
                             {
                                 "attr": "医療機関",
-                                "value": 59
+                                "value": 57
                             },
                             {
                                 "attr": "宿泊療養",
-                                "value": 7
+                                "value": 6
                             },
                             {
                                 "attr": "自宅療養",
-                                "value": 72
+                                "value": 80
                             }
                         ]
                     },
                     {
                         "attr": "死亡",
-                        "value": 43
+                        "value": 45
                     },
                     {
                         "attr": "回復",
-                        "value": 2689
+                        "value": 2702
                     },
                     {
                         "attr": "市内在住",
-                        "value": 2525,
+                        "value": 2542,
                         "children": [
                             {
                                 "attr": "市外在住",
-                                "value": 345
+                                "value": 347
                             }
                         ]
                     }
