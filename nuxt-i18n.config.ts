@@ -18,6 +18,10 @@ const dateTimeFormatsCommon = {
     month: 'long',
     day: 'numeric',
   },
+  dateWithoutDay: {
+    year: 'numeric',
+    month: 'short',
+  },
   dateWithDayOfWeek: {
     weekday: 'short',
     month: 'short',
@@ -37,7 +41,7 @@ const options: NuxtVueI18n.Options.AllOptionsInterface = {
       'zh-cn': dateTimeFormatsCommon,
       'zh-tw': dateTimeFormatsCommon,
       ko: dateTimeFormatsCommon,
-      'ja-basic': dateTimeFormatsCommon,
+      'pt-BR': dateTimeFormatsCommon,
     },
     formatFallbackMessages: true,
   },
