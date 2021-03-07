@@ -920,5 +920,6 @@
   "土・日、祝日も含む": "包括周六，周日和公众假期",
   "こちら(PDF 104.7KB)": "此处（PDF 104.7KB）",
   "`お問い合わせの際は、氏名と共にお問い合わせ内容を記入していただきますようお願いいたします。": "`进行查询时，请填写您的查询详细信息以及您的姓名。",
-  "多言語対応選択メニュー Powered by Google Translation) }} </label> <language-selector /> </div> </div> <menu-list :items=\"items\" @click=\"$emit(": "<html>多语言选择菜单由Google翻译提供）}}<language-selector /></div></div>"
+  "多言語対応選択メニュー Powered by Google Translation) }} </label> <language-selector /> </div> </div> <menu-list :items=\"items\" @click=\"$emit(": "<html>多语言选择菜单由Google翻译提供）}}<language-selector /></div></div>",
+  "多言語対応選択メニュー Powered by Google Translation": "多语种选择菜单由Google翻译提供支持"
 }
