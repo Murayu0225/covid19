@@ -953,3 +953,5 @@ TAG_ADD,土・日、祝日も含む
 TAG_ADD,こちら(PDF 104.7KB)
 RUN,2021/03/07 10:43
 TAG_ADD,`お問い合わせの際は、氏名と共にお問い合わせ内容を記入していただきますようお願いいたします。
+RUN,2021/03/07 15:12
+TAG_ADD,多言語対応選択メニュー Powered by Google Translation) }} </label> <language-selector /> </div> </div> <menu-list :items="items" @click="$emit(
