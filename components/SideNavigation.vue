@@ -45,7 +45,9 @@
             class="SideNavigation-Language"
           >
             <label class="SideNavigation-LanguageLabel" for="LanguageSelector">
-              {{ $t('多言語対応選択メニュー') }}<br />{{ $t('Powered by Google Translation') }}
+              {{ $t('多言語対応選択メニュー') }}<br />{{
+                $t('Powered by Google Translation')
+              }}
             </label>
             <language-selector />
           </div>
