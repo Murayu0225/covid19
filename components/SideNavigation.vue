@@ -39,19 +39,17 @@
       </v-icon>
 
       <nav class="SideNavigation-Menu">
-        <!--
         <div class="SideNavigation-Language">
           <div
             v-if="this.$i18n.locales.length > 1"
             class="SideNavigation-Language"
           >
             <label class="SideNavigation-LanguageLabel" for="LanguageSelector">
-              {{ $t('多言語対応選択メニュー') }}
+              {{ $t('多言語対応選択メニュー Powered by Google Translation) }}
             </label>
             <language-selector />
           </div>
         </div>
--->
         <menu-list :items="items" @click="$emit('close-navigation', $event)" />
       </nav>
 
