@@ -613,7 +613,7 @@
   "女": "femme",
   "(6)の確保病床数には、(7)の確保病床数を含む": "Le nombre de lits sécurisés en (6) comprend le nombre de lits sécurisés en (7).",
   "体制強化が必要であると思われる": "Il semble nécessaire de renforcer le système",
-  "毎週、専門家による状況分析を項目ごとに行い、都内の感染状況と医療提供体制それぞれについて「総括コメント」として4段階で評価します。": "Chaque semaine, une analyse de la situation par un expert est effectuée pour chaque élément, et la situation infectieuse à Tokyo et le système de soins médicaux sont évalués chacun comme un «commentaire de synthèse» sur une échelle de quatre points.",
+  "毎週、専門家による状況分析を項目ごとに行い、都内の感染状況と医療提供体制それぞれについて「総括コメント」として4段階で評価します。": "Chaque semaine, une analyse de la situation par un expert est effectuée pour chaque élément, et la situation infectieuse à Tokyo et le système de soins médicaux sont évalués chacun comme un «commentaire général» sur une échelle de quatre points.",
   "{date}付の総括コメントは以下のとおりです。": "Les commentaires généraux avec {date} sont les suivants.",
   "感染が拡大していると思われる": "L&#39;infection semble se propager",
   "東京都では、都内の「感染状況」と「医療提供体制」を2つの柱として7つのモニタリング項目を設定しています。": "À Tokyo, sept éléments de suivi ont été définis avec les deux piliers «état d&#39;infection» et «système de fourniture de soins médicaux» à Tokyo.",
@@ -919,5 +919,6 @@
   "新型コロナウイルスワクチン接種に関すること": "Chose sur la nouvelle vaccination contre le coronavirus",
   "土・日、祝日も含む": "Y compris les samedis, dimanches et jours fériés",
   "こちら(PDF 104.7KB)": "Ici (PDF 104,7 Ko)",
-  "`お問い合わせの際は、氏名と共にお問い合わせ内容を記入していただきますようお願いいたします。": "`Lorsque vous effectuez une demande, veuillez indiquer les détails de votre demande avec votre nom."
+  "`お問い合わせの際は、氏名と共にお問い合わせ内容を記入していただきますようお願いいたします。": "`Lorsque vous effectuez une demande, veuillez indiquer les détails de votre demande avec votre nom.",
+  "多言語対応選択メニュー Powered by Google Translation) }} </label> <language-selector /> </div> </div> <menu-list :items=\"items\" @click=\"$emit(": "<html>Menu de sélection multilingue Powered by Google Translation)}}<language-selector /></div></div>"
 }
