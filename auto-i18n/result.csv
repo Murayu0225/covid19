@@ -957,3 +957,5 @@ RUN,2021/03/07 15:12
 TAG_ADD,多言語対応選択メニュー Powered by Google Translation) }} </label> <language-selector /> </div> </div> <menu-list :items="items" @click="$emit(
 RUN,2021/03/07 15:21
 TAG_ADD,多言語対応選択メニュー Powered by Google Translation
+RUN,2021/03/08 19:20
+TAG_ADD,Powered by Google Translation
