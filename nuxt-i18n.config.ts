@@ -64,6 +64,13 @@ const options: NuxtVueI18n.Options.AllOptionsInterface = {
       description: 'English',
     },
     {
+      code: 'fr',
+      name: 'français',
+      iso: 'fr-FR',
+      file: 'fr.json',
+      description: 'French',
+    },
+    {
       code: 'zh-cn',
       name: '简体中文',
       iso: 'zh-CN',
@@ -83,6 +90,20 @@ const options: NuxtVueI18n.Options.AllOptionsInterface = {
       iso: 'ko-KR',
       file: 'ko.json',
       description: 'Korean',
+    },
+    {
+      code: 'th',
+      name: 'ภาษาไทย',
+      iso: 'th-TH',
+      file: 'th.json',
+      description: 'Thai',
+    },
+    {
+      code: 'vi',
+      name: 'Tiếng Việt',
+      iso: 'vi-VN',
+      file: 'vi.json',
+      description: 'Vietnamese',
     },
     {
       code: 'pt-BR',
