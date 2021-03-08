@@ -921,5 +921,6 @@
   "こちら(PDF 104.7KB)": "ที่นี่ (PDF 104.7KB)",
   "`お問い合わせの際は、氏名と共にお問い合わせ内容を記入していただきますようお願いいたします。": "`เมื่อทำการสอบถามกรุณากรอกรายละเอียดคำถามของคุณพร้อมกับชื่อของคุณ",
   "多言語対応選択メニュー Powered by Google Translation) }} </label> <language-selector /> </div> </div> <menu-list :items=\"items\" @click=\"$emit(": "<html>เมนูการเลือกหลายภาษาขับเคลื่อนโดย Google Translation)}}<language-selector /></div></div>",
-  "多言語対応選択メニュー Powered by Google Translation": "เมนูการเลือกหลายภาษาขับเคลื่อนโดย Google Translation"
+  "多言語対応選択メニュー Powered by Google Translation": "เมนูการเลือกหลายภาษาขับเคลื่อนโดย Google Translation",
+  "Powered by Google Translation": "ขับเคลื่อนโดย Google Translation"
 }
