@@ -233,6 +233,7 @@ export default Vue.extend({
           link: 'https://www.city.sagamihara.kanagawa.jp/index.html',
         },
       ]
+    },
     logoSrc(): string {
       switch (this.$i18n.locale) {
         case 'ja':
