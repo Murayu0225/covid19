@@ -38,9 +38,12 @@ const options: NuxtVueI18n.Options.AllOptionsInterface = {
     dateTimeFormats: {
       ja: dateTimeFormatsCommon,
       en: dateTimeFormatsCommon,
+      fr: dateTimeFormatsCommon,
       'zh-cn': dateTimeFormatsCommon,
       'zh-tw': dateTimeFormatsCommon,
       ko: dateTimeFormatsCommon,
+      th: dateTimeFormatsCommon,
+      vi: dateTimeFormatsCommon,
       'pt-BR': dateTimeFormatsCommon,
     },
     formatFallbackMessages: true,
