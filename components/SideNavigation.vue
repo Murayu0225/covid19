@@ -233,6 +233,17 @@ export default Vue.extend({
           link: 'https://www.city.sagamihara.kanagawa.jp/index.html',
         },
       ]
+    logoSrc(): string {
+      switch (this.$i18n.locale) {
+        case 'ja':
+        case 'zh-cn':
+        case 'zh-tw':
+          return '/logo.svg'
+        case 'ko':
+          return '/logo-ko.png'
+        default:
+          return '/logo-en.png'
+      }
     },
   },
   watch: {
