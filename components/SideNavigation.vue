@@ -12,7 +12,7 @@
         <app-link :to="localePath('/')" class="SideNavigation-HeaderLink">
           <img
             class="SideNavigation-HeaderLogo"
-            src="/logo.svg"
+            :src="logoSrc"
             width="111"
             height="28"
             :alt="$t('相模原市')"
@@ -45,7 +45,9 @@
             class="SideNavigation-Language"
           >
             <label class="SideNavigation-LanguageLabel" for="LanguageSelector">
-              {{ $t('多言語対応選択メニュー Powered by Google Translation') }}
+              {{ $t('多言語対応選択メニュー') }}<br />{{
+                $t('Powered by Google Translation')
+              }}
             </label>
             <language-selector />
           </div>
@@ -231,6 +233,18 @@ export default Vue.extend({
           link: 'https://www.city.sagamihara.kanagawa.jp/index.html',
         },
       ]
+    },
+    logoSrc(): string {
+      switch (this.$i18n.locale) {
+        case 'ja':
+        case 'zh-cn':
+        case 'zh-tw':
+          return '/logo.svg'
+        case 'ko':
+          return '/logo-ko.png'
+        default:
+          return '/logo-en.png'
+      }
     },
   },
   watch: {
