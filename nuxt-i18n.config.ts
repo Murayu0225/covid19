@@ -18,6 +18,10 @@ const dateTimeFormatsCommon = {
     month: 'long',
     day: 'numeric',
   },
+  dateWithoutDay: {
+    year: 'numeric',
+    month: 'short',
+  },
   dateWithDayOfWeek: {
     weekday: 'short',
     month: 'short',
@@ -34,10 +38,13 @@ const options: NuxtVueI18n.Options.AllOptionsInterface = {
     dateTimeFormats: {
       ja: dateTimeFormatsCommon,
       en: dateTimeFormatsCommon,
+      fr: dateTimeFormatsCommon,
       'zh-cn': dateTimeFormatsCommon,
       'zh-tw': dateTimeFormatsCommon,
       ko: dateTimeFormatsCommon,
-      'ja-basic': dateTimeFormatsCommon,
+      th: dateTimeFormatsCommon,
+      vi: dateTimeFormatsCommon,
+      'pt-BR': dateTimeFormatsCommon,
     },
     formatFallbackMessages: true,
   },
@@ -60,6 +67,13 @@ const options: NuxtVueI18n.Options.AllOptionsInterface = {
       description: 'English',
     },
     {
+      code: 'fr',
+      name: 'français',
+      iso: 'fr-FR',
+      file: 'fr.json',
+      description: 'French',
+    },
+    {
       code: 'zh-cn',
       name: '简体中文',
       iso: 'zh-CN',
@@ -80,21 +94,26 @@ const options: NuxtVueI18n.Options.AllOptionsInterface = {
       file: 'ko.json',
       description: 'Korean',
     },
-    // #1126, #872 (comment)
-    // ポルトガル語は訳が揃っていないため非表示
-    // {
-    //   code: 'pt-BR',
-    //   name: 'Portuguese',
-    //   iso: 'pt-BR',
-    //   file: 'pt_BR.json',
-    //   description: 'Portuguese'
-    // },
     {
-      code: 'ja-basic',
-      name: 'やさしい にほんご',
-      iso: 'ja-JP',
-      file: 'ja-Hira.json',
-      description: 'Easy Japanese',
+      code: 'th',
+      name: 'ภาษาไทย',
+      iso: 'th-TH',
+      file: 'th.json',
+      description: 'Thai',
+    },
+    {
+      code: 'vi',
+      name: 'Tiếng Việt',
+      iso: 'vi-VN',
+      file: 'vi.json',
+      description: 'Vietnamese',
+    },
+    {
+      code: 'pt-BR',
+      name: 'Portuguese',
+      iso: 'pt-BR',
+      file: 'pt_BR.json',
+      description: 'Portuguese',
     },
   ],
   seo: false,

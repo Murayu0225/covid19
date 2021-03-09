@@ -12,7 +12,7 @@
         <app-link :to="localePath('/')" class="SideNavigation-HeaderLink">
           <img
             class="SideNavigation-HeaderLogo"
-            src="/logo.svg"
+            :src="logoSrc"
             width="111"
             height="28"
             :alt="$t('相模原市')"
@@ -39,19 +39,19 @@
       </v-icon>
 
       <nav class="SideNavigation-Menu">
-        <!--
         <div class="SideNavigation-Language">
           <div
             v-if="this.$i18n.locales.length > 1"
             class="SideNavigation-Language"
           >
             <label class="SideNavigation-LanguageLabel" for="LanguageSelector">
-              {{ $t('多言語対応選択メニュー') }}
+              {{ $t('多言語対応選択メニュー') }}<br />{{
+                $t('Powered by Google Translation')
+              }}
             </label>
             <language-selector />
           </div>
         </div>
--->
         <menu-list :items="items" @click="$emit('close-navigation', $event)" />
       </nav>
 
@@ -233,6 +233,18 @@ export default Vue.extend({
           link: 'https://www.city.sagamihara.kanagawa.jp/index.html',
         },
       ]
+    },
+    logoSrc(): string {
+      switch (this.$i18n.locale) {
+        case 'ja':
+        case 'zh-cn':
+        case 'zh-tw':
+          return '/logo.svg'
+        case 'ko':
+          return '/logo-ko.png'
+        default:
+          return '/logo-en.png'
+      }
     },
   },
   watch: {
