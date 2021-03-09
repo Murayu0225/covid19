@@ -113,9 +113,8 @@ const options: NuxtVueI18n.Options.AllOptionsInterface = {
       name: 'Portuguese',
       iso: 'pt-BR',
       file: 'pt_BR.json',
-      description: 'Portuguese'
+      description: 'Portuguese',
     },
-
   ],
   seo: false,
 }
