@@ -190,7 +190,7 @@ const config: NuxtConfig = {
   generate: {
     fallback: true,
     routes() {
-      const locales = ['en', 'zh-cn', 'zh-tw', 'ko', 'ja-basic']
+      const locales = ['en', 'fr', 'zh-cn', 'zh-tw', 'ko', 'th', 'pt-BR']
       const pages = [
         '/cards/details-of-confirmed-cases',
         '/cards/number-of-confirmed-cases',
