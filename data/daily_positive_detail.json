@@ -3270,7 +3270,57 @@
             "diagnosed_date": "2021-03-08",
             "count": 2,
             "weekly_average_count": 11.7
+        },
+        {
+            "diagnosed_date": "2021-03-09",
+            "count": 3,
+            "weekly_average_count": 10.7
+        },
+        {
+            "diagnosed_date": "2021-03-10",
+            "count": 19,
+            "weekly_average_count": 10.7
+        },
+        {
+            "diagnosed_date": "2021-03-11",
+            "count": 7,
+            "weekly_average_count": 9.4
+        },
+        {
+            "diagnosed_date": "2021-03-12",
+            "count": 8,
+            "weekly_average_count": 8.4
+        },
+        {
+            "diagnosed_date": "2021-03-13",
+            "count": 7,
+            "weekly_average_count": 8.0
+        },
+        {
+            "diagnosed_date": "2021-03-14",
+            "count": 14,
+            "weekly_average_count": 8.6
+        },
+        {
+            "diagnosed_date": "2021-03-15",
+            "count": 3,
+            "weekly_average_count": 8.7
+        },
+        {
+            "diagnosed_date": "2021-03-16",
+            "count": 4,
+            "weekly_average_count": 8.9
+        },
+        {
+            "diagnosed_date": "2021-03-17",
+            "count": 3,
+            "weekly_average_count": 6.6
+        },
+        {
+            "diagnosed_date": "2021-03-18",
+            "count": 17,
+            "weekly_average_count": 8.0
         }
     ],
-    "date": "2021\/03\/08 18:00"
+    "date": "2021\/03\/18 18:00"
 }

@@ -1536,7 +1536,48 @@
         {
             "diagnosed_date": "2021-03-07",
             "count": 1
+        },
+        {
+            "diagnosed_date": "2021-03-08",
+            "count": 5
+        },
+        {
+            "diagnosed_date": "2021-03-09",
+            "count": 21
+        },
+        {
+            "diagnosed_date": "2021-03-10",
+            "count": 6
+        },
+        {
+            "diagnosed_date": "2021-03-11",
+            "count": 10
+        },
+        {
+            "diagnosed_date": "2021-03-12",
+            "count": 4
+        },
+        {
+            "diagnosed_date": "2021-03-13",
+            "count": 13
+        },
+        {
+            "diagnosed_date": "2021-03-14",
+            "count": 4
+        },
+        {
+            "diagnosed_date": "2021-03-15",
+            "count": 4
+        },
+        {
+            "diagnosed_date": "2021-03-16",
+            "count": 10
+        },
+        {
+            "diagnosed_date": "2021-03-17",
+            "count": 8
+          
         }
     ],
-    "date": "2021\/03\/08 18:00"
+    "date": "2021\/03\/18 18:00"
 }
