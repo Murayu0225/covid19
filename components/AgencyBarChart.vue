@@ -87,9 +87,6 @@ interface AgencyDisplayData extends DisplayData {
   datasets: AgencyDataSets[]
 }
 
-interface HTMLElementEvent<T extends HTMLElement> extends MouseEvent {
-  currentTarget: T
-}
 type Data = {
   colors: SurfaceStyle[]
   canvas: boolean
