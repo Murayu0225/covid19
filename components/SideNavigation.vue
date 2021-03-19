@@ -189,7 +189,7 @@ export default Vue.extend({
         },
         {
           iconPath: mdiNeedle,
-          title: this.$t('ワクチンについて'),
+          title: this.$t('ワクチンについて(3月15日更新)'),
           link:
             'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1022588/index.html',
           divider: true,
