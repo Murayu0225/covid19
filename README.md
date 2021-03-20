@@ -1,8 +1,8 @@
-# 相模原市 新型コロナウイルス感染症対策サイト (非公式)
+# 相模原市 新型コロナウイルス感染症対策サイト
 [![production deploy](https://github.com/Murayu0225/covid19/actions/workflows/deploy.yml/badge.svg?branch=master)](https://github.com/Murayu0225/covid19/actions/workflows/deploy.yml)
 ![Auto-i18n Generator](https://github.com/Murayu0225/covid19/workflows/Auto-i18n%20Generator/badge.svg) <br>
 
-[相模原市　新型コロナウイルス対策サイト (非公式)](https://sagamihara-stopcovid19.com)
+[相模原市　新型コロナウイルス対策サイト](https://sagamihara-stopcovid19.com)
 
 ## 貢献の仕方
 Issues にあるいろいろな修正にご協力いただけると嬉しいです。

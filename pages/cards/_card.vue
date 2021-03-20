@@ -77,7 +77,7 @@ export default {
     )}`
     const defaultTitle = `${this.$t('相模原市')} ${this.$t(
       '新型コロナウイルス感染症'
-    )}${this.$t('対策サイト (非公式)')}`
+    )}${this.$t('対策サイト')}`
 
     return {
       titleTemplate: (title) => `${this.title || title} | ${defaultTitle}`,

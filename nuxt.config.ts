@@ -179,7 +179,7 @@ const config: NuxtConfig = {
     whitelistPatterns: [/(col|row)/],
   },
   manifest: {
-    name: '相模原市 新型コロナウイルス感染症対策サイト (非公式)',
+    name: '相模原市 新型コロナウイルス感染症対策サイト',
     theme_color: '#085c6c',
     background_color: '#ffffff',
     display: 'standalone',
