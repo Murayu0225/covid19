@@ -124,7 +124,7 @@ export default Vue.extend({
       ],
       // Disable prettier for readability purposes
       // eslint-disable-next-line prettier/prettier
-      titleTemplate: `%s | ${this.$t('相模原市')} ${this.$t('新型コロナウイルス感染症')}${this.$t('対策サイト (非公式)')}`,
+      titleTemplate: `%s | ${this.$t('相模原市')} ${this.$t('新型コロナウイルス感染症')}${this.$t('対策サイト')}`,
       meta: [
         {
           hid: 'author',
@@ -145,7 +145,7 @@ export default Vue.extend({
           property: 'og:site_name',
           content: `${this.$t('相模原市')} ${this.$t(
             '新型コロナウイルス感染症'
-          )} ${this.$t('対策サイト (非公式)')}`,
+          )} ${this.$t('対策サイト')}`,
         },
         {
           hid: 'og:url',
@@ -158,7 +158,7 @@ export default Vue.extend({
           property: 'og:title',
           content: `${this.$t('相模原市')} ${this.$t(
             '新型コロナウイルス感染症'
-          )} ${this.$t('対策サイト (非公式)')}`,
+          )} ${this.$t('対策サイト')}`,
         },
         {
           hid: 'og:description',
@@ -179,7 +179,7 @@ export default Vue.extend({
           name: 'apple-mobile-web-app-title',
           content: `${this.$t('相模原市')} ${this.$t(
             '新型コロナウイルス感染症'
-          )} ${this.$t('対策サイト (非公式)')}`,
+          )} ${this.$t('対策サイト')}`,
         },
         {
           hid: 'twitter:image',

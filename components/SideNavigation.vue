@@ -18,9 +18,7 @@
             :alt="$t('相模原市')"
           />
           <div class="SideNavigation-HeaderText">
-            {{ $t('新型コロナウイルス感染症') }}<br />{{
-              $t('対策サイト (非公式)')
-            }}
+            {{ $t('新型コロナウイルス感染症') }}<br />{{ $t('対策サイト') }}
           </div>
         </app-link>
       </h1>
@@ -189,7 +187,7 @@ export default Vue.extend({
         },
         {
           iconPath: mdiNeedle,
-          title: this.$t('ワクチンについて(3月15日更新)'),
+          title: this.$t('ワクチンについて'),
           link:
             'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1022588/index.html',
           divider: true,
