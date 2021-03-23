@@ -6,12 +6,12 @@
 /* eslint-disable simple-import-sort/sort -- ブラウザでの表示順に合わせて各 card の component を import する */
 import Vue from 'vue'
 
+// 報告日別陽性者数
+const ConfirmedCasesNumberCard = () =>
+import('@/components/cards/ConfirmedCasesNumberCard.vue')
 // モニタリング項目
 const MonitoringItemsOverviewCard = () =>
   import('@/components/cards/MonitoringItemsOverviewCard.vue')
-// 報告日別陽性者数
-const ConfirmedCasesNumberCard = () =>
-  import('@/components/cards/ConfirmedCasesNumberCard.vue')
 const MonitoringConfirmedCasesNumberCard = () =>
   import('@/components/cards/MonitoringConfirmedCasesNumberCard.vue')
 /* eslint-enable simple-import-sort/sort */
@@ -20,7 +20,7 @@ export default Vue.extend({
   data() {
     return {
       rows: [
-        [MonitoringItemsOverviewCard, ConfirmedCasesNumberCard],
+        [ConfirmedCasesNumberCard, MonitoringItemsOverviewCard],
         [MonitoringConfirmedCasesNumberCard],
       ],
     }
