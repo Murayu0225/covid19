@@ -6,8 +6,8 @@
 /* eslint-disable simple-import-sort/sort -- ブラウザでの表示順に合わせて各 card の component を import する */
 // ---- 項目一覧
 // 検査陽性者の状況
-import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
+import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import MonitoringConfirmedCasesNumberCard from '@/components/cards/MonitoringConfirmedCasesNumberCard.vue'
 import MonitoringItemsOverviewCard from '@/components/cards/MonitoringItemsOverviewCard.vue'
 import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
@@ -20,13 +20,11 @@ import { getLinksLanguageAlternative } from '@/utils/i18nUtils'
 
 export default {
   components: {
-    ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
+    ConfirmedCasesDetailsCard,
     MonitoringConfirmedCasesNumberCard,
     MonitoringItemsOverviewCard,
     ConfirmedCasesByMunicipalitiesCard,
-    // 下記のデータを2021年2月1日のアップデートで実装
-    // PositiveNumberByDevelopedDateCard,
     PositiveNumberByDiagnosedDateCard,
     PositiveNumberByDevelopedDateCard,
   },
@@ -36,11 +34,11 @@ export default {
       // NOTE: 以下，ブラウザでの表示順に合わせて条件分岐を行う
       // ---- 項目一覧
       // 検査陽性者の状況
+      case 'number-of-confirmed-cases':
+      cardComponent = 'confirmed-cases-number-card'
+      break
       case 'details-of-confirmed-cases':
         cardComponent = 'confirmed-cases-details-card'
-        break
-      case 'number-of-confirmed-cases':
-        cardComponent = 'confirmed-cases-number-card'
         break
       case 'monitoring-number-of-confirmed-cases':
         cardComponent = 'monitoring-confirmed-cases-number-card'
