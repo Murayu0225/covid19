@@ -8,7 +8,7 @@ import Vue from 'vue'
 
 // 報告日別陽性者数
 const ConfirmedCasesNumberCard = () =>
-import('@/components/cards/ConfirmedCasesNumberCard.vue')
+  import('@/components/cards/ConfirmedCasesNumberCard.vue')
 // モニタリング項目
 const MonitoringItemsOverviewCard = () =>
   import('@/components/cards/MonitoringItemsOverviewCard.vue')

@@ -35,8 +35,8 @@ export default {
       // ---- 項目一覧
       // 検査陽性者の状況
       case 'number-of-confirmed-cases':
-      cardComponent = 'confirmed-cases-number-card'
-      break
+        cardComponent = 'confirmed-cases-number-card'
+        break
       case 'details-of-confirmed-cases':
         cardComponent = 'confirmed-cases-details-card'
         break
