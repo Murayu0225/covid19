@@ -1,0 +1,18 @@
+{
+    "date": "2022\/1\/31 14:40",
+    "data": {
+        "place": {
+            "display": {
+                "@ja": "品川",
+                "@en": "Shinagawa"
+            }
+        },
+        "date": "2022-01-24",
+        "data": [
+            {
+                "reference_date": "2020-01-01",
+                "increase_rate": -65
+            }
+        ]
+    }
+}
