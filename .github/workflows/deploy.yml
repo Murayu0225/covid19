@@ -51,10 +51,11 @@ jobs:
           publish_dir: ./dist
           publish_branch: production
 
-      - name: Create GitHub release
-        uses: rymndhng/release-on-push-action@master
-        with:
-          bump_version_scheme: patch
+      # before product build
+      # - name: Create GitHub release
+        # uses: rymndhng/release-on-push-action@master
+        # with:
+          # bump_version_scheme: patch
 
       - name: run delete_fbcache.sh
         run: |
