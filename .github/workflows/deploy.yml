@@ -3,7 +3,7 @@ name: production deploy
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -51,10 +51,11 @@ jobs:
           publish_dir: ./dist
           publish_branch: production
 
-      - name: Create GitHub release
-        uses: rymndhng/release-on-push-action@master
-        with:
-          bump_version_scheme: patch
+      # before product build
+      # - name: Create GitHub release
+        # uses: rymndhng/release-on-push-action@master
+        # with:
+          # bump_version_scheme: patch
 
       - name: run delete_fbcache.sh
         run: |
