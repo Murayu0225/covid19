@@ -2,7 +2,7 @@
   <v-app class="app-print">
     <div v-if="loading" class="loader">
       <img src="/logo.svg" :alt="$t('相模原市')" />
-      <scale-loader color="#085c6c" />
+      <scale-loader color="#6789e2" />
     </div>
     <div v-else class="print-container">
       <div class="PrintMeta">

@@ -211,7 +211,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
   data() {
     return {
       displayLegends: [true, true],
-      colors: [getGraphSeriesColor('G'), getGraphSeriesColor('B')],
+      colors: [getGraphSeriesColor('A'), getGraphSeriesColor('B')],
       canvas: true,
       startDate: '2020-01-01',
       endDate: dayjs().format('YYYY-MM-DD'),
