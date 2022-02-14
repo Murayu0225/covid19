@@ -35,7 +35,7 @@ const config: NuxtConfig = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://sagamihara-stopcovid19.jp',
+        content: 'https://stopcovid19.metro.tokyo.lg.jp',
       },
       {
         hid: 'twitter:card',
@@ -45,12 +45,12 @@ const config: NuxtConfig = {
       {
         hid: 'twitter:site',
         name: 'twitter:site',
-        content: '@sagami_covid19',
+        content: '@tokyo_bousai',
       },
       {
         hid: 'twitter:creator',
         name: 'twitter:creator',
-        content: '@sagami_covid19',
+        content: '@tokyo_bousai',
       },
       {
         hid: 'fb:app_id',
@@ -213,8 +213,8 @@ const config: NuxtConfig = {
     whitelistPatterns: [/(col|row|v-window)/],
   },
   manifest: {
-    name: '相模原市 新型コロナウイルス感染症対策サイト',
-    theme_color: '#085c6c',
+    name: '東京都 新型コロナウイルス感染症対策サイト',
+    theme_color: '#00a040',
     background_color: '#ffffff',
     display: 'standalone',
     Scope: '/',
@@ -224,7 +224,7 @@ const config: NuxtConfig = {
   generate: {
     fallback: true,
     routes() {
-      const locales = ['en', 'zh-cn', 'zh-tw', 'ko']
+      const locales = ['en', 'zh-cn', 'zh-tw', 'ko', 'ja-basic']
       const pages = cardData.map((v: Settings) => {
         return v.path
       })

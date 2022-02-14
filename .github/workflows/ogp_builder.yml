@@ -3,7 +3,11 @@ name: OGP Builder
 on:
   push:
     branches:
+<<<<<<< HEAD
       - main
+=======
+      - master
+>>>>>>> tokyo/development
 
 jobs:
   build:

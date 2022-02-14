@@ -269,7 +269,7 @@ export default class CardContainer extends Vue implements NuxtConfig {
   }
 
   head() {
-    const url = 'https://sagamihara-stopcovid19.jp'
+    const url = 'https://stopcovid19.metro.tokyo.lg.jp'
     const timestamp = new Date().getTime()
     const defaultTitle = `${this.$t('東京都')} ${this.$t(
       '新型コロナウイルス感染症'

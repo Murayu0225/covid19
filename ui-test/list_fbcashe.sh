@@ -17,7 +17,7 @@ EOT
 
 for page in $PAGES; do
   for lang in $LANGS; do
-    echo "https://sagamihara-stopcovid19.jp/${lang}/cards/${page}"
+    echo "https://stopcovid19.metro.tokyo.lg.jp/${lang}/cards/${page}"
   done
   echo "https://stopcovid19.metro.tokyo.lg.jp/cards/${page}"
 done

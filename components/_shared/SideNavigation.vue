@@ -17,7 +17,7 @@
             :src="logoSrc"
             width="111"
             height="28"
-            :alt="$t('相模原市')"
+            :alt="$t('東京都')"
           />
           <span class="SideNavigation-HeaderText">
             {{ $t('menu/新型コロナウイルス感染症') }}<br />{{
@@ -66,7 +66,7 @@
         <ul class="SideNavigation-Social">
           <li class="SideNavigation-SocialLink-ListItem">
             <app-link
-              to="https://lin.ee/BMlBaDg"
+              to="https://line.me/R/ti/p/%40822sysfc"
               :show-icon="false"
               class="SideNavigation-SocialLink"
             >
@@ -78,7 +78,7 @@
           </li>
           <li class="SideNavigation-SocialLink-ListItem">
             <app-link
-              to="https://twitter.com/sagami_covid19"
+              to="https://twitter.com/tokyo_bousai"
               :show-icon="false"
               class="SideNavigation-SocialLink"
             >
@@ -95,7 +95,24 @@
           </li>
           <li class="SideNavigation-SocialLink-ListItem">
             <app-link
-              to="https://github.com/Murayu0225/covid19"
+              to="https://www.facebook.com/tochokoho"
+              :show-icon="false"
+              class="SideNavigation-SocialLink"
+            >
+              <picture>
+                <source srcset="/facebook.webp" type="image/webp" />
+                <img
+                  src="/facebook.png"
+                  width="130"
+                  height="130"
+                  alt="Facebook"
+                />
+              </picture>
+            </app-link>
+          </li>
+          <li class="SideNavigation-SocialLink-ListItem">
+            <app-link
+              to="https://github.com/tokyo-metropolitan-gov/covid19"
               :show-icon="false"
               class="SideNavigation-SocialLink"
             >
@@ -107,7 +124,7 @@
           </li>
           <li class="SideNavigation-SocialLink-ListItem">
             <app-link
-              to="https://www.youtube.com/user/SagamiharaCityOffice/videos"
+              to="https://www.youtube.com/user/tokyo/videos"
               :show-icon="false"
               class="SideNavigation-SocialLink"
             >
@@ -138,8 +155,20 @@
           </template>
         </i18n>
         <small class="SideNavigation-Copyright">
-          &copy; 2022 Yu Muramatsu
+          &copy; 2020 Tokyo Metropolitan Government
         </small>
+        <div class="SideNavigation-GMarkWrapper">
+          <app-link
+            to="https://www.g-mark.org/award/describe/51112"
+            :show-icon="false"
+          >
+            <img
+              src="/.netlify/functions/g-mark"
+              width="200"
+              alt="GOOD DESIGN AWARD 2020年度受賞"
+            />
+          </app-link>
+        </div>
       </footer>
     </div>
   </div>
@@ -151,6 +180,7 @@ import {
   mdiChartTimelineVariant,
   mdiClose,
   mdiDomain,
+  mdiHumanPregnant,
   mdiMenu,
 } from '@mdi/js'
 import Vue from 'vue'
@@ -207,7 +237,7 @@ export default Vue.extend({
         },
         {
           slug: 'notice-from-tmg',
-          text: this.$t('相模原市からのお知らせ'),
+          text: this.$t('東京都からのお知らせ'),
           isExpand: true,
         },
         {
@@ -221,7 +251,7 @@ export default Vue.extend({
       return [
         {
           iconPath: mdiChartTimelineVariant,
-          title: this.$t('市内の最新感染動向'),
+          title: this.$t('都内の最新感染動向'),
           link: this.localePath('/'),
           slug: 'covid19-info',
         },
@@ -230,55 +260,78 @@ export default Vue.extend({
           title: this.$t(
             '発熱症状がある方・新型コロナウイルス感染症が心配な方へ'
           ),
-          link: 'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019896.html',
+          link: 'https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/soudan/coronasodan.html',
           slug: 'covid19-info',
         },
         {
           svg: 'CovidIcon',
-          title: this.$t('新型コロナウイルス感染症の患者の方へ'),
-          link: 'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1023841.html',
+          title: this.$t('新型コロナウイルス感染症で自宅・宿泊療養される方へ'),
+          link: 'https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/shien/index.html',
           slug: 'covid19-info',
         },
         {
+          svg: 'SupportIcon',
+          title: this.$t(
+            '新型コロナウイルス感染症の患者発生状況に関するよくあるご質問'
+          ),
+          link: 'https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/coronafaq.html',
+          slug: 'covid19-info',
+        },
+        {
+          svg: 'MaskTrashIcon',
+          title: this.$t('ご家庭でのマスク等の捨て方'),
+          link: 'https://www.kankyo.metro.tokyo.lg.jp/resource/500200a20200221162304660.files/200327_chirashi.pdf',
+          slug: 'covid19-info',
+        },
+        {
+          svg: 'ParentIcon',
+          title: this.$t('お子様をお持ちの皆様へ'),
+          link: this.localePath('/parent'),
+          slug: 'support-info',
+        },
+        {
+          iconPath: mdiHumanPregnant,
+          title: this.$t('妊産婦の皆様へ'),
+          link: 'https://www.fukushihoken.metro.tokyo.lg.jp/oshirase/ninsanpu.html',
+          slug: 'support-info',
+        },
+        {
           iconPath: mdiAccountMultiple,
-          title: this.$t('市民の皆様へ'),
-          link: 'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1020293.html',
+          title: this.$t('都民の皆様へ'),
+          link: 'https://www.metro.tokyo.lg.jp/tosei/tosei/news/2019-ncov.html',
           slug: 'support-info',
         },
         {
           iconPath: mdiDomain,
           title: this.$t('企業の皆様・はたらく皆様へ'),
-          link: 'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1020291.html',
+          link: this.localePath('/worker'),
           slug: 'support-info',
         },
         {
-          title: this.$t('市民利用施設に関する情報'),
-          link: 'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019215.html',
+          title: this.$t('東京都 新型コロナウイルス感染症 支援情報ナビ'),
+          link: 'https://covid19.supportnavi.metro.tokyo.lg.jp/',
+          slug: 'support-info',
+        },
+        {
+          title: this.$t('東京都新型コロナウイルス感染症対策本部報'),
+          link: 'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1010035/index.html',
           slug: 'notice-from-tmg',
         },
         {
-          title: this.$t('イベントに関する情報'),
-          link: 'https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019175.html',
+          title: this.$t(
+            '新型コロナウイルス感染症に罹患し回復された方の体験に基づくメッセージの紹介'
+          ),
+          link: 'https://www.seisakukikaku.metro.tokyo.lg.jp/information/corona-message-for-you-02.html',
           slug: 'notice-from-tmg',
         },
         {
-          title: this.$t('相模原市医師会 新型コロナウイルス特設サイト'),
-          link: 'https://www.sagamihara.kanagawa.med.or.jp/covid19',
+          title: this.$t('都民利用施設・都主催イベントに関する情報'),
+          link: 'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html',
           slug: 'notice-from-tmg',
         },
         {
-          title: this.$t('市長からのメッセージ'),
-          link: 'https://www.city.sagamihara.kanagawa.jp/channel/1012225/1019894/index.html',
-          slug: 'notice-from-tmg',
-        },
-        {
-          title: this.$t('神奈川県内の最新感染動向'),
-          link: 'https://www.pref.kanagawa.jp/osirase/1369/',
-          slug: 'notice-from-tmg',
-        },
-        {
-          title: this.$t('相模原市公式ホームページ'),
-          link: 'https://www.city.sagamihara.kanagawa.jp/index.html',
+          title: this.$t('東京都公式ホームページ'),
+          link: 'https://www.metro.tokyo.lg.jp/',
           slug: 'notice-from-tmg',
         },
         {
@@ -287,10 +340,8 @@ export default Vue.extend({
           slug: 'site-info',
         },
         {
-          title: this.$t(
-            '改善・アンケートフォームはこちら（外部サービスを使用しています）'
-          ),
-          link: 'https://forms.gle/Vf9ZwjZq7aFjhzjCA',
+          title: this.$t('ご意見はこちら（外部サービスを使用しています）'),
+          link: 'https://docs.google.com/forms/d/e/1FAIpQLSdSROCPyr6Aj6WoAoYfqcT6StDOEUB38Grug1EJjUYzppcEZg/viewform?usp=sf_link',
           slug: 'site-info',
         },
         {
@@ -308,11 +359,13 @@ export default Vue.extend({
     logoSrc(): string {
       switch (this.$i18n.locale) {
         case 'ja':
-        case 'zh-cn':
+        case 'ja-basic':
         case 'zh-tw':
           return '/logo.svg'
         case 'ko':
           return '/logo-ko.png'
+        case 'zh-cn':
+          return '/logo-zh-cn.png'
         default:
           return '/logo-en.png'
       }

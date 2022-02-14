@@ -13,7 +13,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-o', '--out', action='store_true', help='output screenshots.')
 args = parser.parse_args()
 
-HOST = 'https://sagamihara-stopcovid19.jp'
+HOST = 'https://stopcovid19.metro.tokyo.lg.jp'
 OUT_DIR = 'out'
 
 PATHS = (

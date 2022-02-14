@@ -1,5 +1,5 @@
 {
-    "date": "2022\/2\/3 20:30",
+    "date": "2022\/2\/13 19:45",
     "data": [
         {
             "date": "2020-02-28",
@@ -3535,6 +3535,56 @@
             "date": "2022-02-03",
             "hospitalized": 3831,
             "severe_case": 38
+        },
+        {
+            "date": "2022-02-04",
+            "hospitalized": 3908,
+            "severe_case": 41
+        },
+        {
+            "date": "2022-02-05",
+            "hospitalized": 3974,
+            "severe_case": 44
+        },
+        {
+            "date": "2022-02-06",
+            "hospitalized": 3991,
+            "severe_case": 45
+        },
+        {
+            "date": "2022-02-07",
+            "hospitalized": 4016,
+            "severe_case": 48
+        },
+        {
+            "date": "2022-02-08",
+            "hospitalized": 4025,
+            "severe_case": 51
+        },
+        {
+            "date": "2022-02-09",
+            "hospitalized": 4111,
+            "severe_case": 59
+        },
+        {
+            "date": "2022-02-10",
+            "hospitalized": 4131,
+            "severe_case": 64
+        },
+        {
+            "date": "2022-02-11",
+            "hospitalized": 4194,
+            "severe_case": 61
+        },
+        {
+            "date": "2022-02-12",
+            "hospitalized": 4189,
+            "severe_case": 62
+        },
+        {
+            "date": "2022-02-13",
+            "hospitalized": 4213,
+            "severe_case": 65
         }
     ]
 }

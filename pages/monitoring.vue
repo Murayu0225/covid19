@@ -52,7 +52,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     return {
       headerItem: {
         iconPath: mdiChartTimelineVariant,
-        title: this.$t('市内の最新感染動向') as string,
+        title: this.$t('都内の最新感染動向') as string,
       },
     }
   },
@@ -66,7 +66,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
   },
   head(): MetaInfo {
     return {
-      title: `${this.$t('市内の最新感染動向')} : ${this.$t(
+      title: `${this.$t('都内の最新感染動向')} : ${this.$t(
         'モニタリング項目'
       )}` as string,
     }

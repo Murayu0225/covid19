@@ -11,7 +11,18 @@
         <li>
           <app-link
             class="WhatsNew-linkButton"
-            to="https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1022588/index.html"
+            to="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/henikabu/omicron_info.html"
+          >
+            <span class="WhatsNew-linkButton-inner">
+              <covid-icon class="WhatsNew-linkButton-icon" aria-hidden="true" />
+              {{ $t('オミクロン株情報') }}
+            </span>
+          </app-link>
+        </li>
+        <li>
+          <app-link
+            class="WhatsNew-linkButton"
+            to="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronavaccine/index.html"
           >
             <span class="WhatsNew-linkButton-inner">
               <vaccine-icon
@@ -19,6 +30,19 @@
                 aria-hidden="true"
               />
               {{ $t('ワクチン情報') }}
+            </span>
+          </app-link>
+        </li>
+        <li>
+          <app-link
+            class="WhatsNew-linkButton"
+            to="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/shien/index.html"
+          >
+            <span class="WhatsNew-linkButton-inner">
+              <v-icon size="1.2em" class="WhatsNew-linkButton-v-icon">
+                {{ mdiHomeAccount }}
+              </v-icon>
+              {{ $t('自宅での療養') }}
             </span>
           </app-link>
         </li>
@@ -46,6 +70,7 @@ import { mdiHomeAccount, mdiInformation } from '@mdi/js'
 import Vue from 'vue'
 
 import AppLink from '@/components/_shared/AppLink.vue'
+import CovidIcon from '@/static/covid.svg'
 import VaccineIcon from '@/static/vaccine.svg'
 import { convertDateToISO8601Format } from '@/utils/formatDate'
 
@@ -53,6 +78,7 @@ export default Vue.extend({
   components: {
     AppLink,
     VaccineIcon,
+    CovidIcon,
   },
   props: {
     items: {
