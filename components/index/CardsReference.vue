@@ -35,20 +35,6 @@ const PositiveNumberByDiagnosedDateCard = () =>
 // 死亡日別による死亡者数の推移
 const DeathsByDeathDateCard = () =>
   import('@/components/index/CardsReference/DeathsByDeathDate/Card.vue')
-// L452R変異株スクリーニングの実施状況
-const VariantCard = () =>
-  import('@/components/index/CardsReference/Variant/Card.vue')
-// 都営地下鉄の利用者数の推移
-const MetroCard = () =>
-  import('@/components/index/CardsReference/Metro/Card.vue')
-// 都庁来庁者数の推移
-const AgencyCard = () =>
-  import('@/components/index/CardsReference/Agency/Card.vue')
-// 受診相談窓口における相談件数
-const MonitoringConsultationDeskReportsNumberCard = () =>
-  import(
-    '@/components/index/CardsReference/MonitoringConsultationDeskReportsNumber/Card.vue'
-  )
 /* eslint-enable simple-import-sort/imports */
 
 export default Vue.extend({
@@ -61,9 +47,8 @@ export default Vue.extend({
         [ConfirmedCasesAttributesCard, ConfirmedCasesByMunicipalitiesCard],
         [PositiveNumberByDevelopedDateCard, PositiveNumberByDiagnosedDateCard],
         [PositiveNumberOver65Card, DeathsByDeathDateCard],
-        [MetroCard, AgencyCard],
       ],
-      hideRows: [[VariantCard, MonitoringConsultationDeskReportsNumberCard]],
+      hideRows: [[]],
     }
   },
 })

@@ -41,6 +41,7 @@
         {{ mdiClose }}
       </v-icon>
 
+      <!-- 多言語対応をしていないのでコメントアウト
       <nav class="SideNavigation-Menu">
         <div class="SideNavigation-Language">
           <div v-if="$i18n.locales.length > 1" class="SideNavigation-Language">
@@ -61,6 +62,7 @@
           @click="$emit('close-navigation', $event)"
         />
       </nav>
+      -->
 
       <footer class="SideNavigation-Footer">
         <ul class="SideNavigation-Social">
