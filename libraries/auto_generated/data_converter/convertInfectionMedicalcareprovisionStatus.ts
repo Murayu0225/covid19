@@ -1,48 +1,39 @@
 // To parse this data:
 //
-//   import { Convert, Variants } from "./file";
+//   import { Convert, InfectionMedicalcareprovisionStatus } from "./file";
 //
-//   const variants = Convert.toVariants(json);
+//   const infectionMedicalcareprovisionStatus = Convert.toInfectionMedicalcareprovisionStatus(json);
 //
 // These functions will throw an error if the JSON doesn't
 // match the expected interface, even if the JSON is valid.
 
-export interface Variants {
-    date:     string;
-    datasets: Dataset[];
-}
-
-export interface Dataset {
-    period: Period;
-    data:   Data;
+export interface InfectionMedicalcareprovisionStatus {
+    date: string;
+    data: Data;
 }
 
 export interface Data {
-    l452R:            L452R;
-    variantTestCount: number;
-    variantPcrRate:   number;
-    negativeRate:     number;
-}
-
-export interface L452R {
-    positiveCount: number;
-    positiveRate:  number;
-}
-
-export interface Period {
-    begin: Date;
-    end:   Date;
+    新規陽性者:           number;
+    検査数:             number;
+    検査統計日時:          Date;
+    うち65歳以上の高齢者数:    number;
+    死亡者数:            number;
+    都外からの持込検体による陽性数: number;
+    入院数:             number;
+    確保病床数:           number;
+    うち重症者数:          number;
+    うち重症病床数:         number;
 }
 
 // Converts JSON strings to/from your types
 // and asserts the results of JSON.parse at runtime
 export class Convert {
-    public static toVariants(json: string): Variants {
-        return cast(JSON.parse(json), r("Variants"));
+    public static toInfectionMedicalcareprovisionStatus(json: string): InfectionMedicalcareprovisionStatus {
+        return cast(JSON.parse(json), r("InfectionMedicalcareprovisionStatus"));
     }
 
-    public static variantsToJson(value: Variants): string {
-        return JSON.stringify(uncast(value, r("Variants")), null, 2);
+    public static infectionMedicalcareprovisionStatusToJson(value: InfectionMedicalcareprovisionStatus): string {
+        return JSON.stringify(uncast(value, r("InfectionMedicalcareprovisionStatus")), null, 2);
     }
 }
 
@@ -179,26 +170,20 @@ function r(name: string) {
 }
 
 const typeMap: any = {
-    "Variants": o([
+    "InfectionMedicalcareprovisionStatus": o([
         { json: "date", js: "date", typ: "" },
-        { json: "datasets", js: "datasets", typ: a(r("Dataset")) },
-    ], false),
-    "Dataset": o([
-        { json: "period", js: "period", typ: r("Period") },
         { json: "data", js: "data", typ: r("Data") },
     ], false),
     "Data": o([
-        { json: "L452R", js: "l452R", typ: r("L452R") },
-        { json: "variant_test_count", js: "variantTestCount", typ: 0 },
-        { json: "variant_pcr_rate", js: "variantPcrRate", typ: 3.14 },
-        { json: "negative_rate", js: "negativeRate", typ: 3.14 },
-    ], false),
-    "L452R": o([
-        { json: "positive_count", js: "positiveCount", typ: 0 },
-        { json: "positive_rate", js: "positiveRate", typ: 3.14 },
-    ], false),
-    "Period": o([
-        { json: "begin", js: "begin", typ: Date },
-        { json: "end", js: "end", typ: Date },
+        { json: "新規陽性者", js: "新規陽性者", typ: 0 },
+        { json: "検査数", js: "検査数", typ: 3.14 },
+        { json: "検査統計日時", js: "検査統計日時", typ: Date },
+        { json: "うち65歳以上の高齢者数", js: "うち65歳以上の高齢者数", typ: 0 },
+        { json: "死亡者数", js: "死亡者数", typ: 0 },
+        { json: "都外からの持込検体による陽性数", js: "都外からの持込検体による陽性数", typ: 0 },
+        { json: "入院数", js: "入院数", typ: 0 },
+        { json: "確保病床数", js: "確保病床数", typ: 0 },
+        { json: "うち重症者数", js: "うち重症者数", typ: 0 },
+        { json: "うち重症病床数", js: "うち重症病床数", typ: 0 },
     ], false),
 };

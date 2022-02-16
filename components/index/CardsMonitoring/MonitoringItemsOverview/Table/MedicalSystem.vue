@@ -7,27 +7,17 @@
       <ul :class="$style.group">
         <li :class="[$style.box, $style.parent]">
           <div :class="$style.content">
-            <span>{{ $t('(4)PCR・抗原検査') }}</span>
+            <span>{{ $t('（４）陽性率') }}</span>
+            <value-with-translatable-unit
+              :value="items['陽性率'].value"
+              :unit="items['陽性率'].unit"
+            />
           </div>
           <ul :class="$style.group">
             <li :class="[$style.box]">
               <div :class="$style.content">
-                <span>{{ $t('陽性率') }}</span>
-                <value-with-translatable-unit
-                  :value="items['(4)PCR・抗原検査（陽性率）'].value"
-                  :unit="items['(4)PCR・抗原検査（陽性率）'].unit"
-                  :bold="items['(4)PCR・抗原検査（検査人数）'].bold"
-                />
-              </div>
-            </li>
-            <li :class="[$style.box]">
-              <div :class="$style.content">
-                <span>{{ $t('検査人数') }}</span>
-                <value-with-translatable-unit
-                  :value="items['(4)PCR・抗原検査（検査人数）'].value"
-                  :unit="items['(4)PCR・抗原検査（検査人数）'].unit"
-                  :bold="items['(4)PCR・抗原検査（検査人数）'].bold"
-                />
+                <span>{{ $t('陽性率（参考値）') }}</span>
+                <span>{{ items['陽性率（参考値）'].value }}</span>
               </div>
             </li>
           </ul>
@@ -39,56 +29,57 @@
         <span>{{ $t('受入体制') }}</span>
       </div>
       <ul :class="$style.group">
-        <li :class="[$style.box]">
-          <div :class="$style.content">
-            <span>{{ $t('(5)救急医療の東京ルールの適用件数') }}</span>
-            <value-with-translatable-unit
-              :value="items['(5)救急医療の東京ルールの適用件数'].value"
-              :unit="items['(5)救急医療の東京ルールの適用件数'].unit"
-              :bold="items['(5)救急医療の東京ルールの適用件数'].bold"
-            />
-          </div>
-        </li>
         <li :class="[$style.box, $style.parent]">
           <div :class="$style.content">
-            <span>{{ $t('(6)入院患者数') }}</span>
+            <span>{{ $t('（５）病床の逼迫具合') }}</span>
             <value-with-translatable-unit
-              :value="items['(6)入院患者数'].value"
-              :unit="items['(6)入院患者数'].unit"
-              :bold="items['(6)入院患者数'].bold"
+              :value="items['病床の逼迫具合'].value"
+              :unit="items['病床の逼迫具合'].unit"
             />
           </div>
           <ul :class="$style.group">
             <li :class="[$style.box]">
               <div :class="$style.content">
-                <span>{{ $t('確保病床') }}</span>
-                <value-with-translatable-unit
-                  :value="items['(6)入院患者確保病床数'].value"
-                  :unit="items['(6)入院患者確保病床数'].unit"
-                  :bold="items['(6)入院患者確保病床数'].bold"
-                />
+                <span>{{ $t('病床の逼迫具合（参考値）') }}</span>
+                <span>{{ items['病床の逼迫具合（参考値）'].value }}</span>
               </div>
             </li>
           </ul>
         </li>
         <li :class="[$style.box, $style.parent]">
           <div :class="$style.content">
-            <span>{{ $t('(7)重症患者数') }}</span>
+            <span>{{ $t('（６）重症者用病床の逼迫具合') }}</span>
             <value-with-translatable-unit
-              :value="items['(7)重症患者数'].value"
-              :unit="items['(7)重症患者数'].unit"
-              :bold="items['(7)重症患者数'].bold"
+              :value="items['重症者用病床の逼迫具合'].value"
+              :unit="items['重症者用病床の逼迫具合'].unit"
             />
           </div>
           <ul :class="$style.group">
             <li :class="[$style.box]">
               <div :class="$style.content">
-                <span>{{ $t('確保病床') }}</span>
-                <value-with-translatable-unit
-                  :value="items['(7)重症患者確保病床数'].value"
-                  :unit="items['(7)重症患者確保病床数'].unit"
-                  :bold="items['(7)重症患者確保病床数'].bold"
-                />
+                <span>{{ $t('重症者用病床の逼迫具合（参考値）') }}</span>
+                <span>{{
+                  items['重症者用病床の逼迫具合（参考値）'].value
+                }}</span>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li :class="[$style.box, $style.parent]">
+          <div :class="$style.content">
+            <span>{{ $t('（７）人口10万人当たりの療養者数') }}</span>
+            <value-with-translatable-unit
+              :value="items['人口10万人当たりの療養者数'].value"
+              :unit="items['人口10万人当たりの療養者数'].unit"
+            />
+          </div>
+          <ul :class="$style.group">
+            <li :class="[$style.box]">
+              <div :class="$style.content">
+                <span>{{ $t('人口10万人当たりの療養者数（参考値）') }}</span>
+                <span>{{
+                  items['人口10万人当たりの療養者数（参考値）'].value
+                }}</span>
               </div>
             </li>
           </ul>

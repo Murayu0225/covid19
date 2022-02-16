@@ -41,8 +41,8 @@
         {{ mdiClose }}
       </v-icon>
 
-      <!-- 多言語対応をしていないのでコメントアウト(163.182行目のコメントアウトの削除も必要)
       <nav class="SideNavigation-Menu">
+        <!-- 多言語対応をしていないのでコメントアウト(163.182行目のコメントアウトの削除も必要)
         <div class="SideNavigation-Language">
           <div v-if="$i18n.locales.length > 1" class="SideNavigation-Language">
             <label
@@ -56,13 +56,13 @@
             <language-selector />
           </div>
         </div>
+        -->
         <menu-list
           :items="items"
           :item-titles="itemTitles"
           @click="$emit('close-navigation', $event)"
         />
       </nav>
-      -->
 
       <footer class="SideNavigation-Footer">
         <ul class="SideNavigation-Social">
@@ -161,7 +161,7 @@ import type { TranslateResult } from 'vue-i18n'
 import AppLink from '@/components/_shared/AppLink.vue'
 // 翻訳対応時に下記コメントアウトを削除
 // import LanguageSelector from '@/components/_shared/SideNavigation/LanguageSelector.vue'
-// import MenuList from '@/components/_shared/SideNavigation/MenuList.vue'
+import MenuList from '@/components/_shared/SideNavigation/MenuList.vue'
 
 type ItemTitle = {
   slug: string
@@ -181,7 +181,7 @@ export default Vue.extend({
   components: {
     // 翻訳対応時に下記コメントアウトを削除
     // LanguageSelector,
-    // MenuList,
+    MenuList,
     AppLink,
   },
   props: {

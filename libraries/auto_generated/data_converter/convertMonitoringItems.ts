@@ -8,36 +8,26 @@
 // match the expected interface, even if the JSON is valid.
 
 export interface MonitoringItems {
-    date: string;
-    data: Data;
+    date:       string;
+    updatedate: string;
+    data:       Data;
 }
 
 export interface Data {
-    専門家3行コメント:                        専門家3行コメント[];
-    the1新規陽性者数:                       number;
-    the27119東京消防庁救急相談センターにおける発熱等相談件数: number;
-    the3新規陽性者における接触歴等不明者人数:           number;
-    the3新規陽性者における接触歴等不明者増加比:          number;
-    the4Pcr抗原検査陽性率:                   number;
-    the4Pcr抗原検査検査人数:                  number;
-    the5救急医療の東京ルールの適用件数:              number;
-    the6入院患者数:                        number;
-    the6入院患者確保病床数:                    number;
-    the7重症患者数:                        number;
-    the7重症患者確保病床数:                    number;
-    総括コメント感染状況:                       総括コメント;
-    総括コメント医療提供体制:                     総括コメント;
-}
-
-export interface 専門家3行コメント {
-    ja: string;
-    en: string;
-}
-
-export interface 総括コメント {
-    date:    Date;
-    level:   number;
-    display: 専門家3行コメント;
+    人口10万人当たりの累積陽性者数:    string;
+    人口10万人当たりの累積陽性者数参考値: string;
+    陽性患者増加比:             string;
+    陽性患者増加比参考値:          string;
+    感染経路不明者の割合:          string;
+    感染経路不明者の割合参考値:       string;
+    陽性率:                 string;
+    陽性率参考値:              string;
+    病床の逼迫具合:             string;
+    病床の逼迫具合参考値:          string;
+    重症者用病床の逼迫具合:         string;
+    重症者用病床の逼迫具合参考値:      string;
+    人口10万人当たりの療養者数:      string;
+    人口10万人当たりの療養者数参考値:   string;
 }
 
 // Converts JSON strings to/from your types
@@ -187,33 +177,23 @@ function r(name: string) {
 const typeMap: any = {
     "MonitoringItems": o([
         { json: "date", js: "date", typ: "" },
+        { json: "updatedate", js: "updatedate", typ: "" },
         { json: "data", js: "data", typ: r("Data") },
     ], false),
     "Data": o([
-        { json: "専門家3行コメント", js: "専門家3行コメント", typ: a(r("専門家3行コメント")) },
-        // (1) - (5) は7日間移動平均につき小数になることがある．
-        // したがってこれらについては typ: 3.14 とすること．
-        { json: "(1)新規陽性者数", js: "the1新規陽性者数", typ: 3.14 },
-        { json: "(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 ", js: "the27119東京消防庁救急相談センターにおける発熱等相談件数", typ: 3.14 },
-        { json: "(3)新規陽性者における接触歴等不明者（人数）", js: "the3新規陽性者における接触歴等不明者人数", typ: 3.14 },
-        { json: "(3)新規陽性者における接触歴等不明者（増加比）", js: "the3新規陽性者における接触歴等不明者増加比", typ: 3.14 },
-        { json: "(4)PCR・抗原検査（陽性率）", js: "the4Pcr抗原検査陽性率", typ: 3.14 },
-        { json: "(4)PCR・抗原検査（検査人数）", js: "the4Pcr抗原検査検査人数", typ: 3.14 },
-        { json: "(5)救急医療の東京ルールの適用件数", js: "the5救急医療の東京ルールの適用件数", typ: 3.14 },
-        { json: "(6)入院患者数", js: "the6入院患者数", typ: 0 },
-        { json: "(6)入院患者確保病床数", js: "the6入院患者確保病床数", typ: 0 },
-        { json: "(7)重症患者数", js: "the7重症患者数", typ: 0 },
-        { json: "(7)重症患者確保病床数", js: "the7重症患者確保病床数", typ: 0 },
-        { json: "総括コメント-感染状況", js: "総括コメント感染状況", typ: r("総括コメント") },
-        { json: "総括コメント-医療提供体制", js: "総括コメント医療提供体制", typ: r("総括コメント") },
-    ], false),
-    "専門家3行コメント": o([
-        { json: "@ja", js: "ja", typ: "" },
-        { json: "@en", js: "en", typ: "" },
-    ], false),
-    "総括コメント": o([
-        { json: "date", js: "date", typ: Date },
-        { json: "level", js: "level", typ: 0 },
-        { json: "display", js: "display", typ: r("専門家3行コメント") },
+        { json: "人口10万人当たりの累積陽性者数", js: "人口10万人当たりの累積陽性者数", typ: "" },
+        { json: "人口10万人当たりの累積陽性者数（参考値）", js: "人口10万人当たりの累積陽性者数参考値", typ: "" },
+        { json: "陽性患者増加比", js: "陽性患者増加比", typ: "" },
+        { json: "陽性患者増加比（参考値）", js: "陽性患者増加比参考値", typ: "" },
+        { json: "感染経路不明者の割合", js: "感染経路不明者の割合", typ: "" },
+        { json: "感染経路不明者の割合（参考値）", js: "感染経路不明者の割合参考値", typ: "" },
+        { json: "陽性率", js: "陽性率", typ: "" },
+        { json: "陽性率（参考値）", js: "陽性率参考値", typ: "" },
+        { json: "病床の逼迫具合", js: "病床の逼迫具合", typ: "" },
+        { json: "病床の逼迫具合（参考値）", js: "病床の逼迫具合参考値", typ: "" },
+        { json: "重症者用病床の逼迫具合", js: "重症者用病床の逼迫具合", typ: "" },
+        { json: "重症者用病床の逼迫具合（参考値）", js: "重症者用病床の逼迫具合参考値", typ: "" },
+        { json: "人口10万人当たりの療養者数", js: "人口10万人当たりの療養者数", typ: "" },
+        { json: "人口10万人当たりの療養者数（参考値）", js: "人口10万人当たりの療養者数参考値", typ: "" },
     ], false),
 };
