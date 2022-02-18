@@ -221,7 +221,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     dayPeriod: {
       type: Number,
-      default: 14,
+      default: 48,
     },
   },
   data() {
@@ -235,7 +235,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       displayLegends: [true, true],
       colors,
       startDate: '2020-01-01',
-      endDate: dayjs().format('YYYY-MM-DD'),
+      endDate: dayjs().format('YYY-MM-DDT00:00:00+09:00'),
     }
   },
   computed: {
@@ -303,7 +303,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 
       const rangeDate = this.labels.filter((item) => {
         const date = dayjs(item)
-        return date.isBetween(this.startDate, this.endDate, null, '[]')
+        return date.isBetween(this.startDate, this.endDate, 'day', '[]')
       })
 
       return {
