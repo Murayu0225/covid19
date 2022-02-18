@@ -174,7 +174,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     },
     dayPeriod: {
       type: Number,
-      default: 60,
+      default: 14,
     },
   },
   data: () => ({

@@ -56,13 +56,6 @@
     "ogpHeight": 500
   },
   {
-    "path": "/cards/attributes-of-confirmed-cases",
-    "title": "陽性者の属性",
-    "category": "その他 参考指標",
-    "ogpWidth": 959,
-    "ogpHeight": 480
-  },
-  {
     "path": "/cards/number-of-confirmed-cases-by-municipalities",
     "title": "陽性者数（区市町村別）",
     "category": "その他 参考指標",
@@ -70,8 +63,8 @@
     "ogpHeight": 480
   },
   {
-    "path": "/cards/positive-number-over65",
-    "title": "報告日別による陽性者数（65歳以上）の推移",
+    "path": "/cards/positive-number-over70",
+    "title": "報告日別による陽性者数（70代以上）の推移",
     "category": "その他 参考指標",
     "ogpWidth": 959,
     "ogpHeight": 570

@@ -3,7 +3,7 @@
 require 'spec_helper'
 
 card_classes = [
-  '.DataCard.PositiveNumberOver65Card',
+  '.DataCard.PositiveNumberOver70Card',
   '.DataCard.PositiveNumberByDevelopedDateCard',
   '.DataCard.PositiveNumberByDiagnosedDateCard',
   '.DataCard.DeathsByDeathDateCard',

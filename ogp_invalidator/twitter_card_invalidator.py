@@ -19,7 +19,6 @@ OUT_DIR = 'out'
 PATHS = (
     'cards/details-of-confirmed-cases',
     'cards/number-of-confirmed-cases',
-    'cards/attributes-of-confirmed-cases',
 )
 
 LANGS = (

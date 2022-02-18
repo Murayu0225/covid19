@@ -79,9 +79,6 @@
         :unit="displayInfos[0].unit"
       />
     </template>
-    <template #footer>
-      <open-data-link v-show="url" :url="url" />
-    </template>
   </data-view>
 </template>
 
@@ -99,7 +96,6 @@ import DataViewTable, {
   TableItem,
 } from '@/components/index/_shared/DataViewTable.vue'
 import DateRangeSlider from '@/components/index/_shared/DateRangeSlider.vue'
-import OpenDataLink from '@/components/index/_shared/OpenDataLink.vue'
 import { DisplayData } from '@/plugins/vue-chart'
 import calcDayBeforeRatio from '@/utils/calcDayBeforeRatio'
 import { getGraphSeriesColor, SurfaceStyle } from '@/utils/colors'
@@ -166,7 +162,6 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     DataViewTable,
     DataViewDataSetPanel,
     DateRangeSlider,
-    OpenDataLink,
   },
   props: {
     title: {
@@ -226,12 +221,12 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     dayPeriod: {
       type: Number,
-      default: 60,
+      default: 14,
     },
   },
   data() {
     const colors: SurfaceStyle[] = [
-      getGraphSeriesColor('C'),
+      getGraphSeriesColor('B'),
       getGraphSeriesColor('E'),
     ]
 

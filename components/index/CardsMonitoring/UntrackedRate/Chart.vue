@@ -228,15 +228,15 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     dayPeriod: {
       type: Number,
-      default: 60,
+      default: 14,
     },
   },
   data() {
     return {
       canvas: true,
       colors: [
-        getGraphSeriesColor('A'),
-        getGraphSeriesColor('C'),
+        getGraphSeriesColor('B'),
+        getGraphSeriesColor('D'),
         getGraphSeriesColor('E'),
         getGraphSeriesColor('H'),
       ],

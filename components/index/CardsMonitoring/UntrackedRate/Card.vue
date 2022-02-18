@@ -2,7 +2,6 @@
   <v-col cols="12" md="6" class="DataCard UntrackedRateCard">
     <client-only>
       <chart
-        :title="$t('モニタリング項目(3)')"
         :title-id="'untracked-rate'"
         :info-titles="[$t('新規陽性者における接触歴等不明者数'), $t('増加比')]"
         :chart-id="'untracked-rate-chart'"

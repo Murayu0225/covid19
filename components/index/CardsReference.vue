@@ -11,17 +11,14 @@ import Vue from 'vue'
 
 import CardsLazyRow from '@/components/index/_shared/CardsLazyRow.vue'
 
-// 陽性者の属性
-const ConfirmedCasesAttributesCard = () =>
-  import('@/components/index/CardsReference/ConfirmedCasesAttributes/Card.vue')
 // 陽性者数（区市町村別）
 const ConfirmedCasesByMunicipalitiesCard = () =>
   import(
     '@/components/index/CardsReference/ConfirmedCasesByMunicipalities/Card.vue'
   )
 // 報告日別による陽性者数（65歳以上）の推移
-const PositiveNumberOver65Card = () =>
-  import('@/components/index/CardsReference/PositiveNumberOver65/Card.vue')
+const PositiveNumberOver70Card = () =>
+  import('@/components/index/CardsReference/PositiveNumberOver70/Card.vue')
 // 発症日別による陽性者数の推移
 const PositiveNumberByDevelopedDateCard = () =>
   import(
@@ -44,11 +41,12 @@ export default Vue.extend({
   data() {
     return {
       rows: [
-        [ConfirmedCasesAttributesCard, ConfirmedCasesByMunicipalitiesCard],
-        [PositiveNumberByDevelopedDateCard, PositiveNumberByDiagnosedDateCard],
-        [PositiveNumberOver65Card, DeathsByDeathDateCard],
+        [ConfirmedCasesByMunicipalitiesCard, PositiveNumberOver70Card],
+        [DeathsByDeathDateCard],
       ],
-      hideRows: [[]],
+      hideRows: [
+        [PositiveNumberByDevelopedDateCard, PositiveNumberByDiagnosedDateCard],
+      ],
     }
   },
 })

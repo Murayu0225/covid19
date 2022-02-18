@@ -7,7 +7,7 @@
           <v-icon class="mr-2">
             {{ mdiChartTimelineVariant }}
           </v-icon>
-          {{ $t('都内の最新感染動向') }}
+          {{ $t('市内の最新感染動向') }}
         </app-link>
       </h3>
       <section>
@@ -67,51 +67,12 @@
     </static-card>
     <static-card>
       <h3>
-        <app-link :to="localePath('/parent')" class="Sitemap-titleLink">
-          <span class="Sitemap-titleIcon">
-            <parent-icon />
-          </span>
-          {{ $t('お子様をお持ちの皆様へ') }}
-        </app-link>
-      </h3>
-      <p>
-        {{ $t('子供たちの学びを支援するコンテンツ等について') }}
-      </p>
-    </static-card>
-    <static-card>
-      <h3>
-        <app-link :to="localePath('/worker')" class="Sitemap-titleLink">
-          <v-icon class="mr-2">
-            {{ mdiDomain }}
-          </v-icon>
-          {{ $t('企業の皆様・はたらく皆様へ') }}
-        </app-link>
-      </h3>
-      <p>
-        {{ $t('事業者の皆様に対する支援情報およびテレワーク等の推進について') }}
-      </p>
-    </static-card>
-    <static-card>
-      <h3>
         <app-link :to="localePath('/about')" class="Sitemap-titleLink">
           {{ $t('当サイトについて') }}
         </app-link>
       </h3>
       <p>
         {{ $t('サイトの目的、アクセシビリティ方針、ブラウザ環境等について') }}
-      </p>
-    </static-card>
-    <static-card>
-      <h3>
-        <app-link
-          :to="localePath('/accessibility-results')"
-          class="Sitemap-titleLink"
-        >
-          {{ $t('ウェブアクセシビリティ試験結果（2021年度）') }}
-        </app-link>
-      </h3>
-      <p>
-        {{ $t('ウェブアクセシビリティ試験結果（2021年度）について') }}
       </p>
     </static-card>
     <static-card>
@@ -136,7 +97,6 @@ import cardData from '@/assets/json/cardRoutesSettings.json'
 import AppLink from '@/components/_shared/AppLink.vue'
 import PageHeader from '@/components/_shared/PageHeader.vue'
 import StaticCard from '@/components/_shared/StaticCard.vue'
-import ParentIcon from '@/static/parent.svg'
 import { Settings } from '@/types/cardRoutesSettings'
 
 type Data = {
@@ -155,7 +115,6 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     PageHeader,
     StaticCard,
     AppLink,
-    ParentIcon,
   },
   data() {
     return {
