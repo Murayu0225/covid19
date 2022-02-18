@@ -51,11 +51,10 @@ jobs:
           publish_dir: ./dist
           publish_branch: production
 
-      # before product build
-      # - name: Create GitHub release
-        # uses: rymndhng/release-on-push-action@master
-        # with:
-          # bump_version_scheme: patch
+      - name: Create GitHub release
+        uses: rymndhng/release-on-push-action@master
+        with:
+          bump_version_scheme: patch
 
       # Occurred permission error
       # - name: run delete_fbcache.sh
