@@ -1,9 +1,8 @@
 <template>
   <span :class="$style.parent">
-    <span v-if="bold"
+    <span
       ><strong>{{ value }}</strong></span
     >
-    <span v-else>{{ value }}</span>
     <span v-if="translatedUnit">{{ translatedUnit }}</span>
   </span>
 </template>
@@ -24,10 +23,6 @@ export default Vue.extend({
       type: Object as PropType<Unit>,
       required: true,
     },
-    bold: {
-      type: Boolean,
-      required: true,
-    },
   },
   data() {
     return {
@@ -37,12 +32,8 @@ export default Vue.extend({
   computed: {
     translatedUnit() {
       const unit = this.unit
-      const { text, translatable, except } = unit
+      const { text, translatable } = unit
       if (translatable) {
-        if (except && except.includes(String(this.currentLocaleCode))) {
-          return null
-        }
-
         return this.$t(unit.text)
       }
 

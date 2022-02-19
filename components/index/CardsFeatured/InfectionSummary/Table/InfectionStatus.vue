@@ -12,9 +12,9 @@
       <ul :class="$style.group">
         <li :class="[$style.box]">
           <div :class="$style.content">
-            <span>{{ $t('うち65歳以上') }}</span>
+            <span>{{ $t('うち70代以上') }}</span>
             <value-with-translatable-unit
-              :value="items['うち65歳以上の高齢者数'].toLocaleString()"
+              :value="items['うち70代以上の高齢者数'].toLocaleString()"
               :unit="{ text: '人', translatable: true }"
               :bold="true"
             />
@@ -28,28 +28,6 @@
         <value-with-translatable-unit
           :value="items['死亡者数'].toLocaleString()"
           :unit="{ text: '人', translatable: true }"
-          :bold="true"
-        />
-      </div>
-    </li>
-    <li :class="[$style.box]">
-      <div :class="$style.content">
-        <span>{{ $t('都外からの持込検体による陽性数') }}</span>
-        <value-with-translatable-unit
-          :value="items['都外からの持込検体による陽性数'].toLocaleString()"
-          :unit="{ text: '', translatable: false }"
-          :bold="true"
-        />
-      </div>
-    </li>
-    <li :class="[$style.box]">
-      <div :class="$style.content">
-        <span>{{
-          $t('検査数（{date}参考値（3日間移動平均））', { date: date })
-        }}</span>
-        <value-with-translatable-unit
-          :value="items['検査数'].toLocaleString()"
-          :unit="{ text: '件.reports', translatable: true }"
           :bold="true"
         />
       </div>
@@ -71,10 +49,6 @@ export default Vue.extend({
   props: {
     items: {
       type: Object as PropType<IInfectionMedicalCareSummaryData>,
-      required: true,
-    },
-    date: {
-      type: String,
       required: true,
     },
   },

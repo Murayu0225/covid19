@@ -17,27 +17,25 @@
             <th class="text-center" scope="col">
               {{ $t('お問い合わせ内容') }}
             </th>
-            <th class="text-center" scope="col">{{ $t('局名') }}</th>
+            <th class="text-center" scope="col">{{ $t('担当名') }}</th>
             <th class="text-center tel" scope="col">{{ $t('電話番号') }}</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="content importantContact" v-bind="headingAttrs">
-              {{
-                $t(
-                  '感染の予防に関することや、心配な症状が出た時の対応など、新型コロナウイルス感染症に関する相談'
-                )
-              }}
+              {{ $t('新型コロナウイルス感染症の予防・検査・医療に関すること') }}
             </td>
             <td class="bureau importantContact">
-              {{ $t('新型コロナ・オミクロン株コールセンター') }}
+              {{ $t('相模原市 新型コロナウイルス感染症相談センター') }}
             </td>
             <td class="tel">
-              <a href="tel:0570-550571" class="importantContact">0570-550571</a
+              <a href="tel:042-769-9237" class="importantContact"
+                >042-769-9237</a
               ><br />
+              <br />
               <p class="caution">
-                {{ $t(`午前9時00分から午後10時00分（土日祝含む）`) }}
+                {{ $t(`24時間対応`) }}
               </p>
               <p class="caution">
                 {{
@@ -50,129 +48,119 @@
           </tr>
           <tr>
             <td class="content importantContact" v-bind="headingAttrs">
-              {{ $t('東京都緊急事態措置等・感染拡大防止協力金等に関すること') }}
+              {{ $t('新型コロナウイルスワクチン接種に関すること') }}
             </td>
             <td class="bureau importantContact">
-              {{ $t('東京都緊急事態措置等・感染拡大防止協力金相談センター') }}
+              {{ $t('相模原市 新型コロナウイルス接種コールセンター') }}
             </td>
             <td class="tel">
-              <a href="tel:03-5388-0567" class="importantContact"
-                >03-5388-0567</a
-              ><br />
-              <p class="caution">
-                {{ $t('午前9時00分から午後7時00分（土日祝含む）') }}
-              </p>
+              <ul>
+                <li>
+                  <a href="tel:050-5445-4357">050-5445-4357</a>
+                </li>
+                <li>
+                  <a href="tel:050-5445-4358">050-5445-4358</a>
+                </li>
+                <li>
+                  <a href="tel:050-5445-9837">050-5445-9837</a>
+                </li>
+                <li>
+                  <a href="tel:050-5445-9838">050-5445-9838</a>
+                </li>
+                <li class="bold">
+                  {{
+                    $t(
+                      'すべての電話番号から予約受付終了等の自動音声案内が確認できます。'
+                    )
+                  }}
+                </li>
+                <li>
+                  {{ $t('外国人専用ダイヤル（対応言語：英語、中国語、韓国語）')
+                  }}<br /><a href="tel:042-767-2104">042-767-2104</a>
+                </li>
+                <br />
+                <p class="caution">
+                  {{
+                    $t(`全て、午前8時30分～午後8時（土・日曜日は午後7時まで）`)
+                  }}
+                </p>
+                <p class="caution">
+                  <i18n path="詳しくは、{link}をご参照ください。">
+                    <template #link>
+                      <app-link
+                        :to="
+                          $t(
+                            'https://www.city.sagamihara.kanagawa.jp/kurashi/kenko/kansenyobo/1019910/1022588/1024262/1022745.html'
+                          )
+                        "
+                      >
+                        {{ $t('こちら') }}
+                      </app-link>
+                    </template>
+                  </i18n>
+                </p>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="content importantContact" v-bind="headingAttrs">
+              {{ $t('かかりつけ医がない等受診に困った場合') }}
+            </td>
+            <td class="bureau importantContact">
+              {{ $t('神奈川県 発熱等診療予約センター') }}
+            </td>
+            <td class="tel">
+              <ul>
+                <li>
+                  {{ $t('相模原市にお住まいの方') }}<br /><a
+                    href="tel:042-769-9237"
+                    >042-769-9237</a
+                  >
+                </li>
+                <br />
+                <p class="caution">
+                  {{ $t(`24時間（毎日）`) }}
+                </p>
+                <p class="caution">
+                  <i18n
+                    path="相模原市以外にお住まいの方は、{kanagawa}をご参照ください。"
+                  >
+                    <template #kanagawa>
+                      <app-link
+                        :to="
+                          $t(
+                            'https://www.pref.kanagawa.jp/docs/ga4/covid19/support.html'
+                          )
+                        "
+                      >
+                        {{ $t('こちら') }}
+                      </app-link>
+                    </template>
+                  </i18n>
+                </p>
+              </ul>
             </td>
           </tr>
           <tr>
             <td class="content" v-bind="headingAttrs">
               {{ $t('本サイトの管理・運営に関すること') }}
             </td>
-            <td class="bureau">{{ $t('政策企画局') }}</td>
-            <td class="tel"><a href="tel:03-5388-2171">03-5388-2171</a></td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('新型コロナウイルス感染症対策本部会議に関すること')
-              }}<br />{{ $t('都庁来庁者データに関すること') }}
+            <td class="bureau">
+              {{ $t('本サイト製作者直通メールアドレス（個人）') }}
             </td>
-            <td class="bureau">{{ $t('総務局') }}</td>
             <td class="tel">
-              <ul>
-                <li>
-                  {{ $t('新型コロナウイルス感染症対策本部会議に関すること') }}
-                  <br />
-                  <a href="tel:03-5388-2453"> 03-5388-2453 </a>
-                </li>
-                <li>
-                  {{ $t('都庁来庁者データに関すること') }}
-                  <br />
-                  <a href="tel:03-5388-2319"> 03-5388-2319 </a>
-                </li>
-              </ul>
+              <a href="mailto:contact@sagamihara-stopcovid19.jp"
+                >contact@sagamihara-stopcovid19.jp</a
+              ><br />
+              <br />
+              <p class="caution">
+                {{
+                  $t(
+                    'お問い合わせの際は、氏名と共にお問い合わせ内容を記入していただきますようお願いいたします。'
+                  )
+                }}
+              </p>
             </td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('都公式ホームページに関すること') }}<br />{{
-                $t('都公式SNSアカウントに関すること')
-              }}
-            </td>
-            <td class="bureau">{{ $t('生活文化局') }}</td>
-            <td class="tel">
-              <ul>
-                <li>
-                  {{ $t('都公式ホームページに関すること') }}<br /><a
-                    href="tel:03-5388-3061"
-                    >03-5388-3061</a
-                  >
-                </li>
-                <li>
-                  {{ $t('都公式SNSアカウントに関すること') }}<br /><a
-                    href="tel:03-5388-3094"
-                    >03-5388-3094</a
-                  >
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('中小企業支援、テレワークに関すること') }}
-            </td>
-            <td class="bureau">{{ $t('産業労働局') }}</td>
-            <td class="tel">
-              <ul>
-                <li>
-                  {{ $t('資金繰りに関すること') }}<br /><a
-                    href="tel:03-5320-4877"
-                    >03-5320-4877</a
-                  >
-                </li>
-                <li>
-                  {{ $t('経営に関すること') }}<br /><a href="tel:03-3251-7881"
-                    >03-3251-7881</a
-                  >
-                </li>
-                <li>
-                  {{ $t('労働関係に関すること') }}<br /><a
-                    href="tel:0570-00-6110"
-                    >0570-00-6110</a
-                  >
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('都立学校に関すること') }}
-            </td>
-            <td class="bureau">{{ $t('教育庁') }}</td>
-            <td class="tel"><a href="tel:03-5320-6705">03-5320-6705</a></td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('スムーズビズに関すること') }}
-            </td>
-            <td class="bureau">{{ $t('都市整備局') }}</td>
-            <td class="tel"><a href="tel:03-5388-3317">03-5388-3317</a></td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('都営交通に関すること') }}
-            </td>
-            <td class="bureau">{{ $t('交通局') }}</td>
-            <td class="tel">
-              <a href="tel:03-3816-5700">03-3816-5700</a><br />
-              {{ $t('（都営交通お客様センター）') }}
-            </td>
-          </tr>
-          <tr>
-            <td class="content" v-bind="headingAttrs">
-              {{ $t('ご家庭でのマスク等の捨て方に関すること') }}
-            </td>
-            <td class="bureau">{{ $t('環境局') }}</td>
-            <td class="tel"><a href="tel:03-5388-3581">03-5388-3581</a></td>
           </tr>
         </tbody>
       </table>
@@ -182,13 +170,15 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import type { MetaInfo } from 'vue-meta'
+import { MetaInfo } from 'vue-meta' // eslint-disable-line import/named
 
+import AppLink from '@/components/_shared/AppLink.vue'
 import PageHeader from '@/components/_shared/PageHeader.vue'
 
 export default Vue.extend({
   components: {
     PageHeader,
+    AppLink,
   },
   data() {
     return {
@@ -238,20 +228,21 @@ export default Vue.extend({
 
       th {
         padding: 1em 0;
-
         @include font-size(14, true);
       }
 
       td {
         padding: 1em 16px;
-
         @include font-size(14);
       }
 
       .importantContact {
         font-weight: 600;
-
         @include font-size(16, true);
+      }
+
+      .bold {
+        font-weight: bold;
       }
 
       .tel ul {
@@ -318,7 +309,6 @@ export default Vue.extend({
 
       p.caution {
         margin: 0;
-
         @include font-size(12);
       }
     }

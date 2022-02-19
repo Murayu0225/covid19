@@ -11,30 +11,16 @@ import CardsLazyRow from '@/components/index/_shared/CardsLazyRow.vue'
 // モニタリング項目
 const MonitoringItemsOverviewCard = () =>
   import('@/components/index/CardsMonitoring/MonitoringItemsOverview/Card.vue')
+// このグラフにはバグが存在しているため一時的に非公開にしている。
+// パス経由でのみアクセスのみできるようにしている。
 // モニタリング項目(1)新規陽性者数
-const MonitoringConfirmedCasesNumberCard = () =>
-  import(
-    '@/components/index/CardsMonitoring/MonitoringConfirmedCasesNumber/Card.vue'
-  )
-// モニタリング項目(2)#7119における発熱等相談件数
-const ConsultationAboutFeverNumberCard = () =>
-  import(
-    '@/components/index/CardsMonitoring/ConsultationAboutFeverNumber/Card.vue'
-  )
+// const MonitoringConfirmedCasesNumberCard = () =>
+// import(
+// '@/components/index/CardsMonitoring/MonitoringConfirmedCasesNumber/Card.vue'
+// )
 // モニタリング項目(3)新規陽性者における接触歴等不明者数
 const UntrackedRateCard = () =>
   import('@/components/index/CardsMonitoring/UntrackedRate/Card.vue')
-// モニタリング項目(4)検査の陽性率
-const PositiveRateCard = () =>
-  import('@/components/index/CardsMonitoring/PositiveRate/Card.vue')
-// モニタリング項目(5)救急医療の東京ルールの適用件数
-const TokyoRulesApplicationNumberCard = () =>
-  import(
-    '@/components/index/CardsMonitoring/TokyoRulesApplicationNumber/Card.vue'
-  )
-// モニタリング項目(6)入院患者数
-const HospitalizedNumberCard = () =>
-  import('@/components/index/CardsMonitoring/HospitalizedNumber/Card.vue')
 // モニタリング項目(7)重症患者数
 const SevereCaseCard = () =>
   import('@/components/index/CardsMonitoring/SevereCase/Card.vue')
@@ -47,10 +33,8 @@ export default Vue.extend({
   data() {
     return {
       rows: [
-        [MonitoringItemsOverviewCard, MonitoringConfirmedCasesNumberCard],
-        [ConsultationAboutFeverNumberCard, UntrackedRateCard],
-        [PositiveRateCard, TokyoRulesApplicationNumberCard],
-        [HospitalizedNumberCard, SevereCaseCard],
+        [MonitoringItemsOverviewCard, UntrackedRateCard],
+        [SevereCaseCard],
       ],
     }
   },
