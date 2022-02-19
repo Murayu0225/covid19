@@ -11,11 +11,13 @@ import CardsLazyRow from '@/components/index/_shared/CardsLazyRow.vue'
 // モニタリング項目
 const MonitoringItemsOverviewCard = () =>
   import('@/components/index/CardsMonitoring/MonitoringItemsOverview/Card.vue')
+// このグラフにはバグが存在しているため一時的に非公開にしている。
+// パス経由でのみアクセスのみできるようにしている。
 // モニタリング項目(1)新規陽性者数
-const MonitoringConfirmedCasesNumberCard = () =>
-  import(
-    '@/components/index/CardsMonitoring/MonitoringConfirmedCasesNumber/Card.vue'
-  )
+// const MonitoringConfirmedCasesNumberCard = () =>
+// import(
+// '@/components/index/CardsMonitoring/MonitoringConfirmedCasesNumber/Card.vue'
+// )
 // モニタリング項目(3)新規陽性者における接触歴等不明者数
 const UntrackedRateCard = () =>
   import('@/components/index/CardsMonitoring/UntrackedRate/Card.vue')
@@ -31,8 +33,8 @@ export default Vue.extend({
   data() {
     return {
       rows: [
-        [MonitoringItemsOverviewCard, MonitoringConfirmedCasesNumberCard],
-        [UntrackedRateCard, SevereCaseCard],
+        [MonitoringItemsOverviewCard, UntrackedRateCard],
+        [SevereCaseCard],
       ],
     }
   },
