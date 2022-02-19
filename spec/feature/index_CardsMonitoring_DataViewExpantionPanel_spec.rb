@@ -4,11 +4,7 @@ require 'spec_helper'
 
 card_classes = [
   '.DataCard.MonitoringConfirmedCasesNumberCard',
-  '.DataCard.ConsultationAboutFeverNumberCard',
   '.DataCard.UntrackedRateCard',
-  '.DataCard.PositiveRateCard',
-  '.DataCard.TokyoRulesApplicationNumberCard',
-  '.DataCard.HospitalizedNumberCard',
   '.DataCard.SevereCaseCard',
 ]
 

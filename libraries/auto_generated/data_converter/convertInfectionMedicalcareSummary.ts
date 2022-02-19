@@ -13,24 +13,11 @@ export interface InfectionMedicalcareSummary {
 }
 
 export interface Data {
-    日付:              Date;
-    レベル:             number;
-    病床使用率:           number;
-    入院数:             number;
-    確保病床数:           number;
-    都基準重症病床使用率:      number;
-    都基準重症者数:         number;
-    都基準重症病床数:        number;
-    国基準重症病床使用率:      number;
-    国基準重症者数:         number;
-    国基準重症病床数:        number;
-    新規陽性者:           number;
-    検査数:             number;
-    検査統計日時:          Date;
-    うち65歳以上の高齢者数:    number;
-    死亡者数:            number;
-    都外からの持込検体による陽性数: number;
-    ワクチン接種状況:        { [key: string]: number | null };
+    日付:           Date;
+    新規陽性者:        number;
+    うち70代以上の高齢者数: number;
+    死亡者数:         number;
+    ワクチン接種状況:     { [key: string]: number };
 }
 
 // Converts JSON strings to/from your types
@@ -184,22 +171,9 @@ const typeMap: any = {
     ], false),
     "Data": o([
         { json: "日付", js: "日付", typ: Date },
-        { json: "レベル", js: "レベル", typ: 0 },
-        { json: "病床使用率", js: "病床使用率", typ: 3.14 },
-        { json: "入院数", js: "入院数", typ: 0 },
-        { json: "確保病床数", js: "確保病床数", typ: 0 },
-        { json: "都基準重症病床使用率", js: "都基準重症病床使用率", typ: 3.14 },
-        { json: "都基準重症者数", js: "都基準重症者数", typ: 0 },
-        { json: "都基準重症病床数", js: "都基準重症病床数", typ: 0 },
-        { json: "国基準重症病床使用率", js: "国基準重症病床使用率", typ: 3.14 },
-        { json: "国基準重症者数", js: "国基準重症者数", typ: 0 },
-        { json: "国基準重症病床数", js: "国基準重症病床数", typ: 0 },
         { json: "新規陽性者", js: "新規陽性者", typ: 0 },
-        { json: "検査数", js: "検査数", typ: 0 },
-        { json: "検査統計日時", js: "検査統計日時", typ: Date },
-        { json: "うち65歳以上の高齢者数", js: "うち65歳以上の高齢者数", typ: 0 },
+        { json: "うち70代以上の高齢者数", js: "うち70代以上の高齢者数", typ: 0 },
         { json: "死亡者数", js: "死亡者数", typ: 0 },
-        { json: "都外からの持込検体による陽性数", js: "都外からの持込検体による陽性数", typ: 0 },
-        { json: "ワクチン接種状況", js: "ワクチン接種状況", typ: m(u(0, null)) },
+        { json: "ワクチン接種状況", js: "ワクチン接種状況", typ: m(0) },
     ], false),
 };

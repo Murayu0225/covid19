@@ -174,7 +174,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     },
     dayPeriod: {
       type: Number,
-      default: 60,
+      default: 14,
     },
   },
   data: () => ({
@@ -387,7 +387,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       const values = this.chartData
         .filter((item) => {
           const date = dayjs(item.label)
-          return date.isBetween(this.startDate, this.endDate, null, '[]')
+          return date.isBetween(this.startDate, this.endDate, 'day', '[]')
         })
         .map((d) => d[dataKind])
       const max = Math.max(...values)

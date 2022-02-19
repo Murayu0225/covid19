@@ -2,12 +2,12 @@
 //
 //   import { Convert, PositiveOver65 } from "./file";
 //
-//   const positiveOver65 = Convert.toPositiveOver65(json);
+//   const positiveOver70 = Convert.toPositiveOver70(json);
 //
 // These functions will throw an error if the JSON doesn't
 // match the expected interface, even if the JSON is valid.
 
-export interface PositiveOver65 {
+export interface PositiveOver70 {
     date: string;
     data: Datum[];
 }
@@ -20,12 +20,12 @@ export interface Datum {
 // Converts JSON strings to/from your types
 // and asserts the results of JSON.parse at runtime
 export class Convert {
-    public static toPositiveOver65(json: string): PositiveOver65 {
-        return cast(JSON.parse(json), r("PositiveOver65"));
+    public static toPositiveOver70(json: string): PositiveOver70 {
+        return cast(JSON.parse(json), r("PositiveOver70"));
     }
 
-    public static positiveOver65ToJson(value: PositiveOver65): string {
-        return JSON.stringify(uncast(value, r("PositiveOver65")), null, 2);
+    public static positiveOver70ToJson(value: PositiveOver70): string {
+        return JSON.stringify(uncast(value, r("PositiveOver70")), null, 2);
     }
 }
 
@@ -162,7 +162,7 @@ function r(name: string) {
 }
 
 const typeMap: any = {
-    "PositiveOver65": o([
+    "PositiveOver70": o([
         { json: "date", js: "date", typ: "" },
         { json: "data", js: "data", typ: a(r("Datum")) },
     ], false),

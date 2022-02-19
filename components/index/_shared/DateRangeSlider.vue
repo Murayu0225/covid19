@@ -89,7 +89,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     },
     defaultDayPeriod: {
       type: Number,
-      default: 60,
+      default: 14,
     },
   },
   data() {

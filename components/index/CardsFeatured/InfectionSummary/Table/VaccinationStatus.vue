@@ -31,26 +31,6 @@
           />
         </div>
       </li>
-      <li :class="[$style.box]">
-        <div :class="$style.content">
-          <span>{{ $t('接種なし') }}</span>
-          <value-with-translatable-unit
-            :value="items['ワクチン接種状況']['接種なし'].toLocaleString()"
-            :unit="{ text: '人', translatable: true }"
-            :bold="true"
-          />
-        </div>
-      </li>
-      <li :class="[$style.box]">
-        <div :class="$style.content">
-          <span>{{ $t('不明') }}</span>
-          <value-with-translatable-unit
-            :value="items['ワクチン接種状況']['不明'].toLocaleString()"
-            :unit="{ text: '人', translatable: true }"
-            :bold="true"
-          />
-        </div>
-      </li>
     </ul>
   </div>
 </template>
