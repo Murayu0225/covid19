@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/pt-BR/cards/predicted-number-of-toei-subway-passengers", {data:[{}],fetch:[],mutations:void 0});

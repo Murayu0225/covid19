@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/pt-BR/cards/positive-status-severe-case", {data:[{}],fetch:[],mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/pt-BR/cards/number-of-reports-to-covid19-telephone-advisory-center", {data:[{}],fetch:[],mutations:void 0});
