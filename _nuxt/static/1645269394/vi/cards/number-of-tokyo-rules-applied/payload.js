@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/vi/cards/number-of-tokyo-rules-applied", {data:[{}],fetch:[],mutations:void 0});

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/pt-BR/print/flow", {data:[{}],fetch:[],mutations:void 0});

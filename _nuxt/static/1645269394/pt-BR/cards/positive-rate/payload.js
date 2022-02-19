@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/pt-BR/cards/positive-rate", {data:[{}],fetch:[],mutations:void 0});
