@@ -12,24 +12,23 @@
           <infection-status
             :aria-label="$t('患者の発生状況等')"
             :items="statuses"
-            :date="formatDate(statisticDate)"
           />
         </section>
         <section :class="$style.section">
-          <h4>{{ $t('ワクチン接種状況') }}</h4>
+          <h4>{{ $t('ワクチン接種状況（累計）') }}</h4>
           <vaccination-status
-            :aria-label="$t('ワクチン接種状況')"
+            :aria-label="$t('ワクチン接種状況（累計）')"
             :items="statuses"
           />
         </section>
         <div :class="$style.link">
           <v-icon color="#D9D9D9">{{ mdiChevronRight }}</v-icon>
           <app-link
-            to="https://www.fukushihoken.metro.tokyo.lg.jp/hodo/saishin/hassei.html"
+            to="https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html"
           >
             {{
               $t(
-                '新型コロナウイルスに関連した患者の発生について（過去1週間分）'
+                '新型コロナウイルス感染症に関する相模原市発表資料（発生状況等）'
               )
             }}
           </app-link>
@@ -40,7 +39,24 @@
             <li>
               {{
                 $t(
-                  '感染者の濃厚接触者が有症状となった場合で、検査を実施せずに医師の判断により臨床診断された患者を含む'
+                  'ワクチン接種状況については、土曜日・日曜日・祝日は更新しない'
+                )
+              }}
+            </li>
+            <li>
+              {{ $t('速報値として公表するものであり、後日修正する場合がある') }}
+            </li>
+            <li>
+              {{
+                $t(
+                  'ワクチン接種状況における1回目・2回目の接種状況は、2022年１月30日時点のものである'
+                )
+              }}
+            </li>
+            <li>
+              {{
+                $t(
+                  '全対象者の接種率は、令和3年1月1日住民基本台帳年齢階級別人口（総務省公表）をもとに、12歳以上の人口(652,528人)を分母として算出'
                 )
               }}
             </li>
@@ -74,7 +90,6 @@ type Computed = {
   statuses: IInfectionMedicalCareSummaryData
   date: string
   publicationDate: string
-  statisticDate: string
   infectionMedicalCareSummary: IInfectionMedicalCareSummary
 }
 type Props = {}
@@ -100,11 +115,6 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     publicationDate() {
       return this.infectionMedicalCareSummary.data['日付'] as unknown as string
-    },
-    statisticDate() {
-      return this.infectionMedicalCareSummary.data[
-        '検査統計日時'
-      ] as unknown as string
     },
     infectionMedicalCareSummary() {
       return this.$store.state.infectionMedicalCareSummary

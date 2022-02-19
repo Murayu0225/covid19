@@ -3,7 +3,7 @@
     <v-overlay :value="loading" color="#F8F9FA" opacity="1" z-index="9999">
       <div class="loader">
         <img src="/logo.svg" alt="相模原市" />
-        <scale-loader color="#085c6c" />
+        <scale-loader color="#6789e2" />
       </div>
     </v-overlay>
     <div v-if="hasNavigation" class="appContainer">
@@ -149,7 +149,7 @@ export default class Default extends Vue implements NuxtConfig {
           content: `${this.$t('{date} 更新', {
             date: convertDateToSimpleFormat(lastUpdate),
           })}: ${this.$tc(
-            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものです。'
+            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものを相模原市向けに改変したものです。'
           )}`,
         },
         {
@@ -178,7 +178,7 @@ export default class Default extends Vue implements NuxtConfig {
           content: `${this.$t('{date} 更新', {
             date: convertDateToSimpleFormat(lastUpdate),
           })}: ${this.$tc(
-            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものです。'
+            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものを相模原市向けに改変したものです。'
           )}`,
         },
         {

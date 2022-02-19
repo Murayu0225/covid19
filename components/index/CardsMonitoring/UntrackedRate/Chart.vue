@@ -228,15 +228,15 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     dayPeriod: {
       type: Number,
-      default: 60,
+      default: 14,
     },
   },
   data() {
     return {
       canvas: true,
       colors: [
-        getGraphSeriesColor('A'),
-        getGraphSeriesColor('C'),
+        getGraphSeriesColor('B'),
+        getGraphSeriesColor('D'),
         getGraphSeriesColor('E'),
         getGraphSeriesColor('H'),
       ],
@@ -302,7 +302,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     displayData() {
       const rangeDate = this.labels.filter((item) => {
         const date = dayjs(item)
-        return date.isBetween(this.startDate, this.endDate, null, '[]')
+        return date.isBetween(this.startDate, this.endDate, 'day', '[]')
       })
 
       return {

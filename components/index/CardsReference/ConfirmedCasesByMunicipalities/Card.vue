@@ -2,26 +2,22 @@
   <v-col cols="12" md="6" class="DataCard ConfirmedCasesByMunicipalitiesCard">
     <client-only>
       <confirmed-cases-by-municipalities-table
-        :title="$t('陽性者数（区市町村別）')"
+        :title="$t('陽性者数（区別）')"
         :title-id="'number-of-confirmed-cases-by-municipalities'"
         :chart-data="municipalitiesTable"
         :date="date"
         :info="info"
-        :url="'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000085'"
       >
         <template #additionalDescription>
           <span>{{ $t('（注）') }}</span>
           <ul>
             <li>
-              {{ $t('前日までに報告された陽性者数の累計値') }}
-            </li>
-            <li>
-              {{ $t('チャーター機帰国者、クルーズ船乗客等は含まれていない') }}
+              {{ $t('１週間おきに更新する') }}
             </li>
             <li>
               {{
                 $t(
-                  '2022年2月2日以降の報告分には、感染者の濃厚接触者が有症状となった場合で、検査を実施せずに医師の判断により臨床診断された患者を含む'
+                  '毎日の発生数等によっては、個人が特定されるおそれがあるため、区別の陽性患者数については週報とする'
                 )
               }}
             </li>
@@ -57,54 +53,26 @@ export default {
       datasets: [],
     }
 
-    // ヘッダーを設定
-    if (this.$i18n.locale === 'ja') {
-      municipalitiesTable.headers = [
-        { text: this.$t('地域'), value: 'area' },
-        { text: this.$t('ふりがな'), value: 'ruby' },
-        { text: this.$t('区市町村'), value: 'label' },
-        { text: this.$t('陽性者数'), value: 'count', align: 'end' },
-      ]
-    } else {
-      municipalitiesTable.headers = [
-        { text: this.$t('地域'), value: 'area' },
-        { text: this.$t('区市町村'), value: 'label' },
-        { text: this.$t('陽性者数'), value: 'count', align: 'end' },
-      ]
-    }
+    municipalitiesTable.headers = [
+      { text: this.$t('区'), value: 'label' },
+      { text: this.$t('陽性者数'), value: 'count', align: 'end' },
+    ]
 
     // データをソート
-    const areaOrder = ['特別区', '多摩地域', '島しょ地域', null]
-    datasets.data
-      .sort((a, b) => {
-        // 全体をふりがなでソート
-        if (a.ruby === b.ruby) {
-          return 0
-        } else if (a.ruby > b.ruby) {
-          return 1
-        } else {
-          return -1
-        }
-      })
-      .sort((a, b) => {
-        // '特別区' -> '多摩地域' -> '島しょ地域' -> その他 の順にソート
-        return areaOrder.indexOf(a.area) - areaOrder.indexOf(b.area)
-      })
+    const labelOrder = ['緑区', '中央区', '南区', '市外']
+    datasets.data.sort((a, b) => {
+      // '特別区' -> '多摩地域' -> '島しょ地域' -> その他 の順にソート
+      return labelOrder.indexOf(a.label) - labelOrder.indexOf(b.label)
+    })
 
     // データを追加
     municipalitiesTable.datasets = datasets.data
       .filter((d) => d.label !== '小計')
       .map((d) => {
-        const area = this.$t(d.area)
         const label = this.$t(d.label)
         const count = countFormatter(d.count)
 
-        if (this.$i18n.locale === 'ja') {
-          const ruby = this.$t(d.ruby)
-          return { area, ruby, label, count }
-        } else {
-          return { area, label, count }
-        }
+        return { label, count }
       })
 
     const info = {

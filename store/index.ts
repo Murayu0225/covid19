@@ -7,11 +7,11 @@ import { InfectionMedicalCareSummaryRepository } from '@/libraries/repositories/
 import { MetroRepository } from '@/libraries/repositories/MetroRepository'
 import { MonitoringCommentImageRepository } from '@/libraries/repositories/MonitoringCommentImageRepository'
 import { NewsRepository } from '@/libraries/repositories/NewsRepository'
-import { PositiveOver65Repository } from '@/libraries/repositories/PositiveOver65Repository'
 import { StayingPopulationRepository } from '@/libraries/repositories/StayingPopulationRepository'
 import { TokyoRuleRepository } from '@/libraries/repositories/TokyoRuleRepository'
 import { VaccinationRepository } from '@/libraries/repositories/VaccinationRepository'
 import { VariantsRepository } from '@/libraries/repositories/VariantsRepository'
+import { PositiveOver70Repository } from '~/libraries/repositories/PositiveOver70Repository'
 
 export const state = () => ({
   agency: new AgencyRepository().data,
@@ -27,5 +27,5 @@ export const state = () => ({
   tokyoRule: new TokyoRuleRepository().data,
   vaccination: new VaccinationRepository().data,
   variants: new VariantsRepository().data,
-  positiveOver65: new PositiveOver65Repository().data,
+  positiveOver70: new PositiveOver70Repository().data,
 })

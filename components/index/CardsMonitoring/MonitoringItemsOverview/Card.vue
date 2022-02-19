@@ -6,42 +6,46 @@
         title-id="monitoring-items-overview"
         :date="monitoringItemsData.date"
       >
-        <template v-if="$route.path !== localePath('/monitoring')" #description>
-          <app-link
-            :to="localePath('/monitoring')"
-            :class="[$style.button, $style['inner-link']]"
-          >
-            {{ $t('モニタリング項目の各グラフはこちら') }}
-          </app-link>
+        <template #description>
+          <div v-if="$route.path !== localePath('/monitoring')">
+            <app-link
+              :to="localePath('/monitoring')"
+              :class="[$style.button, $style['inner-link']]"
+            >
+              {{ $t('モニタリング項目の各グラフはこちら') }}
+            </app-link>
+          </div>
+          <p>
+            <br />
+            {{
+              $t(
+                '参考値における [ ] 内の数値は、ステージ4の指標である（ [ ] のついていない参考値は、ステージ3の指標である）'
+              )
+            }}<br />
+            {{
+              $t(
+                '[ ] のない参考値は、ステージ3,4どちらとも同じ数値であることを示す'
+              )
+            }}
+          </p>
         </template>
+
         <template #additionalDescription>
           <span>{{ $t('（注）') }}</span>
           <ul>
             <li>
-              <i18n
-                tag="span"
-                path="{number}：急病やけがの際に、緊急受診の必要性や診察可能な医療機関をアドバイスする電話相談窓口"
-              >
-                <template #number>
-                  <dfn>#7119</dfn>
-                </template>
-              </i18n>
-            </li>
-            <li>
               {{
                 $t(
-                  '救急医療の東京ルールの適用件数：救急隊による5医療機関への受入要請又は選定開始から20分以上経過しても搬送先が決定しない事案の件数'
+                  '参考値は、国の新型コロナウィルス感染症対策分科会で示された「今後想定される感染状況と対策について」のステージ1から4までのうち、ステージ3及び4の指標を掲載している'
                 )
               }}
             </li>
             <li>
-              {{ $t('(1)～(5)は7日間移動平均で算出') }}
-            </li>
-            <li>
-              {{ $t('(2)(4)(5)は報告日の前日時点の数値') }}
-            </li>
-            <li>
-              {{ $t('(6)の確保病床数には、(7)の確保病床数を含む') }}
+              {{
+                $t(
+                  '陽性患者については、報道発表した数値を翌日の数値に反映している'
+                )
+              }}
             </li>
             <li>
               {{ $t('速報値として公表するものであり、後日修正する場合がある') }}
@@ -49,16 +53,45 @@
             <li>
               {{
                 $t(
-                  '(2)(5)は土曜日、日曜日、祝日は更新しない。(4)は日曜日、祝日は更新しない'
+                  '（１）の数値は、｛直近1週間の累積新規陽性患者数/（本市人口/10万人）｝で計算'
                 )
               }}
             </li>
             <li>
               {{
                 $t(
-                  '(1)(3)には、感染者の濃厚接触者が有症状となった場合で、検査を実施せずに医師の判断により臨床診断された患者を含む'
+                  '（２）の数値は、｛当該週の新規陽性患者数/前週の新規陽性患者数｝で計算'
                 )
               }}
+            </li>
+            <li>
+              {{
+                $t(
+                  '（３）の数値は、｛直近1週間の感染経路不明者/直近1週間の新規陽性患者数｝で計算'
+                )
+              }}
+            </li>
+            <li>
+              {{
+                $t(
+                  '（３）の数値は、｛直近1週間の感染経路不明者/直近1週間の新規陽性患者数｝で計算'
+                )
+              }}
+            </li>
+            <li>
+              {{
+                $t(
+                  '（４）の数値は、｛直近1週間の新規陽性患者数/市衛生研究所と民間検査機関の検査人数の合計｝で計算'
+                )
+              }}
+            </li>
+            <li>
+              {{
+                $t('（５）、（６）の数値は、｛入院者病床/利用可能病床｝で計算')
+              }}
+            </li>
+            <li>
+              {{ $t('（７）の数値は、｛療養者数/（本市人口/10万人）｝で計算') }}
             </li>
           </ul>
         </template>
@@ -76,22 +109,6 @@
             :items="monitoringItems"
           />
         </section>
-        <div :class="$style['button-wrap']">
-          <app-link
-            :class="$style.button"
-            to="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/monitoring.html"
-          >
-            {{ $t('最新のモニタリング項目の分析・総括コメントについて') }}
-          </app-link>
-        </div>
-        <div>
-          <app-link
-            :class="$style.button"
-            to="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html"
-          >
-            {{ $t('国のステージ判断のための指標') }}
-          </app-link>
-        </div>
       </data-view>
     </client-only>
   </v-col>

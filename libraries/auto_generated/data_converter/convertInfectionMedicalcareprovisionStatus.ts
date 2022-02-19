@@ -1,38 +1,39 @@
 // To parse this data:
 //
-//   import { Convert, DailyPositiveDetail } from "./file";
+//   import { Convert, InfectionMedicalcareprovisionStatus } from "./file";
 //
-//   const dailyPositiveDetail = Convert.toDailyPositiveDetail(json);
+//   const infectionMedicalcareprovisionStatus = Convert.toInfectionMedicalcareprovisionStatus(json);
 //
 // These functions will throw an error if the JSON doesn't
 // match the expected interface, even if the JSON is valid.
 
-export interface DailyPositiveDetail {
+export interface InfectionMedicalcareprovisionStatus {
     date: string;
-    data: Datum[];
+    data: Data;
 }
 
-export interface Datum {
-    diagnosedDate:                        Date;
-    count:                                number;
-    missingCount:                         number;
-    reportedCount:                        number;
-    weeklyAverageCount:                   number | null;
-    weeklyAverageUntrackedCount:          number | null;
-    weeklyAverageUntrackedIncresePercent: number | null;
-    weeklyGainRatio?:                     number;
-    untrackedPercent?:                    number;
+export interface Data {
+    新規陽性者:           number;
+    検査数:             number;
+    検査統計日時:          Date;
+    うち65歳以上の高齢者数:    number;
+    死亡者数:            number;
+    都外からの持込検体による陽性数: number;
+    入院数:             number;
+    確保病床数:           number;
+    うち重症者数:          number;
+    うち重症病床数:         number;
 }
 
 // Converts JSON strings to/from your types
 // and asserts the results of JSON.parse at runtime
 export class Convert {
-    public static toDailyPositiveDetail(json: string): DailyPositiveDetail {
-        return cast(JSON.parse(json), r("DailyPositiveDetail"));
+    public static toInfectionMedicalcareprovisionStatus(json: string): InfectionMedicalcareprovisionStatus {
+        return cast(JSON.parse(json), r("InfectionMedicalcareprovisionStatus"));
     }
 
-    public static dailyPositiveDetailToJson(value: DailyPositiveDetail): string {
-        return JSON.stringify(uncast(value, r("DailyPositiveDetail")), null, 2);
+    public static infectionMedicalcareprovisionStatusToJson(value: InfectionMedicalcareprovisionStatus): string {
+        return JSON.stringify(uncast(value, r("InfectionMedicalcareprovisionStatus")), null, 2);
     }
 }
 
@@ -169,19 +170,20 @@ function r(name: string) {
 }
 
 const typeMap: any = {
-    "DailyPositiveDetail": o([
+    "InfectionMedicalcareprovisionStatus": o([
         { json: "date", js: "date", typ: "" },
-        { json: "data", js: "data", typ: a(r("Datum")) },
+        { json: "data", js: "data", typ: r("Data") },
     ], false),
-    "Datum": o([
-        { json: "diagnosed_date", js: "diagnosedDate", typ: Date },
-        { json: "count", js: "count", typ: 0 },
-        { json: "missing_count", js: "missingCount", typ: 0 },
-        { json: "reported_count", js: "reportedCount", typ: 0 },
-        { json: "weekly_average_count", js: "weeklyAverageCount", typ: u(3.14, null) },
-        { json: "weekly_average_untracked_count", js: "weeklyAverageUntrackedCount", typ: u(3.14, null) },
-        { json: "weekly_average_untracked_increse_percent", js: "weeklyAverageUntrackedIncresePercent", typ: u(3.14, null) },
-        { json: "weekly_gain_ratio", js: "weeklyGainRatio", typ: u(undefined, 3.14) },
-        { json: "untracked_percent", js: "untrackedPercent", typ: u(undefined, 3.14) },
+    "Data": o([
+        { json: "新規陽性者", js: "新規陽性者", typ: 0 },
+        { json: "検査数", js: "検査数", typ: 3.14 },
+        { json: "検査統計日時", js: "検査統計日時", typ: Date },
+        { json: "うち65歳以上の高齢者数", js: "うち65歳以上の高齢者数", typ: 0 },
+        { json: "死亡者数", js: "死亡者数", typ: 0 },
+        { json: "都外からの持込検体による陽性数", js: "都外からの持込検体による陽性数", typ: 0 },
+        { json: "入院数", js: "入院数", typ: 0 },
+        { json: "確保病床数", js: "確保病床数", typ: 0 },
+        { json: "うち重症者数", js: "うち重症者数", typ: 0 },
+        { json: "うち重症病床数", js: "うち重症病床数", typ: 0 },
     ], false),
 };

@@ -9,43 +9,23 @@
         :date="date"
         :unit="$t('人')"
         :by-date="true"
-        :url="'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000068'"
       >
-        <template #description>
-          <app-link
-            :to="`${
-              $i18n.locale !== 'ja' ? $i18n.locale : ''
-            }/cards/positive-number-by-developed-date`"
-            class="Description-Link"
-          >
-            {{ $t('発症日別による陽性者数の推移はこちら') }}
-          </app-link>
-        </template>
         <template #additionalDescription>
           <div class="Description-ExternalLink">
             <app-link
-              to="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/todokedehcyouseisya.html"
+              to="https://www.city.sagamihara.kanagawa.jp/shisei/koho/1019191.html"
             >
-              {{ $t('65歳以上の新規陽性者数の推移及び届出保健所別の内訳') }}
+              {{
+                $t(
+                  '新型コロナウイルス感染症に関する相模原市発表資料（発生状況等）'
+                )
+              }}
             </app-link>
           </div>
           <span>{{ $t('（注）') }}</span>
           <ul>
             <li>
-              {{ $t('保健所から発生届が提出された日を基準とする') }}
-            </li>
-            <li>
-              {{ $t('医療機関等が行った検査も含む') }}
-            </li>
-            <li>
-              {{ $t('チャーター機帰国者、クルーズ船乗客等は含まれていない') }}
-            </li>
-            <li>
-              {{
-                $t(
-                  '2022年2月2日以降は、感染者の濃厚接触者が有症状となった場合で、検査を実施せずに医師の判断により臨床診断された患者を含む'
-                )
-              }}
+              {{ $t('在日米陸軍関係者は含めない') }}
             </li>
           </ul>
         </template>

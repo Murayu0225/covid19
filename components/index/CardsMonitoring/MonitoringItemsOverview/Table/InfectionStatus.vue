@@ -1,86 +1,55 @@
 <template>
   <ul :class="$style.container">
-    <li :class="[$style.box]">
-      <div :class="$style.content">
-        <span>{{ $t('(1)新規陽性者数') }}</span>
-        <value-with-translatable-unit
-          :value="items['(1)新規陽性者数'].value"
-          :unit="items['(1)新規陽性者数'].unit"
-          :bold="items['(1)新規陽性者数'].bold"
-        />
-      </div>
-    </li>
     <li :class="[$style.box, $style.parent]">
       <div :class="$style.content">
-        <span>{{ $t('潜在・市中感染') }}</span>
+        <span>{{ $t('（１）人口10万人当たりの累積陽性者数') }}</span>
+        <value-with-translatable-unit
+          :value="items['人口10万人当たりの累積陽性者数'].value"
+          :unit="items['人口10万人当たりの累積陽性者数'].unit"
+        />
       </div>
       <ul :class="$style.group">
         <li :class="[$style.box]">
           <div :class="$style.content">
-            <span>
-              {{
-                $t(
-                  '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 '
-                )
-              }}
-            </span>
-            <value-with-translatable-unit
-              :value="
-                items[
-                  '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 '
-                ].value
-              "
-              :unit="
-                items[
-                  '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 '
-                ].unit
-              "
-              :bold="
-                items[
-                  '(2)#7119（東京消防庁救急相談センター）における発熱等相談件数 '
-                ].bold
-              "
-            />
+            <span>{{ $t('人口10万人当たりの累積陽性者数（参考値）') }}</span>
+            <span>{{
+              items['人口10万人当たりの累積陽性者数（参考値）'].value
+            }}</span>
           </div>
         </li>
-        <li :class="[$style.box, $style.parent]">
+      </ul>
+    </li>
+    <li :class="[$style.box, $style.parent]">
+      <div :class="$style.content">
+        <span>{{ $t('（２）陽性患者増加比') }}</span>
+        <value-with-translatable-unit
+          :value="items['陽性患者増加比'].value"
+          :unit="items['陽性患者増加比'].unit"
+        />
+      </div>
+      <ul :class="$style.group">
+        <li :class="[$style.box]">
           <div :class="$style.content">
-            <span>{{ $t('(3)新規陽性者における接触歴等不明者') }}</span>
+            <span>{{ $t('陽性患者増加比（参考値）') }}</span>
+            <span>{{ items['陽性患者増加比（参考値）'].value }}</span>
           </div>
-          <ul :class="$style.group">
-            <li :class="[$style.box]">
-              <div :class="$style.content">
-                <span>{{ $t('人数') }}</span>
-                <value-with-translatable-unit
-                  :value="
-                    items['(3)新規陽性者における接触歴等不明者（人数）'].value
-                  "
-                  :unit="
-                    items['(3)新規陽性者における接触歴等不明者（人数）'].unit
-                  "
-                  :bold="
-                    items['(3)新規陽性者における接触歴等不明者（人数）'].bold
-                  "
-                />
-              </div>
-            </li>
-            <li :class="[$style.box]">
-              <div :class="$style.content">
-                <span>{{ $t('増加比') }}</span>
-                <value-with-translatable-unit
-                  :value="
-                    items['(3)新規陽性者における接触歴等不明者（増加比）'].value
-                  "
-                  :unit="
-                    items['(3)新規陽性者における接触歴等不明者（増加比）'].unit
-                  "
-                  :bold="
-                    items['(3)新規陽性者における接触歴等不明者（増加比）'].bold
-                  "
-                />
-              </div>
-            </li>
-          </ul>
+        </li>
+      </ul>
+    </li>
+    <li :class="[$style.box, $style.parent]">
+      <div :class="$style.content">
+        <span>{{ $t('（３）感染経路不明者の割合') }}</span>
+        <value-with-translatable-unit
+          :value="items['感染経路不明者の割合'].value"
+          :unit="items['感染経路不明者の割合'].unit"
+        />
+      </div>
+      <ul :class="$style.group">
+        <li :class="[$style.box]">
+          <div :class="$style.content">
+            <span>{{ $t('感染経路不明者の割合（参考値）') }}</span>
+            <span>{{ items['感染経路不明者の割合（参考値）'].value }}</span>
+          </div>
         </li>
       </ul>
     </li>

@@ -29,9 +29,6 @@
         @end-date="endDate = $event"
       />
     </div>
-    <template #additionalDescription>
-      <slot name="additionalDescription" />
-    </template>
     <template #dataTable>
       <client-only>
         <data-view-table :headers="tableHeaders" :items="tableData" />
@@ -44,9 +41,6 @@
         :s-text="displayInfo[0].sText"
         :unit="displayInfo[0].unit"
       />
-    </template>
-    <template #footer>
-      <open-data-link v-show="url" :url="url" />
     </template>
   </data-view>
 </template>
@@ -160,7 +154,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     },
     dayPeriod: {
       type: Number,
-      default: 60,
+      default: 14,
     },
   },
   data: () => ({
@@ -298,7 +292,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       const values = this.chartData
         .filter((item) => {
           const date = dayjs(item.label)
-          return date.isBetween(this.startDate, this.endDate, null, '[]')
+          return date.isBetween(this.startDate, this.endDate, 'day', '[]')
         })
         .map((d) => d.transition)
       const max = Math.max(...values)

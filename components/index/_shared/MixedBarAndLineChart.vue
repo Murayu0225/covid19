@@ -224,7 +224,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     },
     dayPeriod: {
       type: Number,
-      default: 60,
+      default: 14,
     },
   },
   data() {
@@ -273,7 +273,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     displayData() {
       const rangeDate = this.labels.filter((item) => {
         const date = dayjs(item)
-        return date.isBetween(this.startDate, this.endDate, null, '[]')
+        return date.isBetween(this.startDate, this.endDate, 'day', '[]')
       })
 
       return {

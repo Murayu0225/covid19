@@ -5,9 +5,6 @@ require 'spec_helper'
 card_classes = [
   '.DataCard.VaccinationCard',
   '.DataCard.ConfirmedCasesNumberCard',
-  '.DataCard.TestedNumberCard',
-  '.DataCard.TokyoFeverConsultationCenterReportsNumberCard',
-  '.DataCard.TelephoneAdvisoryReportsNumberCard',
 ]
 
 describe 'page [/]', type: :feature do
