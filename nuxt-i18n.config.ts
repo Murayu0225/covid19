@@ -44,7 +44,7 @@ const options: NuxtConfig['i18n'] = {
       'zh-cn': dateTimeFormatsCommon,
       'zh-tw': dateTimeFormatsCommon,
       ko: dateTimeFormatsCommon,
-      'ja-basic': dateTimeFormatsCommon,
+      'pt-BR': dateTimeFormatsCommon,
     },
   },
   // vueI18nLoader: true,
@@ -86,21 +86,12 @@ const options: NuxtConfig['i18n'] = {
       file: 'ko.json',
       description: 'Korean',
     },
-    // #1126, #872 (comment)
-    // ポルトガル語は訳が揃っていないため非表示
-    // {
-    //   code: 'pt-BR',
-    //   name: 'Portuguese',
-    //   iso: 'pt-BR',
-    //   file: 'pt_BR.json',
-    //   description: 'Portuguese'
-    // },
     {
-      code: 'ja-basic',
-      name: 'やさしい にほんご',
-      iso: 'ja-JP',
-      file: 'ja-Hira.json',
-      description: 'Easy Japanese',
+      code: 'pt-br',
+      name: 'Portuguese',
+      iso: 'pt-BR',
+      file: 'pt_BR.json',
+      description: 'Portuguese',
     },
   ],
 }

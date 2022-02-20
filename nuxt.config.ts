@@ -224,7 +224,7 @@ const config: NuxtConfig = {
   generate: {
     fallback: true,
     routes() {
-      const locales = ['en', 'zh-cn', 'zh-tw', 'ko']
+      const locales = ['en', 'zh-cn', 'zh-tw', 'ko', 'pt-br']
       const pages = cardData.map((v: Settings) => {
         return v.path
       })

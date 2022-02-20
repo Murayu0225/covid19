@@ -21,7 +21,6 @@ export const getLinksLanguageAlternative = (
   if (locales) {
     for (const locale of locales) {
       if (typeof locale === 'string') continue
-      if (locale.code === 'ja-basic') continue
 
       links.push({
         hid: `alternate-hreflang-${locale.iso}`,
