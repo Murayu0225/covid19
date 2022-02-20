@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/pt-br/cards/details-of-confirmed-cases", {data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/pt-br/cards/positive-number-over70", {data:[{}],fetch:{},mutations:[]});
