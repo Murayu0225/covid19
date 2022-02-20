@@ -1,7 +1,7 @@
 [
   {
     "path": "/cards/infection-summary",
-    "title": "本日の患者の発生状況等",
+    "title": "患者の発生状況等",
     "category": "注目の指標",
     "ogpWidth": 959,
     "ogpHeight": 500

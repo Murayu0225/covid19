@@ -12,7 +12,7 @@
         formatDate(updatedAtAsDate)
       }}</time>
     </div>
-    <div v-show="!['ja', 'ja-basic'].includes($i18n.locale)" class="Annotation">
+    <div v-show="!['ja'].includes($i18n.locale)" class="Annotation">
       <span>{{ $t('注釈') }}</span>
     </div>
   </div>

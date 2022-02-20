@@ -87,7 +87,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     placeName() {
       const placeToDisplay = this.stayingPopulationData.place.display
 
-      return ['ja', 'ja-basic', 'zh-cn', 'zh-tw'].includes(this.$i18n.locale)
+      return ['ja', 'zh-cn', 'zh-tw', 'pt-br'].includes(this.$i18n.locale)
         ? placeToDisplay.ja
         : placeToDisplay.en
     },
