@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/pt-br/cards/monitoring-items-overview", {data:[{}],fetch:{},mutations:[]});

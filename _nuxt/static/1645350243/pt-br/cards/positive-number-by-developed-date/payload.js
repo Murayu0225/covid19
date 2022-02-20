@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/pt-br/cards/positive-number-by-developed-date", {data:[{}],fetch:{},mutations:[]});
