@@ -231,6 +231,10 @@ export default class Default extends Vue implements NuxtConfig {
   font-family: $western, $korean, sans-serif;
 }
 
+.app:lang(pt-BR) {
+  font-family: $western, sans-serif;
+}
+
 .v-application--wrap {
   width: 100%;
 }

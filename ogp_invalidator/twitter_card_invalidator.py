@@ -27,7 +27,7 @@ LANGS = (
     'zh-cn',
     'zh-tw',
     'ko',
-    'ja-basic',
+    'pt-br'
 )
 
 options = webdriver.ChromeOptions()

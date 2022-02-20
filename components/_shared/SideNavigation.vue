@@ -42,7 +42,6 @@
       </v-icon>
 
       <nav class="SideNavigation-Menu">
-        <!-- 多言語対応をしていないのでコメントアウト(163.182行目のコメントアウトの削除も必要)
         <div class="SideNavigation-Language">
           <div v-if="$i18n.locales.length > 1" class="SideNavigation-Language">
             <label
@@ -51,12 +50,12 @@
               for="LanguageSelector"
               tabindex="-1"
             >
-              {{ $t('多言語対応選択メニュー') }}
+              {{ $t('多言語対応選択メニュー') }}<br />
+              {{ $t('Powerd by Google Translate') }}
             </label>
             <language-selector />
           </div>
         </div>
-        -->
         <menu-list
           :items="items"
           :item-titles="itemTitles"
@@ -159,8 +158,7 @@ import Vue from 'vue'
 import type { TranslateResult } from 'vue-i18n'
 
 import AppLink from '@/components/_shared/AppLink.vue'
-// 翻訳対応時に下記コメントアウトを削除
-// import LanguageSelector from '@/components/_shared/SideNavigation/LanguageSelector.vue'
+import LanguageSelector from '@/components/_shared/SideNavigation/LanguageSelector.vue'
 import MenuList from '@/components/_shared/SideNavigation/MenuList.vue'
 
 type ItemTitle = {
@@ -179,8 +177,7 @@ type Item = {
 
 export default Vue.extend({
   components: {
-    // 翻訳対応時に下記コメントアウトを削除
-    // LanguageSelector,
+    LanguageSelector,
     MenuList,
     AppLink,
   },
