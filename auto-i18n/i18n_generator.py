@@ -180,12 +180,8 @@ with open(os.path.join(os.pardir, OUTPUT_DIR, CHECK_RESULT), mode="a", encoding=
                         tags = []
                         if file_name == JSON_FILES[1]:  # patient.jsonの場合
                             for city in json_content["datasets"]["data"]:
-                                # エリアを取得
-                                tags.append(city["area"])
                                 # ラベルを取得、「小計」は除外する
                                 tags.append(city["label"]) if city["label"] != "小計" else None
-                                # ルビを取得
-                                tags.append(city["ruby"])
                         # タグを統合し、重複分を取り除く
                         all_tags = list(set(all_tags + tags))
             # Noneが混じっているので、取り除く
