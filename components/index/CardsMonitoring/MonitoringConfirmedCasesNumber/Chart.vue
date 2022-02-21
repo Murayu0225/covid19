@@ -235,7 +235,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       displayLegends: [true, true],
       colors,
       startDate: '2020-01-01',
-      endDate: dayjs().format('YYY-MM-DDT00:00:00+09:00'),
+      endDate: dayjs().format('YYYY-MM-DDT00:00:00+09:00'),
     }
   },
   computed: {
