@@ -11,6 +11,9 @@ import CardsLazyRow from '@/components/index/_shared/CardsLazyRow.vue'
 // 患者の発生状況等（サマリ）
 const InfectionSummaryCard = () =>
   import('@/components/index/CardsFeatured/InfectionSummary/Card.vue')
+// 報告日別による陽性者数の推移
+const ConfirmedCasesNumberCard = () =>
+  import('@/components/index/CardsFeatured/ConfirmedCasesNumber/Card.vue')
 // 検査陽性者の状況
 const ConfirmedCasesDetailsCard = () =>
   import('@/components/index/CardsFeatured/ConfirmedCasesDetails/Card.vue')
@@ -20,9 +23,6 @@ const MonitoringItemsOverviewCard = () =>
 // ワクチン接種数（累計）
 const VaccinationCard = () =>
   import('@/components/index/CardsFeatured/Vaccination/Card.vue')
-// 報告日別による陽性者数の推移
-const ConfirmedCasesNumberCard = () =>
-  import('@/components/index/CardsFeatured/ConfirmedCasesNumber/Card.vue')
 /* eslint-enable simple-import-sort/imports */
 
 export default Vue.extend({
@@ -32,9 +32,9 @@ export default Vue.extend({
   data() {
     return {
       rows: [
-        [InfectionSummaryCard, ConfirmedCasesDetailsCard],
-        [MonitoringItemsOverviewCard, VaccinationCard],
-        [ConfirmedCasesNumberCard],
+        [InfectionSummaryCard, ConfirmedCasesNumberCard],
+        [ConfirmedCasesDetailsCard, MonitoringItemsOverviewCard],
+        [VaccinationCard],
       ],
     }
   },
