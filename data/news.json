@@ -1,19 +1,19 @@
 {
     "newsItems": [
         {
+            "date": "2022\/02\/24",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/02\/0224.pdf",
+            "text": "新型コロナウイルス感染症による新たな患者の確認について(31671例目～31804例目) （PDF 391.1KB）"
+        },
+        {
+            "date": "2022\/02\/24",
+            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/02\/0224_00.pdf",
+            "text": "在日米陸軍関係者における新型コロナウイルス感染症の感染者の確認について （PDF 216.2KB）"
+        },
+        {
             "date": "2022\/02\/23",
             "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/02\/0223.pdf",
             "text": "新型コロナウイルス感染症による新たな患者の確認について(31063例目～31670例目) （PDF 218.1KB）"
-        },
-        {
-            "date": "2022\/02\/22",
-            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/02\/0222_02.pdf",
-            "text": "新型コロナウイルス感染症による新たな患者の確認（30274例目～31062例目）及び患者の死亡 について （PDF 452.3KB）"
-        },
-        {
-            "date": "2022\/02\/22",
-            "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/02\/0222_01.pdf",
-            "text": "相模原市職員の新型コロナウイルス陽性判明の状況について（令和4年2月18日から2月21日まで判明分）"
         }
     ]
 }
