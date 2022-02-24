@@ -244,7 +244,32 @@
             "date": "2022-02-18",
             "hospitalized": 3831,
             "severe_case": 0
+        },
+        {
+            "date": "2022-02-19",
+            "hospitalized": 3831,
+            "severe_case": 0
+        },
+        {
+            "date": "2022-02-20",
+            "hospitalized": 3831,
+            "severe_case": 0
+        },
+        {
+            "date": "2022-02-21",
+            "hospitalized": 3831,
+            "severe_case": 0
+        },
+        {
+            "date": "2022-02-22",
+            "hospitalized": 3831,
+            "severe_case": 0
+        },
+        {
+            "date": "2022-02-23",
+            "hospitalized": 3831,
+            "severe_case": 0
         }
     ],
-    "date": "2022\/2\/18 18:00"
+    "date": "2022\/2\/23 18:00"
 }
