@@ -40,7 +40,7 @@
           <ul :class="$style.group">
             <li :class="[$style.box]">
               <div :class="$style.content">
-                <span>{{ '病床の逼迫具合（参考値）' }}</span>
+                <span>{{ $t('病床の逼迫具合（参考値）') }}</span>
                 <span>{{ items['病床の逼迫具合（参考値）'].value }}</span>
               </div>
             </li>
