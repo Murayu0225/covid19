@@ -512,7 +512,16 @@
             "weekly_average_count": 461.43,
             "weekly_average_untracked_count": 81.29,
             "weekly_average_untracked_increse_percent": 81.64
+        },
+        {
+            "diagnosed_date": "2022-02-27",
+            "count": 414,
+            "missing_count": 259,
+            "reported_count": 155,
+            "weekly_average_count": 459.43,
+            "weekly_average_untracked_count": 48.29,
+            "weekly_average_untracked_increse_percent": 105.64
         }
     ],
-    "date": "2022\/2\/26 18:00"
+    "date": "2022\/2\/27 18:00"
 }
