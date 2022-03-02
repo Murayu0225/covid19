@@ -533,13 +533,22 @@
         },
         {
             "diagnosed_date": "2022-03-01",
-            "count": 106,
+            "count": 683,
             "missing_count": 360,
             "reported_count": 323,
             "weekly_average_count": 443.14,
             "weekly_average_untracked_count": 97.71,
             "weekly_average_untracked_increse_percent": 82.31
+        },
+        {
+            "diagnosed_date": "2022-03-02",
+            "count": 582,
+            "missing_count": 302,
+            "reported_count": 280,
+            "weekly_average_count": 439.43,
+            "weekly_average_untracked_count": 51.43,
+            "weekly_average_untracked_increse_percent": 52.48
         }
     ],
-    "date": "2022\/3\/01 18:00"
+    "date": "2022\/3\/02 18:00"
 }
