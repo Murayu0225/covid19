@@ -299,7 +299,12 @@
             "date": "2022-03-01",
             "hospitalized": 3831,
             "severe_case": 1
+        },
+        {
+            "date": "2022-03-02",
+            "hospitalized": 3831,
+            "severe_case": 0
         }
     ],
-    "date": "2022\/3\/01 18:00"
+    "date": "2022\/3\/02 18:00"
 }
