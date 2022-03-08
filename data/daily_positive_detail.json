@@ -557,7 +557,52 @@
             "weekly_average_count": 484.29,
             "weekly_average_untracked_count": 87.14,
             "weekly_average_untracked_increse_percent": 162.24
+        },
+        {
+            "diagnosed_date": "2022-03-04",
+            "count": 349,
+            "missing_count": 197,
+            "reported_count": 152,
+            "weekly_average_count": 456.71,
+            "weekly_average_untracked_count": 76.43,
+            "weekly_average_untracked_increse_percent": 81.06
+        },
+        {
+            "diagnosed_date": "2022-03-05",
+            "count": 437,
+            "missing_count": 185,
+            "reported_count": 252,
+            "weekly_average_count": 431.29,
+            "weekly_average_untracked_count": 63.43,
+            "weekly_average_untracked_increse_percent": 78.03
+        },
+        {
+            "diagnosed_date": "2022-03-06",
+            "count": 461,
+            "missing_count": 266,
+            "reported_count": 195,
+            "weekly_average_count": 438.00,
+            "weekly_average_untracked_count": 47.14,
+            "weekly_average_untracked_increse_percent": 97.62
+        },
+        {
+            "diagnosed_date": "2022-03-07",
+            "count": 155,
+            "missing_count": 87,
+            "reported_count": 68,
+            "weekly_average_count": 445.00,
+            "weekly_average_untracked_count": 63.86,
+            "weekly_average_untracked_increse_percent": 87.48
+        },
+        {
+            "diagnosed_date": "2022-03-08",
+            "count": 416,
+            "missing_count": 230,
+            "reported_count": 186,
+            "weekly_average_count": 406.86,
+            "weekly_average_untracked_count": 76.00,
+            "weekly_average_untracked_increse_percent": 77.78
         }
     ],
-    "date": "2022\/3\/03 18:00"
+    "date": "2022\/3\/08 18:00"
 }
