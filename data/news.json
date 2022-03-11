@@ -1,19 +1,19 @@
 {
     "newsItems": [
       {
+          "date": "2022\/03\/11",
+          "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/03\/0311.pdf",
+          "text": "新型コロナウイルス感染症による新たな患者の確認(37972例目～38365例目)及び患者の死亡について （PDF 208.7KB）"
+      },
+      {
+          "date": "2022\/03\/11",
+          "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/03\/0311_01.pdf",
+          "text": "相模原市職員の新型コロナウイルス陽性判明の状況について（令和4年3月8日から3月10日まで判明分） （PDF 239.1KB）"
+      },
+      {
           "date": "2022\/03\/10",
           "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/03\/0310.pdf",
           "text": "新型コロナウイルス感染症による新たな患者の確認(37528例目～37971例目)及び患者の死亡について （PDF 424.0KB）"
-      },
-      {
-          "date": "2022\/03\/10",
-          "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/03\/0310_01.pdf",
-          "text": "新型コロナウイルスワクチン接種のお知らせ～ワクチン接種の加速化、利便性の向上を図る取組を進めます～ （PDF 280.4KB）"
-      },
-      {
-          "date": "2022\/03\/09",
-          "url": "https:\/\/www.city.sagamihara.kanagawa.jp\/_res\/projects\/default_project\/_page_\/001\/019\/191\/03\/0309.pdf",
-          "text": "新型コロナウイルス感染症による新たな患者の確認(37014例目～37527例目)及び患者の死亡並びに発生届の取下げ(32349例目)について （PDF 432.7KB）"
       }
     ]
 }
